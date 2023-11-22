@@ -7,22 +7,37 @@
   <title>My Portfolio</title>
 </head>
 <body>
+
   <div class="header">
-    <h1>ARTUS</h1>
+    <h1 class="nom">ARTUS</h1>
     <h1 class="prenom">ALEXANDRE</h1>
-    <h4>Hello, moi c'est Alexandre 24 ans bienvenue sur mon portfolio. Je design, crée & developpe dees sites internet.</h4>
-    <p>Scroll pour voir mes derniers projets</p>
+    <div class="flex">
+      <div class="console-log">
+        <p><span style="color:rgb(121, 199, 230);">Console</span><span>.<span style="color:#efe868;">log</span></span>("</p>
+        <div class="string">
+          <p class="greeting en">The Surf Course</p>
+          <p class="greeting es">TudoBemMaman</p>
+          <p class="greeting de">This Portfolio</p>
+        </div>
+        <p class="closure">");</p>
+      </div>
+      <div class="title-h4">
+        <h4 class="pres">Hello, moi c'est Alexandre j'ai 24 ans, bienvenue sur mon portfolio.<br> Je design, crée & developpe des sites internet.</h4>
+      </div>
+    </div>
   </div>
-  <div class="section">
+
+  <div class="container">
     <div class="left-col">
-      <h3>The Surf Course</h3>
+      <h2 class="surf-course-title">The Surf Course</h2>
       <p>The Surf Course est un destiné aux adeptes du surf qui ont envie d'acheter leur matériel de surf mais qui ne savent pas par ou commencé.</p>
       <p>Technologies uitlisées</p>
       <p>Ruby on Rails / Javascript / SQL</p>
     </div>
     <div class="right-col">
-      <img src="images/surf-project.png" alt="surf-course-project">
     </div>
   </div>
 </body>
 </html>
+
+<img src="images/surf-project.png" alt="surf-course-project">

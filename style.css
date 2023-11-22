@@ -7,7 +7,6 @@
        url('fonts/manrope-light/Manrope-Medium.ttf') format('truetype'),
        url('fonts/manrope-light/Manrope-Regular.ttf') format('truetype'),
        url('fonts/manrope-light/Manrope-SemiBold.ttf') format('truetype');
-  /* Ajoutez d'autres formats de police si nécessaire */
 }
 
 @font-face {
@@ -19,40 +18,151 @@
        url('fonts/butler-stencil/Butler_Light_Stencil.otf') format('opentype'),
        url('fonts/butler-stencil/Butler_Medium_Stencil.otf') format('opentype'),
        url('fonts/butler-stencil/Butler_Regular_Stencil.otf') format('opentype');
-  /* Ajoutez d'autres formats de police si nécessaire */
 }
 
 @font-face {
   font-family: 'butler';
   src :url('fonts/butler/Butler_Ultra_Light.otf') format('opentype');
-
-  /* Ajoutez d'autres formats de police si nécessaire */
 }
 
 @font-face {
   font-family: 'manrope';
   src: url('fonts/manrope-light/Manrope-Light.ttf') format('truetype'),
 }
-/* Utilisation de la police 'Butler_Ultra_Light_Stencil' pour les h1 */
+
+@font-face {
+  font-family: 'manrope-ultra-light';
+  src: url('fonts/manrope-light/Manrope-ExtraLight.ttf') format('truetype'),
+}
+
+html, body {
+  overflow-x: hidden; /* Empêche la barre de défilement horizontale */
+  background-color: black;
+}
+
+.header {
+  margin-bottom: 148px;
+}
+
 h1 {
   font-family: 'butler', sans-serif;
-  font-size: 128px;
+  font-size: 220px;
   font-weight: 500;
-  margin-bottom: -40px;
+  color: white;
+  margin-bottom: -80px;
 }
 
 .prenom {
   font-family: 'manrope', sans-serif;
-  font-weight: 400;
+  font-weight: 100;
+  color: white;
   margin: 0;
+  margin-bottom: 48px;
 }
 
-/* Utilisation de la police 'butler-stencil' pour les autres titres (h2, h3) */
+.nom {
+  margin-top: 80px;
+}
+
 h2, h3 {
   font-family: 'butler-stencil', sans-serif;
+  color: white;
 }
 
-/* Utilisation de la police 'manrope-light' pour les paragraphes et h4 */
 p, h4 {
-  font-family: 'manrope-light', sans-serif;
+  font-family: 'manrope-ultra-light', sans-serif;
+  font-weight: bold;
+  color: white;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.pres {
+  font-size: 24px;
+  padding-right: 120px;
+  margin-top: 64px;
+  text-align: end;
+}
+
+.sub-cont {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+/* code pour le console log */
+
+.string {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  animation: move 4s infinite;
+}
+
+.greeting {
+  position: relative;
+  top: 0vmin;
+  animation: white-out 5s infinite;
+}
+
+.closure::after {
+  content: '';
+  position: absolute;
+  margin-top: 70px;
+  margin-left: 30px;
+  height: 15vmin;
+  width: 40vmin;
+  background: black;
+  transform: translate(-45vmin, -24.5vmin);
+}
+
+.closure::before {
+  content: '';
+  position: absolute;
+  height: 15vmin;
+  width: 40vmin;
+  background: black;
+  transform: translate(-40vmin, 5vmin);
+}
+
+.en {
+  color: #fa8231;
+}
+
+.es {
+  color: greenyellow;
+}
+
+.de {
+  color: #c678dd;
+}
+
+@keyframes move {
+  25% {
+    transform: translatey(-6.8vmin);
+    opacity: 1;
+  }
+  50% {
+    transform: translatey(-14vmin);
+  }
+}
+
+.console-log {
+  display: flex;
+  margin-top: 54px;
+}
+
+/* code pour le premier projet */
+
+.container {
+  margin-left: 116px;
+  margin-right: 116px;
+}
+
+.surf-course-title {
+  font-size: 48px;
 }
