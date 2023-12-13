@@ -21,6 +21,7 @@
             <p class="greeting en">The Surf Course</p>
             <p class="greeting es">TudoBemMaman</p>
             <p class="greeting de">This Portfolio</p>
+            <p class="greeting ru">SurfMate</p>
           </div>
           <p id="closure" class="closure">");</p>
           <div class="black-box-2"></div>
@@ -39,11 +40,13 @@
         <h2 class="surf-course-title">The Surf Course</h2>
         <p>The Surf Course est un destiné aux adeptes du surf qui ont envie d'acheter leur matériel de surf mais qui ne savent pas par ou commencé.</p>
         <p>Cette version est adaptée en version mobile uniquement (pour l'instant...)</p>
-        <button onclick="displayDiv('cache');"><p class="en-savoir-plus">En savoir plus ...</p></button>
+        <div class="flex-surf-project">
+          <button onclick="displayDiv('cache');"><p class="en-savoir-plus">En savoir plus ...</p></button>
+          <a href="https://the-surf-course.one/" target="_blank" class="lien-boutique">Choisi ton matériel</a>
+        </div>
         <div id="cache">
           <p>Ce projet est basé sur un <strong class="techno-utilisees">algorithme de recommandation de combinaisons et planches de surf en fonction du choix de l'utilisateur</strong>. Avec une base de donnée remplie de différents produits pour le surf, les résultats varient et permettent d'aporter les meilleurs solutions.</p>
         </div>
-        <a href="https://the-surf-course.one/" target="_blank" class="lien-boutique">Choisi ton matériel</a>
         <!-- <hr class="trait"> -->
         <p class="techno-utilisees">Technologies utilisées</p>
         <div class="langage">
@@ -82,17 +85,18 @@
       <div class="right-col second-project-col">
         <h2 class="surf-course-title">Tudo Bem Maman</h2>
         <p>Tudo Bem Maman quant a lui est né d'une idée de marque de vêtements de la part d'une amie qui souhaitait pouvoir vendre en ligne... </p>
-        <button onclick="displayDiv('cache-2');"><p class="en-savoir-plus">En savoir plus ...</p></button>
+        <div class="flex-surf-project">
+          <button onclick="displayDiv('cache-2');"><p class="en-savoir-plus">En savoir plus ...</p></button>
+          <a href="https://www.tudobemmaman.com/" target="_blank" class="lien-boutique">Visiter la boutique</a>
+        </div>
         <div id="cache-2">
           <p>Ici, le projet réuni les grandes fonctionnalités d'une boutique en ligne avec :</p>
           <ul>
             <li>Possibilité d'acheter en ligne via Stripe</li>
             <li>Possibilité <strong class="techno-utilisees">uniquement</strong> pour l'administrateur de gérer ses collections directement sur le site et d'avoir un dashboard avec toutes les infos sur ses ventes</li>
             <li>Possibilité d'ajouter des articles au panier avant de faire une commande de groupe</li>
-            <li>(Ce projet est encore en cours ...)</li>
           </ul>
         </div>
-        <a href="https://www.tudobemmaman.com/" target="_blank" class="lien-boutique">Visiter la boutique</a>
         <!-- <hr class="trait"> -->
         <p class="techno-utilisees">Technologies utilisées</p>
         <div class="langage">
@@ -118,8 +122,8 @@
     <div class="container">
       <div class="left-col third-project-col">
         <h2 class="surf-course-title">This Portfolio</h2>
-        <p>Et enfin, ce portfolio qui est un projet personnel qui me permet de mettre en avant mes compétences et mes projets.</p>
-        <button id="togg" onclick="displayDiv('cache-3');"><p class="en-savoir-plus">En savoir plus ...</p></button>
+        <p>Ce portfolio qui est un projet personnel qui me permet de mettre en avant mes compétences et mes projets.</p>
+        <button onclick="displayDiv('cache-3');"><p class="en-savoir-plus">En savoir plus ...</p></button>
         <div id="cache-3">
           <p>Le but de ce projet est de pouvoir mettre en avant mes compétences et mes projets. Il est donc composé de :</p>
           <ul>
@@ -146,6 +150,47 @@
     </div>
   </section>
 
+  <section>
+    <div class="container">
+      <div class="left-col-2">
+        <div class="loader">
+          <span class="loader__element"></span>
+          <span class="loader__element"></span>
+          <span class="loader__element"></span>
+        </div>
+      </div>
+      <div class="right-col second-project-col">
+        <h2 class="surf-course-title">SurfMate</h2>
+        <p>Ce projet commence seulement et aura pour but d'être une application mobile mettant en relation des personnes passionnées de surf.</p>
+        <button onclick="displayDiv('cache-4');"><p class="en-savoir-plus">En savoir plus ...</p></button>
+        <div id="cache-4">
+          <p>Le but de ce projet est de pouvoir mettre en relation des surfeurs grâce à la proposition de session et de chat</p>
+          <ul>
+            <li>Un surfeur pourra proposer des session (date / lieu ...)</li>
+            <li>Visibilité de sessions proche de chez soi</li>
+            <li>Possibilité de rentrer en contact avec l'admin de la session</li>
+            <li>(Ce projet est encore en cours ...)</li>
+          </ul>
+        </div>
+        <!-- <hr class="trait"> -->
+        <p class="techno-utilisees">Technologies utilisées</p>
+        <div class="langage">
+          <div class="ruby">
+            <p>Ruby on Rails</p>
+            <img src="images/ruby.png" alt="logo-ruby" height="18px" width="20px">
+          </div>
+          <div class="javascript">
+            <p>Javascript</p>
+            <img src="images/javascript.png" alt="logo-javascript" height="22px" width="42px">
+          </div>
+          <div class="sql">
+            <p>SQL</p>
+            <img src="images/sql.png" alt="logo-sql" height="18px" width="42px">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <section>
     <h2 class="other-project">Mes autres projets</h2>
