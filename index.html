@@ -4,40 +4,200 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="script.js"></script>
   <title>My Portfolio</title>
 </head>
 <body>
 
-  <div class="header">
-    <h1 class="nom">ARTUS</h1>
-    <h1 class="prenom">ALEXANDRE</h1>
-    <div class="flex">
-      <div class="console-log">
-        <p><span style="color:rgb(121, 199, 230);">Console</span><span>.<span style="color:#efe868;">log</span></span>("</p>
-        <div class="string">
-          <p class="greeting en">The Surf Course</p>
-          <p class="greeting es">TudoBemMaman</p>
-          <p class="greeting de">This Portfolio</p>
+  <section>
+    <div class="header">
+      <h1 class="nom">ARTUS</h1>
+      <h1 class="prenom">ALEXANDRE</h1>
+      <div class="black-box"></div>
+      <div class="flex">
+        <div class="console-log">
+          <p><span style="color:rgb(121, 199, 230);">console</span><span>.<span style="color:#efe868;">log</span></span>("</p>
+          <div class="string">
+            <p class="greeting en">The Surf Course</p>
+            <p class="greeting es">TudoBemMaman</p>
+            <p class="greeting de">This Portfolio</p>
+          </div>
+          <p id="closure" class="closure">");</p>
+          <div class="black-box-2"></div>
         </div>
-        <p class="closure">");</p>
-      </div>
-      <div class="title-h4">
-        <h4 class="pres">Hello, moi c'est Alexandre j'ai 24 ans, bienvenue sur mon portfolio.<br> Je design, crée & developpe des sites internet.</h4>
+        <div class="title-h4">
+          <h4 class="pres">Hello, moi c'est Alexandre j'ai 24 ans, bienvenue sur mon portfolio.<br> Je design, crée & developpe des sites internet.</h4>
+        </div>
       </div>
     </div>
-  </div>
+  </section>
 
-  <div class="container">
-    <div class="left-col">
-      <h2 class="surf-course-title">The Surf Course</h2>
-      <p>The Surf Course est un destiné aux adeptes du surf qui ont envie d'acheter leur matériel de surf mais qui ne savent pas par ou commencé.</p>
-      <p>Technologies uitlisées</p>
-      <p>Ruby on Rails / Javascript / SQL</p>
+
+  <section>
+    <div class="container">
+      <div class="left-col first-project-col">
+        <h2 class="surf-course-title">The Surf Course</h2>
+        <p>The Surf Course est un destiné aux adeptes du surf qui ont envie d'acheter leur matériel de surf mais qui ne savent pas par ou commencé.</p>
+        <p>Cette version est adaptée en version mobile uniquement (pour l'instant...)</p>
+        <button onclick="displayDiv('cache');"><p class="en-savoir-plus">En savoir plus ...</p></button>
+        <div id="cache">
+          <p>Ce projet est basé sur un <strong class="techno-utilisees">algorithme de recommandation de combinaisons et planches de surf en fonction du choix de l'utilisateur</strong>. Avec une base de donnée remplie de différents produits pour le surf, les résultats varient et permettent d'aporter les meilleurs solutions.</p>
+        </div>
+        <a href="https://the-surf-course.one/" target="_blank" class="lien-boutique">Choisi ton matériel</a>
+        <!-- <hr class="trait"> -->
+        <p class="techno-utilisees">Technologies utilisées</p>
+        <div class="langage">
+          <div class="ruby">
+            <p>Ruby on Rails</p>
+            <img src="images/ruby.png" alt="logo-ruby" height="18px" width="20px">
+          </div>
+          <div class="javascript">
+            <p>Javascript</p>
+            <img src="images/javascript.png" alt="logo-javascript" height="22px" width="42px">
+          </div>
+          <div class="sql">
+            <p>SQL</p>
+            <img src="images/sql.png" alt="logo-sql" height="18px" width="42px">
+          </div>
+        </div>
+      </div>
+      <div class="right-col">
+        <video class="mockup-the-surf-course" width="320" height="600" controls autoplay>
+          <source src="videos/mockup-the-surf-course.mp4" type="video/mp4">
+          Error Message
+        </video>
+      </div>
     </div>
-    <div class="right-col">
+  </section>
+
+
+  <section>
+    <div class="container">
+      <div class="left-col">
+        <video class="mockup-tudobemmaman" width="520" height="400" controls autoplay>
+          <source src="videos/mockup-tudobemmaman.mp4" type="video/mp4">
+          Error Message
+        </video>
+      </div>
+      <div class="right-col second-project-col">
+        <h2 class="surf-course-title">Tudo Bem Maman</h2>
+        <p>Tudo Bem Maman quant a lui est né d'une idée de marque de vêtements de la part d'une amie qui souhaitait pouvoir vendre en ligne... </p>
+        <button onclick="displayDiv('cache-2');"><p class="en-savoir-plus">En savoir plus ...</p></button>
+        <div id="cache-2">
+          <p>Ici, le projet réuni les grandes fonctionnalités d'une boutique en ligne avec :</p>
+          <ul>
+            <li>Possibilité d'acheter en ligne via Stripe</li>
+            <li>Possibilité <strong class="techno-utilisees">uniquement</strong> pour l'administrateur de gérer ses collections directement sur le site et d'avoir un dashboard avec toutes les infos sur ses ventes</li>
+            <li>Possibilité d'ajouter des articles au panier avant de faire une commande de groupe</li>
+            <li>(Ce projet est encore en cours ...)</li>
+          </ul>
+        </div>
+        <a href="https://www.tudobemmaman.com/" target="_blank" class="lien-boutique">Visiter la boutique</a>
+        <!-- <hr class="trait"> -->
+        <p class="techno-utilisees">Technologies utilisées</p>
+        <div class="langage">
+          <div class="ruby">
+            <p>Ruby on Rails</p>
+            <img src="images/ruby.png" alt="logo-ruby" height="18px" width="20px">
+          </div>
+          <div class="javascript">
+            <p>Javascript</p>
+            <img src="images/javascript.png" alt="logo-javascript" height="22px" width="42px">
+          </div>
+          <div class="sql">
+            <p>SQL</p>
+            <img src="images/sql.png" alt="logo-sql" height="18px" width="42px">
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
+  </section>
+
+
+  <section>
+    <div class="container">
+      <div class="left-col third-project-col">
+        <h2 class="surf-course-title">This Portfolio</h2>
+        <p>Et enfin, ce portfolio qui est un projet personnel qui me permet de mettre en avant mes compétences et mes projets.</p>
+        <button id="togg" onclick="displayDiv('cache-3');"><p class="en-savoir-plus">En savoir plus ...</p></button>
+        <div id="cache-3">
+          <p>Le but de ce projet est de pouvoir mettre en avant mes compétences et mes projets. Il est donc composé de :</p>
+          <ul>
+            <li>Une page d'accueil avec une présentation de moi</li>
+            <li>Une page de présentation de mes projets avec un lien vers les sites</li>
+            <li>Une page de contact pour pouvoir me contacter</li>
+          </ul>
+        </div>
+        <!-- <hr class="trait"> -->
+        <p class="techno-utilisees">Technologies utilisées</p>
+        <div class="langage">
+          <div class="ruby">
+            <p>HTML / CSS / Javascript</p>
+            <img src="images/html.png" alt="logo-html-css-javascript" height="28px" width="48px">
+          </div>
+        </div>
+      </div>
+      <div class="right-col">
+        <video class="mockup-portfolio" width="320" height="600" controls autoplay>
+          <source src="videos/mockup-portfolio.mp4" type="video/mp4">
+          Error Message
+        </video>
+      </div>
+    </div>
+  </section>
+
+
+  <section>
+    <h2 class="other-project">Mes autres projets</h2>
+    <div class="container-2">
+      <div class="left-col-2">
+        <h2 class="other-project-1">Extension Chrome Gmail</h2>
+        <p>Grâce à l'API Open AI cela me permet de générer automatiquement un objet de mail et de le remplir en fonction du corp de celui-ci.</p>
+        <p class="techno-utilisees">Technologie utilisée</p>
+        <div class="langage">
+          <div class="ruby">
+            <p>Javascript</p>
+            <img src="images/javascript.png" alt="logo-javascript" height="28px" width="48px">
+          </div>
+        </div>
+        <video src="videos/extension-projects.mp4" class="extension-project" controls autoplay></video>
+      </div>
+
+      <div class="right-col-2">
+        <h2 class="other-project-2">Chatbot</h2>
+        <p>Construction d'un chatbot dilivrant des messages en temps réel. Ce projet est en cours...</p>
+        <p class="techno-utilisees">Technologie utilisée</p>
+        <div class="langage">
+          <div class="ruby">
+            <p>Python</p>
+            <img src="images/python.png" alt="logo-python" class="logo-python" height="28px" width="24px">
+          </div>
+        </div>
+        <div class="loader">
+          <span class="loader__element"></span>
+          <span class="loader__element"></span>
+          <span class="loader__element"></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2 class="contact">Contact</h2>
+    <div class="flex">
+      <div class="socials">
+        <h4>Github</h4>
+        <a href="https://github.com/alexarts74"><img src="images/github-mark-white.png" alt="github-logo" height="72px" width="72px"></a>
+      </div>
+      <div class="socials">
+        <h4>Linkedin</h4>
+        <a href="https://www.linkedin.com/in/alexandre-artus-27a71b1a4/"><img src="images/logo-linkedin.png" alt="logo-linkedin" height="72px" width="72px"></a>
+      </div>
+      <div class="socials">
+        <h4>Gmail</h4>
+        <a href="mailto:artusalexandre74@gmail.com"><img src="images/gmail-logo.png" alt="logo-linkedin" height="48px" width="72px" class="gmail-logo"></a>
+      </div>
+    </div>
+  </section>
 </body>
 </html>
-
-<img src="images/surf-project.png" alt="surf-course-project">

@@ -35,14 +35,27 @@
   src: url('fonts/manrope-light/Manrope-ExtraLight.ttf') format('truetype'),
 }
 
-html, body {
-  overflow-x: hidden; /* Empêche la barre de défilement horizontale */
-  background-color: black;
+@font-face {
+  font-family: 'manrope-medium';
+  src: url('fonts/manrope-light/Manrope-Medium.ttf') format('truetype'),
 }
 
-.header {
-  margin-bottom: 148px;
+/* code pour scroll */
+
+html, body, section {
+  overflow-x: hidden; /* Empêche la barre de défilement horizontale */
+  background-color: black;
+  scroll-snap-type: y mandatory;
+  block-size: 100%;
 }
+
+section {
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+}
+
+
+/* code design */
 
 h1 {
   font-family: 'butler', sans-serif;
@@ -69,7 +82,7 @@ h2, h3 {
   color: white;
 }
 
-p, h4 {
+p, h4, a , li{
   font-family: 'manrope-ultra-light', sans-serif;
   font-weight: bold;
   color: white;
@@ -109,24 +122,25 @@ p, h4 {
   animation: white-out 5s infinite;
 }
 
-.closure::after {
-  content: '';
-  position: absolute;
-  margin-top: 70px;
+.black-box {
+  position: relative;
+  z-index: 18;
+  margin-top: -42px;
   margin-left: 30px;
   height: 15vmin;
   width: 40vmin;
   background: black;
-  transform: translate(-45vmin, -24.5vmin);
+  margin-bottom: -72px;
 }
 
-.closure::before {
-  content: '';
-  position: absolute;
+.black-box-2 {
+  position: relative;
   height: 15vmin;
-  width: 40vmin;
+  width: 30vmin;
   background: black;
-  transform: translate(-40vmin, 5vmin);
+  margin-top: 48px;
+  margin-left: -224px;
+  z-index: 18;
 }
 
 .en {
@@ -161,8 +175,175 @@ p, h4 {
 .container {
   margin-left: 116px;
   margin-right: 116px;
+  display: flex;
+  margin-top: 248px;
+  gap: 128px;
 }
 
 .surf-course-title {
+  font-size: 72px;
+}
+
+.img-surfcourse {
+  height: 450px;
+  width: 600px;
+}
+
+.mockup-the-surf-course {
+  margin-top: -78px;
+}
+
+.techno-utilisees {
+  font-family: 'manrope-medium', sans-serif;
+}
+
+.trait {
+  margin: 0;
+  height: 1px;
+  width: 172px;
+  color: white;
+  background-color: white;
+}
+
+.langage {
+  display: flex;
+  gap: 32px;
+  margin-top: -24px;
+}
+
+.ruby, .javascript, .sql {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.lien-boutique {
+  display: block;
+}
+
+/* code pour le deuxième projet */
+
+.first-project-col {
+  margin-top: -56px;
+}
+
+.second-project-col {
+  margin-top: -56px;
+}
+
+.mockup-tudobemmaman {
+  margin-top: 48px;
+}
+
+
+/* code pour autres projets */
+
+.container-2 {
+  margin-left: 116px;
+  margin-right: 116px;
+  display: flex;
+  margin-top: 72px;
+  gap: 128px;
+  column-count: 2;
+}
+
+.other-project {
+  font-size: 72px;
+  text-align: center;
+}
+
+.other-project-1 {
   font-size: 48px;
+  text-align: center;
+}
+
+.other-project-2 {
+  font-size: 48px;
+  text-align: center;
+}
+
+.logo-python {
+  margin-left: 8px;
+}
+
+.left-col-2{
+  width: 50%;
+}
+
+.right-col-2{
+  width: 50%;
+}
+
+.extension-project {
+  height: 350px;
+  width: 500px;
+}
+
+
+.loader {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  z-index: 100000;
+  gap: 18px;
+  margin-top: 48px;
+}
+
+.loader__element {
+  border-radius: 50%;
+  border: 5px solid white;
+}
+
+.loader__element:nth-child(1) {
+  animation: preloader .6s ease-in-out alternate infinite;
+}
+.loader__element:nth-child(2) {
+  animation: preloader .6s ease-in-out alternate .2s infinite;
+}
+
+.loader__element:nth-child(3) {
+  animation: preloader .6s ease-in-out alternate .4s infinite;
+}
+
+@keyframes preloader {
+  100% { transform: scale(2); }
+}
+
+/* code pour le footer */
+
+.contact {
+  font-size: 72px;
+  text-align: center;
+  margin-bottom: 98px;
+  margin-top: 72px;
+}
+
+.gmail-logo {
+  margin-left: -12px;
+  margin-top: 12px;
+}
+
+button {
+  all: unset;
+  cursor: pointer;
+}
+
+.en-savoir-plus {
+  font-family: 'manrope-medium', sans-serif;
+}
+
+.en-savoir-plus:hover {
+  color: blue;
+}
+
+#cache {
+  display: none;
+}
+
+#cache-2 {
+  display: none;
+}
+
+#cache-3 {
+  display: none;
 }
