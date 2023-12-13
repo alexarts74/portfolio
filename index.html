@@ -4,7 +4,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="style.css">
-  <script src="script.js"></script>
   <title>My Portfolio</title>
 </head>
 <body>
@@ -36,7 +35,7 @@
 
   <section>
     <div class="container">
-      <div class="left-col first-project-col">
+      <div class="left-col first-project-col reveal reveal-visible">
         <h2 class="surf-course-title">The Surf Course</h2>
         <p>The Surf Course est un destiné aux adeptes du surf qui ont envie d'acheter leur matériel de surf mais qui ne savent pas par ou commencé.</p>
         <p>Cette version est adaptée en version mobile uniquement (pour l'instant...)</p>
@@ -64,7 +63,7 @@
           </div>
         </div>
       </div>
-      <div class="right-col">
+      <div class="right-col reveal reveal-visible">
         <video class="mockup-the-surf-course" width="320" height="600" controls autoplay>
           <source src="videos/mockup-the-surf-course.mp4" type="video/mp4">
           Error Message
@@ -76,13 +75,13 @@
 
   <section>
     <div class="container">
-      <div class="left-col">
+      <div class="left-col reveal reveal-visible">
         <video class="mockup-tudobemmaman" width="520" height="400" controls autoplay>
           <source src="videos/mockup-tudobemmaman.mp4" type="video/mp4">
           Error Message
         </video>
       </div>
-      <div class="right-col second-project-col">
+      <div class="right-col second-project-col reveal reveal-visible">
         <h2 class="surf-course-title">Tudo Bem Maman</h2>
         <p>Tudo Bem Maman quant a lui est né d'une idée de marque de vêtements de la part d'une amie qui souhaitait pouvoir vendre en ligne... </p>
         <div class="flex-surf-project">
@@ -120,7 +119,7 @@
 
   <section>
     <div class="container">
-      <div class="left-col third-project-col">
+      <div class="left-col third-project-col reveal reveal-visible">
         <h2 class="surf-course-title">This Portfolio</h2>
         <p>Ce portfolio qui est un projet personnel qui me permet de mettre en avant mes compétences et mes projets.</p>
         <button onclick="displayDiv('cache-3');"><p class="en-savoir-plus">En savoir plus ...</p></button>
@@ -141,7 +140,7 @@
           </div>
         </div>
       </div>
-      <div class="right-col">
+      <div class="right-col reveal reveal-visible">
         <video class="mockup-portfolio" width="320" height="600" controls autoplay>
           <source src="videos/mockup-portfolio.mp4" type="video/mp4">
           Error Message
@@ -153,13 +152,15 @@
   <section>
     <div class="container">
       <div class="left-col-2">
-        <div class="loader">
-          <span class="loader__element"></span>
-          <span class="loader__element"></span>
-          <span class="loader__element"></span>
+        <div class="reveal-test reveal-visible-test">
+          <div class="loader">
+            <span class="loader__element"></span>
+            <span class="loader__element"></span>
+            <span class="loader__element"></span>
+          </div>
         </div>
       </div>
-      <div class="right-col second-project-col">
+      <div class="right-col second-project-col reveal reveal-visible">
         <h2 class="surf-course-title">SurfMate</h2>
         <p>Ce projet commence seulement et aura pour but d'être une application mobile mettant en relation des personnes passionnées de surf.</p>
         <button onclick="displayDiv('cache-4');"><p class="en-savoir-plus">En savoir plus ...</p></button>
@@ -245,4 +246,5 @@
     </div>
   </section>
 </body>
+<script src="script.js" defer></script>
 </html>

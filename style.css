@@ -242,7 +242,7 @@ p, h4, a , li{
 }
 
 .second-project-col {
-  margin-top: -56px;
+  margin-top: -80px;
 }
 
 .mockup-tudobemmaman {
@@ -364,4 +364,18 @@ button {
 
 #cache-4 {
   display: none;
+}
+
+
+/* code pour animation affichage au scroll */
+
+.reveal {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all .7s ease-in-out;
+}
+
+.reveal-visible {
+  opacity: 0;
+  transform: translateY(-10px);
 }
