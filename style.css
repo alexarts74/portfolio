@@ -386,3 +386,159 @@ button {
   opacity: 0;
   transform: translateY(-10px);
 }
+
+
+/* code pour format tablette */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+  /*code pour premier écran */
+  h1 {
+    font-family: 'butler', sans-serif;
+    font-size: 128px;
+    font-weight: 500;
+    color: white;
+    margin-bottom: 12px;
+  }
+
+  .prenom {
+    font-family: 'manrope', sans-serif;
+    font-weight: 100;
+    color: white;
+    margin-top: -48px;
+    margin-bottom: 96px;
+  }
+
+  .nom {
+    margin-top: 160px;
+  }
+
+  .flex {
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 48px;
+    margin-right: -60px;
+  }
+
+  @keyframes move {
+    25% {
+      transform: translatey(-7.8vmin);
+      opacity: 1;
+    }
+    48% {
+      transform: translatey(-16vmin);
+    }
+    70% {
+      transform: translatey(-24vmin);
+    }
+  }
+
+  .black-box {
+    position: relative;
+    z-index: 18;
+    margin-top: -98px;
+    margin-left: 30px;
+    height: 24vmin;
+    width: 40vmin;
+    background: black;
+    margin-bottom: -72px;
+  }
+
+  .black-box-2 {
+    position: relative;
+    height: 24vmin;
+    width: 30vmin;
+    background: black;
+    margin-top: 48px;
+    margin-left: -224px;
+    z-index: 18;
+  }
+
+  /* code pour premier projet */
+  .container {
+    margin-left: 116px;
+    margin-right: 116px;
+    display: block;
+    margin-top: -48px;
+    gap: 128px;
+  }
+
+  .mockup-the-surf-course {
+    display: block;
+    justify-content: center;
+    margin-top: -28px;
+  }
+
+  .right-col {
+    display: flex;
+    justify-content: center;
+  }
+
+  .surf-course-title {
+    font-size: 72px;
+    margin-bottom: -8px;
+    text-align: center;
+  }
+
+   /* code pour deuxieme projet */
+   .second-project-col {
+    display: block;
+  }
+
+  .second-project-title {
+    font-size: 72px;
+    margin-top: 148px;
+    text-align: center;
+  }
+
+  .second-project-container {
+    margin-left: 116px;
+    margin-right: 116px;
+    display: block;
+    margin-top: 0px;
+    gap: 128px;
+  }
+
+  /* code pour quatrieme projet */
+  .reveal-visible-test {
+    margin-top: 354px;
+    margin-bottom: 256px;
+  }
+
+  .col-loader {
+    margin-left: 124px;
+  }
+
+  /* code pour autres projet */
+  .container-2 {
+    display: block;
+    column-count: 1;
+  }
+
+  .other-project-left-col{
+    width: 100%;
+    margin-bottom: 96px
+  }
+
+  .other-project-right-col{
+    width: 100%
+  }
+
+  .loader-other-project {
+    margin-top: 28px;
+    margin-bottom: 56px;
+  }
+
+  /* code pour contact */
+  .flex-other-project {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+  }
+}
+
+
+/* code pour format mobile */
+
+@media (min-width: 320px) and (max-width: 480px) {
+}
