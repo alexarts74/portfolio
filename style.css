@@ -44,7 +44,7 @@
 
 html, body, section {
   overflow-x: hidden; /* Empêche la barre de défilement horizontale */
-  background-color: black;
+  background-color: rgb(5, 5, 5);
   scroll-snap-type: y mandatory;
   block-size: 100%;
 }
@@ -129,7 +129,7 @@ p, h4, a , li{
   margin-left: 30px;
   height: 21vmin;
   width: 40vmin;
-  background: black;
+  background: rgb(5, 5, 5);;
   margin-bottom: -72px;
 }
 
@@ -137,7 +137,7 @@ p, h4, a , li{
   position: relative;
   height: 22vmin;
   width: 30vmin;
-  background: black;
+  background: rgb(5, 5, 5);;
   margin-top: 48px;
   margin-left: -224px;
   z-index: 18;
@@ -302,7 +302,7 @@ p, h4, a , li{
 
 
 .loader {
-  background-color: black;
+  background-color: rgb(5, 5, 5);;
   display: flex;
   justify-content: center;
   z-index: 100000;
@@ -448,7 +448,7 @@ button {
     position: relative;
     height: 24vmin;
     width: 30vmin;
-    background: black;
+    background: rgb(5, 5, 5);;
     margin-top: 48px;
     margin-left: -224px;
     z-index: 18;
@@ -601,7 +601,7 @@ button {
     margin-left: 30px;
     height: 42vmin;
     width: 70vmin;
-    background: black;
+    background: rgb(5, 5, 5);;
     margin-bottom: -148px;
   }
 
@@ -609,7 +609,7 @@ button {
     position: relative;
     height: 48vmin;
     width: 100%;
-    background: black;
+    background: rgb(5, 5, 5);;
     margin-top: 48px;
     margin-left: -224px;
     z-index: 18;
