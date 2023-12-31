@@ -275,12 +275,14 @@ p, h4, a , li{
 
 .other-project-1 {
   font-size: 48px;
-  text-align: center;
+  /* text-align: center; */
+  text-align: left;
 }
 
 .other-project-2 {
   font-size: 48px;
-  text-align: center;
+  /* text-align: center; */
+  text-align: left;
 }
 
 .logo-python {
