@@ -9,8 +9,16 @@
 </head>
 <body>
 
-  <section>
-    <div class="header">
+
+  <section class="fr">
+    <nav>
+      <ul>
+          <li class="lang-switch"><a href="#" data-lang="en">English</a></li>
+          <li class="lang-switch"><a href="#" data-lang="fr" style="display: none;">Français</a></li>
+      </ul>
+    </nav>
+
+    <div class="header fr">
       <h1 class="nom">ARTUS</h1>
       <h1 class="prenom">ALEXANDRE</h1>
       <div class="black-box"></div>
@@ -33,8 +41,41 @@
     </div>
   </section>
 
+/* code pour anglais */
+<section class="en" style="display: none;">
+  <nav>
+    <ul>
+      
+        <li class="lang-switch"><a href="#" data-lang="fr">Français</a></li>
+    </ul>
+  </nav>
+  <div class="header">
+    <h1 class="nom">ARTUS</h1>
+    <h1 class="prenom">ALEXANDRE</h1>
+    <div class="black-box"></div>
+    <div class="flex flex-mobile">
+      <div class="console-log">
+        <p><span style="color:rgb(121, 199, 230);">console</span><span>.<span style="color:#efe868;">log</span></span>("</p>
+        <div class="string">
+          <p class="greeting en">The Surf Course</p>
+          <p class="greeting es">TudoBemMaman</p>
+          <p class="greeting de">This Portfolio</p>
+          <p class="greeting ru">SurfMate</p>
+        </div>
+        <p id="closure" class="closure">");</p>
+        <div class="black-box-2"></div>
+      </div>
+      <div class="title-h4">
+        <h4 class="pres">Hello, I'm Alexandre, I'm 24, welcome to my portfolio.<br> I design, create & develop websites.</h4>
+      </div>
+    </div>
+  </div>
+</section>
+/* code pour anglais */
 
-  <section>
+
+
+  <section class="fr">
     <div class="container">
       <div class="left-col first-project-col reveal reveal-visible">
         <h2 class="surf-course-title">The Surf Course</h2>
@@ -75,7 +116,51 @@
   </section>
 
 
-  <section>
+  /* code pour anglais */
+  <section class="en" style="display: none;">
+    <div class="container">
+      <div class="left-col first-project-col reveal reveal-visible">
+        <h2 class="surf-course-title">The Surf Course</h2>
+        <p>The Surf Course is for surf enthusiasts who want to buy their gear but don't know where to start.</p>.
+        <p>This version is adapted as a mobile version only (for now...)</p>
+        <div class="flex-surf-project">
+          <button onclick="displayDiv('cache');"><p class="en-savoir-plus">Find out more ...</p></button>
+          <a href="https://the-surf-course.one/" target="_blank" class="lien-boutique">Choose your equipment</a>
+        </div>
+        <div id="cache">
+          <p>This project is based on a <strong class="techno-utilisees">algorithm for recommending wetsuits and surfboards based on the user's choice</strong>. With a database full of different surfing products, the results vary and provide the best solutions.</p>
+        </div>
+
+        <p class="techno-utilisees">Technologies used</p>
+        <div class="langage">
+          <div class="ruby ruby-mobile">
+            <p>Ruby on Rails</p>
+            <img src="images/ruby.png" alt="logo-ruby" height="18px" width="20px">
+          </div>
+          <div class="javascript javascript-mobile">
+            <p>Javascript</p>
+            <img src="images/javascript.png" alt="logo-javascript" height="22px" width="42px">
+          </div>
+          <div class="sql sql-mobile">
+            <p>SQL</p>
+            <img src="images/sql.png" alt="logo-sql" height="18px" width="42px">
+          </div>
+        </div>
+      </div>
+
+      <div class="right-col reveal reveal-visible">
+        <video class="mockup-the-surf-course" width="320" height="600" controls autoplay>
+          <source src="videos/mockup-the-surf-course.mp4" type="video/mp4">
+          Error Message
+        </video>
+      </div>
+    </div>
+  </section>
+  /* code pour anglais */
+
+
+
+  <section class="fr">
     <div class="container second-project-container">
       <div class="left-col reveal reveal-visible left-col-mobile">
         <video class="mockup-tudobemmaman" width="520" height="400" controls autoplay>
@@ -120,7 +205,55 @@
   </section>
 
 
-  <section>
+  /* code pour anglais */
+  <section class="en" style="display: none;">
+    <div class="container second-project-container">
+      <div class="left-col reveal reveal-visible left-col-mobile">
+        <video class="mockup-tudobemmaman" width="520" height="400" controls autoplay>
+          <source src="videos/mockup-tudobemmaman.mp4" type="video/mp4">
+          Error Message
+        </video>
+      </div>
+
+      <div class="right-col second-project-col reveal reveal-visible right-col-mobile">
+        <h2 class="surf-course-title second-project-title">Tudo Bem Maman</h2>
+        <p>Tudo Bem Maman was born of an idea for a clothing brand from a friend who wanted to be able to sell online...</p>
+        <div class="flex-surf-project">
+          <button onclick="displayDiv('cache-2');"><p class="en-savoir-plus">Find out more ...</p></button>
+          <a href="https://www.tudobemmaman.com/" target="_blank" class="lien-boutique">Visit the store</a>
+        </div>
+        <div id="cache-2">
+          <p>Here, the project brings together the main functionalities of an online store with :</p>
+          <ul>
+            <li>Online purchasing via Stripe</li>
+            <li>Possibility <strong class="techno-utilisees">only</strong> for the administrator to manage his collections directly on the site and have a dashboard with all the information on his sales</li>
+            <li>Add items to basket before placing a group order</li>
+          </ul>
+        </div>
+
+        <p class="techno-utilisees">Technologies used</p>
+        <div class="langage">
+          <div class="ruby">
+            <p>Ruby on Rails</p>
+            <img src="images/ruby.png" alt="logo-ruby" height="18px" width="20px">
+          </div>
+          <div class="javascript">
+            <p>Javascript</p>
+            <img src="images/javascript.png" alt="logo-javascript" height="22px" width="42px">
+          </div>
+          <div class="sql">
+            <p>SQL</p>
+            <img src="images/sql.png" alt="logo-sql" height="18px" width="42px">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  /* code pour anglais */
+
+
+
+  <section class="fr">
     <div class="container second-project-container third-project-container">
       <div class="left-col third-project-col reveal reveal-visible">
         <h2 class="surf-course-title">This Portfolio</h2>
@@ -150,7 +283,41 @@
     </div>
   </section>
 
-  <section>
+
+  /* code pour anglais */
+  <section class="en" style="display: none;">
+    <div class="container second-project-container third-project-container">
+      <div class="left-col third-project-col reveal reveal-visible">
+        <h2 class="surf-course-title">This Portfolio</h2>
+        <p>This portfolio is a personal project that allows me to showcase my skills and projects.</p>
+        <button onclick="displayDiv('cache-3');"><p class="en-savoir-plus">Find out more ...</p></button>
+        <div id="cache-3">
+          <p>The aim of this project is to showcase my skills and projects. It is therefore composed of :</p>
+          <ul>
+            <li>A home page with a presentation of me</li>
+            <li>A presentation page of my projects with a link to the sites</li>.
+            <li>A contact page so you can get in touch with me</li>
+          </ul>
+        </div>
+
+        <p class="techno-utilisees">Technologies used</p>
+        <div class="langage">
+          <div class="ruby ruby-mobile-third-project">
+            <p>HTML / CSS / Javascript</p>
+            <img src="images/html.png" alt="logo-html-css-javascript" height="28px" width="48px" class="html-project">
+          </div>
+        </div>
+      </div>
+
+      <div class="right-col reveal reveal-visible">
+        <img src="images/portfolio.png" alt="portfolio-code" width="520" height="400" class="portfolio">
+      </div>
+    </div>
+  </section>
+  /* code pour anglais */
+
+
+  <section class="fr">
     <div class="container container-fourth-mobile">
       <div class="left-col-2 col-loader">
         <div class="reveal-test reveal-visible-test">
@@ -195,7 +362,57 @@
     </div>
   </section>
 
-  <section>
+
+  /* code pour anglais */
+  <section class="en" style="display: none;">
+    <div class="container container-fourth-mobile">
+      <div class="left-col-2 col-loader">
+        <div class="reveal-test reveal-visible-test">
+          <div class="loader loader-surfmate">
+            <span class="loader__element"></span>
+            <span class="loader__element"></span>
+            <span class="loader__element"></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="right-col second-project-col reveal reveal-visible fourth-project-cols">
+        <h2 class="surf-course-title">SurfMate</h2>
+        <p>This project is just getting started and will aim to be a mobile app connecting people who are passionate about surfing.</p>
+        <button onclick="displayDiv('cache-4');"><p class="en-savoir-plus">Find out more ...</p></button>
+        <div id="cache-4">
+          <p>The aim of this project is to put surfers in touch with each other by proposing sessions and chats.</p>
+          <ul>
+            <li>A surfer will be able to propose sessions (date / place ...)</li>
+            <li>Visibility of sessions close to home</li>
+            <li>Possibility of contacting the session administrator</li>.
+            <li>(This project is still in progress ...)</li>
+          </ul>
+        </div>
+
+        <p class="techno-utilisees">Technologies used</p>
+        <div class="langage">
+          <div class="ruby">
+            <p>Ruby on Rails</p>
+            <img src="images/ruby.png" alt="logo-ruby" height="18px" width="20px">
+          </div>
+          <div class="javascript">
+            <p>Javascript</p>
+            <img src="images/javascript.png" alt="logo-javascript" height="22px" width="42px">
+          </div>
+          <div class="sql">
+            <p>SQL</p>
+            <img src="images/sql.png" alt="logo-sql" height="18px" width="42px">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  /* code pour anglais */
+
+
+
+  <section class="fr">
     <h2 class="other-project">Mes autres projets</h2>
     <div class="container-2 container-other-project">
       <div class="left-col-2 other-project-left-col">
@@ -214,7 +431,7 @@
       <div class="right-col-2 other-project-right-col">
         <h2 class="other-project-2">Chatbot</h2>
         <p>Construction d'un chatbot délivrant des messages en temps réel. Ce projet est en cours...</p>
-        <p class="techno-utilisees">Technologie utilisée</p>
+        <p class="techno-utilisees">Technologies utilisée</p>
         <div class="langage">
           <div class="ruby ruby-other-project">
             <p>Python</p>
@@ -229,6 +446,45 @@
       </div>
     </div>
   </section>
+
+
+  /* code pour anglais */
+  <section class="en" style="display: none;">
+    <h2 class="other-project">My others projects</h2>
+    <div class="container-2 container-other-project">
+      <div class="left-col-2 other-project-left-col">
+        <h2 class="other-project-1 ">Chrome Gmail extension</h2>
+        <p>Thanks to the Open AI API this allows me to automatically generate a mail subject and fill it according to the body of the mail.</p>
+        <p class="techno-utilisees">Technology used</p>
+        <div class="langage">
+          <div class="ruby ruby-other-project">
+            <p>Javascript</p>
+            <img src="images/javascript.png" alt="logo-javascript" height="28px" width="48px">
+          </div>
+        </div>
+        <video src="videos/extension-projects.mp4" class="extension-project" controls autoplay></video>
+      </div>
+
+      <div class="right-col-2 other-project-right-col">
+        <h2 class="other-project-2">Chatbot</h2>
+        <p>Building a chatbot delivering messages in real time. This project is in progress...</p>
+        <p class="techno-utilisees">Technology used</p>
+        <div class="langage">
+          <div class="ruby ruby-other-project">
+            <p>Python</p>
+            <img src="images/python.png" alt="logo-python" class="logo-python" height="28px" width="24px">
+          </div>
+        </div>
+        <div class="loader loader-other-project">
+          <span class="loader__element"></span>
+          <span class="loader__element"></span>
+          <span class="loader__element"></span>
+        </div>
+      </div>
+    </div>
+  </section>
+  /* code pour anglais */
+
 
   <section>
     <h2 class="contact">Contact</h2>

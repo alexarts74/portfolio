@@ -57,6 +57,19 @@ section {
 
 /* code design */
 
+
+.lang-switch {
+  color: white;
+  display: flex;
+  justify-content: end;
+  margin-right: 36px;
+}
+
+.en {
+  display: none;
+}
+
+
 h1 {
   font-family: 'butler', sans-serif;
   font-size: 200px;
@@ -74,7 +87,7 @@ h1 {
 }
 
 .nom {
-  margin-top: 80px;
+  margin-top: 40px;
 }
 
 h2, h3 {
@@ -544,6 +557,19 @@ button {
 
 @media (min-width: 320px) and (max-width: 480px) {
 
+
+  html, body, section {
+    overflow-x: hidden; /* Empêche la barre de défilement horizontale */
+    background-color: rgb(5, 5, 5);
+    /* scroll-snap-type: y mandatory; */
+    block-size: 100%;
+  }
+
+  section {
+
+    /* scxroll-behavior: auto; */
+    scroll-behavior: smooth;
+  }
   /* code pour premier écran */
 
   .flex-mobile {
