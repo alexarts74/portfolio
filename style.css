@@ -156,7 +156,7 @@ p, h4, a , li{
   z-index: 18;
 }
 
-.en {
+.env {
   color: #fa8231;
 }
 
@@ -388,6 +388,22 @@ button {
   display: none;
 }
 
+
+#cache-ang {
+  display: none;
+}
+
+#cache-ang-2 {
+  display: none;
+}
+
+#cache-ang-3 {
+  display: none;
+}
+
+#cache-ang-4 {
+  display: none;
+}
 
 /* code pour animation affichage au scroll */
 
