@@ -141,16 +141,16 @@ p, h4, a , li{
   margin-top: -98px;
   margin-left: 35px;
   height: 21vmin;
-  width: 43vmin;
-  background: rgb(5, 5, 5);;
+  width: 48vmin;
+  background: rgb(5, 5, 5);
   margin-bottom: -72px;
 }
 
 .black-box-2 {
   position: relative;
   height: 22vmin;
-  width: 30vmin;
-  background: rgb(5, 5, 5);;
+  width: 36vmin;
+  background: rgb(5, 5, 5);
   margin-top: 48px;
   margin-left: -224px;
   z-index: 18;
