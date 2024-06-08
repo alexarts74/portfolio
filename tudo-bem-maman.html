@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="icon" href="images/favicon.png">
+  <title>Tudo Bem Maman</title>
+</head>
+<body>
+<section class="fr">
+    <div class="container second-project-container">
+      <div class="left-col reveal reveal-visible left-col-mobile">
+        <video class="mockup-tudobemmaman" width="520" height="400" controls autoplay>
+          <source src="videos/mockup-tudobemmaman.mp4" type="video/mp4">
+        </video>
+      </div>
+
+      <div class="right-col second-project-col reveal reveal-visible right-col-mobile">
+        <h2 class="surf-course-title second-project-title">Tudo Bem Maman</h2>
+        <p>Tudo Bem Maman quant à lui est né d'une idée de marque de vêtements de la part d'une amie qui souhaitait pouvoir vendre en ligne... </p>
+        <div class="flex-surf-project">
+          <button onclick="displayDiv('cache-2');"><p class="en-savoir-plus">En savoir plus ...</p></button>
+          <a href="https://tudobemmaman.herokuapp.com/" target="_blank" class="lien-boutique">Visiter la boutique</a>
+        </div>
+        <div id="cache-2">
+          <p>Ici, le projet réuni les grandes fonctionnalités d'une boutique en ligne avec :</p>
+          <ul>
+            <li>Possibilité d'acheter en ligne via Stripe</li>
+            <li>Possibilité <strong class="techno-utilisees">uniquement</strong> pour l'administrateur de gérer ses collections directement sur le site et d'avoir un dashboard avec toutes les informations sur ses ventes</li>
+            <li>Possibilité d'ajouter des articles au panier avant de faire une commande de groupe</li>
+          </ul>
+        </div>
+
+        <p class="techno-utilisees">Technologies utilisées</p>
+        <div class="langage">
+          <div class="ruby">
+            <p>Ruby on Rails</p>
+            <img src="images/ruby.png" alt="logo-ruby" height="18px" width="20px">
+          </div>
+          <div class="javascript">
+            <p>Javascript</p>
+            <img src="images/javascript.png" alt="logo-javascript" height="22px" width="42px">
+          </div>
+          <div class="sql">
+            <p>SQL</p>
+            <img src="images/sql.png" alt="logo-sql" height="18px" width="42px">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  /* code pour anglais */
+  <section class="en" style="display: none;">
+    <div class="container second-project-container">
+      <div class="left-col reveal reveal-visible left-col-mobile">
+        <video class="mockup-tudobemmaman" width="520" height="400" controls autoplay>
+          <source src="videos/mockup-tudobemmaman.mp4" type="video/mp4">
+        </video>
+      </div>
+
+      <div class="right-col second-project-col reveal reveal-visible right-col-mobile">
+        <h2 class="surf-course-title second-project-title">Tudo Bem Maman</h2>
+        <p>Tudo Bem Maman was born of an idea for a clothing brand from a friend who wanted to be able to sell online...</p>
+        <div class="flex-surf-project">
+          <button onclick="displayDiv('cache-ang-2');"><p class="en-savoir-plus">Find out more ...</p></button>
+          <a href="https://tudobemmaman.herokuapp.com/" target="_blank" class="lien-boutique">Visit the store</a>
+        </div>
+        <div id="cache-ang-2">
+          <p>Here, the project brings together the main functionalities of an online store with :</p>
+          <ul>
+            <li>Online purchasing via Stripe</li>
+            <li>Possibility <strong class="techno-utilisees">only</strong> for the administrator to manage his collections directly on the site and have a dashboard with all the information on his sales</li>
+            <li>Add items to basket before placing a group order</li>
+          </ul>
+        </div>
+
+        <p class="techno-utilisees">Technologies used</p>
+        <div class="langage">
+          <div class="ruby">
+            <p>Ruby on Rails</p>
+            <img src="images/ruby.png" alt="logo-ruby" height="18px" width="20px">
+          </div>
+          <div class="javascript">
+            <p>Javascript</p>
+            <img src="images/javascript.png" alt="logo-javascript" height="22px" width="42px">
+          </div>
+          <div class="sql">
+            <p>SQL</p>
+            <img src="images/sql.png" alt="logo-sql" height="18px" width="42px">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+<script src="script.js" defer></script>
+</html>

@@ -8,8 +8,6 @@ function displayDiv(id) {
   }
 }
 
-
-
 const ratio = .5;
 
 const options = {
@@ -21,7 +19,6 @@ const options = {
 const handleIntersect = function(entries, observer) {
     entries.forEach(function(entry) {
       if (entry.intersectionRatio > ratio) {
-        console.log("visible")
         entry.target.classList.remove('reveal-visible')
         observer.unobserve(entry.target)
       }
@@ -35,11 +32,7 @@ document.querySelectorAll('.left-col, .right-col').forEach(function (element) {
 });
 
 
-
-
-
 // Récupérer les éléments nécessaires
-// script.js
 document.addEventListener('DOMContentLoaded', function() {
   const langLinks = document.querySelectorAll('.lang-switch a');
   const frElements = document.querySelectorAll('.fr');

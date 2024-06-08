@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="icon" href="images/favicon.png">
+  <title>The Surf Course</title>
+</head>
+
+<body>
+<section class="fr">
+    <div class="container">
+      <div class="left-col first-project-col reveal reveal-visible">
+        <h2 class="surf-course-title">The Surf Course</h2>
+        <p>The Surf Course est destiné aux adeptes du surf qui ont envie d'acheter leur matériel mais qui ne savent pas par où commencer.</p>
+        <p>Cette version est adaptée en version mobile uniquement (pour l'instant...)</p>
+        <div class="flex-surf-project">
+          <button onclick="displayDiv('cache');"><p class="en-savoir-plus">En savoir plus ...</p></button>
+          <a href="https://the-surf-course.one/" target="_blank" class="lien-boutique">Choisi ton matériel</a>
+        </div>
+        <div id="cache">
+          <p>Ce projet est basé sur un <strong class="techno-utilisees">algorithme de recommandation de combinaisons et planches de surf en fonction du choix de l'utilisateur</strong>. Avec une base de données remplie de différents produits pour le surf, les résultats varient et permettent d'apporter les meilleures solutions.</p>
+        </div>
+
+        <p class="techno-utilisees">Technologies utilisées</p>
+        <div class="langage">
+          <div class="ruby ruby-mobile">
+            <p>Ruby on Rails</p>
+            <img src="images/ruby.png" alt="logo-ruby" height="18px" width="20px">
+          </div>
+          <div class="javascript javascript-mobile">
+            <p>Javascript</p>
+            <img src="images/javascript.png" alt="logo-javascript" height="22px" width="42px">
+          </div>
+          <div class="sql sql-mobile">
+            <p>SQL</p>
+            <img src="images/sql.png" alt="logo-sql" height="18px" width="42px">
+          </div>
+        </div>
+      </div>
+
+      <div class="right-col reveal reveal-visible">
+        <video class="mockup-the-surf-course" width="320" height="600" controls autoplay>
+          <source src="videos/mockup-the-surf-course.mp4" type="video/mp4">
+          Error Message
+        </video>
+      </div>
+    </div>
+  </section>
+
+
+  /* code pour anglais */
+  <section class="en" style="display: none;">
+    <div class="container">
+      <div class="left-col first-project-col reveal reveal-visible">
+        <h2 class="surf-course-title">The Surf Course</h2>
+        <p>The Surf Course is for surf enthusiasts who want to buy their gear but don't know where to start.</p>.
+        <p>This version is adapted as a mobile version only (for now...)</p>
+        <div class="flex-surf-project">
+          <button onclick="displayDiv('cache-ang');"><p class="en-savoir-plus">Find out more ...</p></button>
+          <a href="https://the-surf-course.one/" target="_blank" class="lien-boutique">Choose your equipment</a>
+        </div>
+        <div id="cache-ang">
+          <p>This project is based on a <strong class="techno-utilisees">algorithm for recommending wetsuits and surfboards based on the user's choice</strong>. With a database full of different surfing products, the results vary and provide the best solutions.</p>
+        </div>
+
+        <p class="techno-utilisees">Technologies used</p>
+        <div class="langage">
+          <div class="ruby ruby-mobile">
+            <p>Ruby on Rails</p>
+            <img src="images/ruby.png" alt="logo-ruby" height="18px" width="20px">
+          </div>
+          <div class="javascript javascript-mobile">
+            <p>Javascript</p>
+            <img src="images/javascript.png" alt="logo-javascript" height="22px" width="42px">
+          </div>
+          <div class="sql sql-mobile">
+            <p>SQL</p>
+            <img src="images/sql.png" alt="logo-sql" height="18px" width="42px">
+          </div>
+        </div>
+      </div>
+
+      <div class="right-col reveal reveal-visible">
+        <video class="mockup-the-surf-course" width="320" height="600" controls autoplay>
+          <source src="videos/mockup-the-surf-course.mp4" type="video/mp4">
+          Error Message
+        </video>
+      </div>
+    </div>
+  </section>
+</body>
+<script src="script.js" defer></script>
+</html>
