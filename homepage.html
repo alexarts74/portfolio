@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="images/favicon.png">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @font-face {
+      font-family: 'manrope-light';
+      src: url('fonts/manrope-light/Manrope-Bold.ttf') format('truetype'),
+           url('fonts/manrope-light/Manrope-ExtraBold.ttf') format('truetype'),
+           url('fonts/manrope-light/Manrope-ExtraLight.ttf') format('truetype'),
+           url('fonts/manrope-light/Manrope-Light.ttf') format('truetype'),
+           url('fonts/manrope-light/Manrope-Medium.ttf') format('truetype'),
+           url('fonts/manrope-light/Manrope-Regular.ttf') format('truetype'),
+           url('fonts/manrope-light/Manrope-SemiBold.ttf') format('truetype');
+    }
+    @font-face {
+      font-family: 'butler-stencil';
+      src :url('fonts/butler-stencil/Butler_Ultra_Light_Stencil.otf') format('opentype'),
+           url('fonts/butler-stencil/Butler_Black_Stencil.otf') format('opentype'),
+           url('fonts/butler-stencil/Butler_Bold_Stencil.otf') format('opentype'),
+           url('fonts/butler-stencil/Butler_ExtraBold_Stencil.otf') format('opentype'),
+           url('fonts/butler-stencil/Butler_Light_Stencil.otf') format('opentype'),
+           url('fonts/butler-stencil/Butler_Medium_Stencil.otf') format('opentype'),
+           url('fonts/butler-stencil/Butler_Regular_Stencil.otf') format('opentype');
+    }
+    @font-face {
+      font-family: 'butler';
+      src :url('fonts/butler/Butler_Ultra_Light.otf') format('opentype');
+    }
+    @font-face {
+      font-family: 'manrope';
+      src: url('fonts/manrope-light/Manrope-Light.ttf') format('truetype');
+    }
+    @font-face {
+      font-family: 'manrope-ultra-light';
+      src: url('fonts/manrope-light/Manrope-ExtraLight.ttf') format('truetype');
+    }
+    @font-face {
+      font-family: 'manrope-medium';
+      src: url('fonts/manrope-light/Manrope-Medium.ttf') format('truetype');
+    }
+    /* custom styles for specific fonts */
+    .font-butler {
+      font-family: 'butler', sans-serif;
+    }
+    .font-manrope-light {
+      font-family: 'manrope-light', sans-serif;
+    }
+    .font-manrope-ultra-light {
+      font-family: 'manrope-ultra-light', sans-serif;
+    }
+    .font-butler-stencil {
+      font-family: 'butler-stencil', sans-serif;
+    }
+    /* keyframes for animation */
+    @keyframes move {
+      25% {
+        transform: translateY(-6.8vmin);
+        opacity: 1;
+      }
+      48% {
+        transform: translateY(-14vmin);
+      }
+      70% {
+        transform: translateY(-21vmin);
+      }
+    }
+  </style>
+  <title>My Portfolio</title>
+</head>
+<body class="overflow-x-hidden overflow-y-hidden background-body">
+    <section class="fr snap-y snap-mandatory h-screen">
+        <ul class="flex justify-end space-x-4 text-black">
+          <li class="lang-switch"><a href="#" data-lang="en">English</a></li>
+          <li class="lang-switch" style="display: none;"><a href="#" data-lang="fr">Français</a></li>
+        </ul>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 h-full">
+            <div class="w-12/12 mt-[60%]">
+                <div class="flex flex ml-16">
+                    <h1 class="text-5xl text-[24px]  text-black mr-2">ALEXANDRE</h1>
+                    <h1 class="text-5xl text-[24px] font-manrope text-black">ARTUS</h1>
+                </div>
+                <hr class="border-t border-black w-[40%] ml-16 mt-4">
+                <h4 class="pres text-[18px] font-manrope-ultra-light font-bold text-black pr-4 md:pr-32 mt-8 ml-16">Hello, moi c'est Alexandre, j'ai 24 ans<br> bienvenue sur mon portfolio. Je designe, crée<br> & développe des sites internet.</h4>
+            </div>
+            <ul class="text-black text-lg font-manrope-ultra-light flex flex-col justify-center gap-y-12 h-full">
+                <li class="transition-transform hover:translate-x-4"><a href="/surf-course.html" class="font-butler transition-transform transform hover:italic font-medium text-[80px]">The Surf Course</a></li>
+                <li class="transition-transform hover:translate-x-4"><a href="/tudo-bem-maman.html" class="font-butler transition-transform transform hover:italic font-medium text-[80px]">Tudo Bem Maman</a></li>
+                <li class="transition-transform hover:translate-x-4"><a href="/portfolio.html" class="font-butler transition-transform transform hover:italic font-medium text-[80px]">Portfolio</a></li>
+                <li class="transition-transform hover:translate-x-4"><a href="/surfmate.html" class="font-butler transition-transform transform hover:italic font-medium text-[80px]">SurfMate</a></li>
+                <li class="transition-transform hover:translate-x-4"><a href="/others-projects.html" class="font-butler transition-transform transform hover:italic font-medium text-[80px]">Others Projects</a></li>
+                <li class="transition-transform hover:translate-x-4"><a href="/contact.html" class="font-butler transition-transform transform hover:italic font-medium text-[80px]">Contact</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="fr snap-y snap-mandatory h-screen en" style="display: none;">
+        <nav class="">
+          <ul class="flex justify-end space-x-4 text-black">
+            <li class="lang-switch"><a href="#" data-lang="fr">Français</a></li>
+          </ul>
+        </nav>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 h-full">
+          <div class="w-12/12 mt-[60%]">
+              <div class="flex flex ml-16">
+                  <h1 class="text-5xl text-[24px]  text-black mr-2">ALEXANDRE</h1>
+                  <h1 class="text-5xl text-[24px] font-manrope text-black">ARTUS</h1>
+              </div>
+              <hr class="border-t border-black w-[40%] ml-16 mt-4">
+              <h4 class="pres text-[18px] font-manrope-ultra-light font-bold text-black pr-4 md:pr-32 mt-8 ml-16">Hello, moi c'est Alexandre, j'ai 24 ans<br> bienvenue sur mon portfolio. Je designe, crée<br> & développe des sites internet.</h4>
+          </div>
+          <ul class="text-black text-lg font-manrope-ultra-light flex flex-col justify-center gap-y-12 h-full">
+              <li class="transition-transform hover:translate-x-4"><a href="/surf-course.html" class="font-butler transition-transform transform hover:italic font-medium text-[80px]">The Surf Course</a></li>
+              <li class="transition-transform hover:translate-x-4"><a href="/tudo-bem-maman.html" class="font-butler transition-transform transform hover:italic font-medium text-[80px]">Tudo Bem Maman</a></li>
+              <li class="transition-transform hover:translate-x-4"><a href="#" class="font-butler transition-transform transform hover:italic font-medium text-[80px]">Portfolio</a></li>
+              <li class="transition-transform hover:translate-x-4"><a href="#" class="font-butler transition-transform transform hover:italic font-medium text-[80px]">SurfMate</a></li>
+              <li class="transition-transform hover:translate-x-4"><a href="#" class="font-butler transition-transform transform hover:italic font-medium text-[80px]">Others Projects</a></li>
+              <li class="transition-transform hover:translate-x-4"><a href="#" class="font-butler transition-transform transform hover:italic font-medium text-[80px]">Contact</a></li>
+          </ul>
+        </div>
+      </section>
+
+
+
+<style>
+    .background-body {
+        background-color: #ece7e1;
+    }
+</style>
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="icon" href="images/favicon.png">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>My Portfolio</title>
+</head>
+<body>
+
+
+    <section class="fr">
+        <nav>
+            <ul>
+                <li class="lang-switch"><a href="#" data-lang="en">English</a></li>
+                <li class="lang-switch"><a href="#" data-lang="fr" style="display: none;">Français</a></li>
+            </ul>
+        </nav>
+        <div class="grid grid-cols-2">
+            <div class="name">
+                <h1 class="nom">ARTUS</h1>
+                <h1 class="prenom">ALEXANDRE</h1>
+            </div>
+            <div class="black-box"></div>
+                <div class="flex flex-mobile">
+                    <div class="console-log">
+                    <p><span style="color:rgb(121, 199, 230);">console</span><span>.<span style="color:#efe868;">log</span></span>("</p>
+                    <div class="string">
+                        <p class="greeting env">The Surf Course</p>
+                        <p class="greeting es">TudoBemMaman</p>
+                        <p class="greeting de">This Portfolio</p>
+                        <p class="greeting ru">SurfMate</p>
+                    </div>
+                    <p id="closure" class="closure">");</p>
+                    <div class="black-box-2"></div>
+                </div>
+                <div class="title-h4">
+                <h4 class="pres">Hello, moi c'est Alexandre, j'ai 24 ans, bienvenue sur mon portfolio.<br> Je designe, crée & developpe des sites internet.</h4>
+                </div>
+            </div>
+        </div>
+      </section> -->
+
+<!-- Code pour anglais-->
+    <section class="en" style="display: none;">
+    <nav>
+        <ul>
+            <li class="lang-switch"><a href="#" data-lang="fr">Français</a></li>
+        </ul>
+    </nav>
+    <div class="header">
+        <h1 class="nom">ARTUS</h1>
+        <h1 class="prenom">ALEXANDRE</h1>
+        <div class="black-box"></div>
+        <div class="flex flex-mobile">
+        <div class="console-log">
+            <p><span style="color:rgb(121, 199, 230);">console</span><span>.<span style="color:#efe868;">log</span></span>("</p>
+            <div class="string">
+            <p class="greeting env">The Surf Course</p>
+            <p class="greeting es">TudoBemMaman</p>
+            <p class="greeting de">This Portfolio</p>
+            <p class="greeting ru">SurfMate</p>
+            </div>
+            <p id="closure" class="closure">");</p>
+            <div class="black-box-2"></div>
+        </div>
+        <div class="title-h4">
+            <h4 class="pres">Hello, I'm Alexandre, I'm 24, welcome to my portfolio.<br> I design, create & develop websites.</h4>
+        </div>
+        </div>
+    </div>
+    </section>
+</body>
+
+<script src="script.js" defer></script>
+</html>

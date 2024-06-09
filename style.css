@@ -1,3 +1,8 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+
 @font-face {
   font-family: 'manrope-light';
   src: url('fonts/manrope-light/Manrope-Bold.ttf') format('truetype'),
@@ -43,11 +48,12 @@
 /* code pour scroll */
 
 html, body, section {
-  overflow-x: hidden; /* Empêche la barre de défilement horizontale */
-  background-color: rgb(5, 5, 5);
+    overflow-x: hidden; /* Empêche la barre de défilement horizontale */
+    background-color: rgb(5, 5, 5);
   scroll-snap-type: y mandatory;
   block-size: 100%;
 }
+
 
 section {
   scroll-snap-align: start;
@@ -62,7 +68,6 @@ section {
   color: white;
   display: flex;
   justify-content: end;
-  margin-right: 36px;
 }
 
 .en {
@@ -78,17 +83,6 @@ h1 {
   margin-bottom: -80px;
 }
 
-.prenom {
-  font-family: 'manrope', sans-serif;
-  font-weight: 100;
-  color: white;
-  margin: 0;
-  margin-bottom: 48px;
-}
-
-.nom {
-  margin-top: 40px;
-}
 
 h2, h3 {
   font-family: 'butler-stencil', sans-serif;
