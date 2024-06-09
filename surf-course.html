@@ -4,93 +4,192 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="style.css">
   <link rel="icon" href="images/favicon.png">
+  <script src="https://cdn.tailwindcss.com"></script>
   <title>The Surf Course</title>
 </head>
 
-<body>
-<section class="fr">
-    <div class="container">
-      <div class="left-col first-project-col reveal reveal-visible">
-        <h2 class="surf-course-title">The Surf Course</h2>
-        <p>The Surf Course est destiné aux adeptes du surf qui ont envie d'acheter leur matériel mais qui ne savent pas par où commencer.</p>
-        <p>Cette version est adaptée en version mobile uniquement (pour l'instant...)</p>
-        <div class="flex-surf-project">
-          <button onclick="displayDiv('cache');"><p class="en-savoir-plus">En savoir plus ...</p></button>
-          <a href="https://the-surf-course.one/" target="_blank" class="lien-boutique">Choisi ton matériel</a>
+<body class="background-color">
+    <div class="h-screen w-screen flex items-start justify-center">
+        <div class="background-color-section h-[90%] w-[90%] flex flex-col items-center">
+            <ul class="flex justify-between w-[90%] mt-4">
+                <li class=" underline-animation"><a href="/surf-course.html" class="font-butler font-medium text-[24px]">The Surf Course</a></li>
+                <li class="underline-animation"><a href="/tudo-bem-maman.html" class="font-butler font-medium text-[24px]">Tudo Bem Maman</a></li>
+                <li class=" underline-animation"><a href="/portfolio.html" class="font-butler font-medium text-[24px]">Portfolio</a></li>
+                <li class=" underline-animation"><a href="/surfmate.html" class="font-butler font-medium text-[24px]">SurfMate</a></li>
+                <li class=" underline-animation"><a href="/others-projects.html" class="font-butler font-medium text-[24px]">Others Projects</a></li>
+                <li class=" underline-animation"><a href="/contact.html" class="font-butler font-medium text-[24px]">Contact</a></li>
+            </ul>
+            <div class="flex flex-grow items-center justify-center w-full">
+                <h1 class="font-butler font-medium text-[80px] text-center text-color">The Surf Course</h1>
+            </div>
         </div>
-        <div id="cache">
-          <p>Ce projet est basé sur un <strong class="techno-utilisees">algorithme de recommandation de combinaisons et planches de surf en fonction du choix de l'utilisateur</strong>. Avec une base de données remplie de différents produits pour le surf, les résultats varient et permettent d'apporter les meilleures solutions.</p>
-        </div>
-
-        <p class="techno-utilisees">Technologies utilisées</p>
-        <div class="langage">
-          <div class="ruby ruby-mobile">
-            <p>Ruby on Rails</p>
-            <img src="images/ruby.png" alt="logo-ruby" height="18px" width="20px">
-          </div>
-          <div class="javascript javascript-mobile">
-            <p>Javascript</p>
-            <img src="images/javascript.png" alt="logo-javascript" height="22px" width="42px">
-          </div>
-          <div class="sql sql-mobile">
-            <p>SQL</p>
-            <img src="images/sql.png" alt="logo-sql" height="18px" width="42px">
-          </div>
-        </div>
-      </div>
-
-      <div class="right-col reveal reveal-visible">
-        <video class="mockup-the-surf-course" width="320" height="600" controls autoplay>
-          <source src="videos/mockup-the-surf-course.mp4" type="video/mp4">
-          Error Message
-        </video>
-      </div>
     </div>
-  </section>
+    <section class="fr">
+        <div class="container mx-auto flex gap-8 mt-32">
+            <div class="left-col w-1/2">
+                <h2 class="text-4xl font-semibold mb-4">The Surf Course</h2>
+                <p>The Surf Course est destiné aux adeptes du surf qui ont envie d'acheter leur matériel mais qui ne savent pas par où commencer.</p>
+                <p>Cette version est adaptée en version mobile uniquement (pour l'instant...)</p>
+                <div class="flex items-center justify-between">
+                    <button onclick="displayDiv('cache');" class="py-2 px-4 bg-blue-500 text-white rounded hover:bg-blue-600">En savoir plus ...</button>
+                    <a href="https://the-surf-course.one/" target="_blank" class="lien-boutique">Choisi ton matériel</a>
+                </div>
+                <div id="cache" class="hidden">
+                    <p>Ce projet est basé sur un <strong class="font-semibold">algorithme de recommandation de combinaisons et planches de surf en fonction du choix de l'utilisateur</strong>. Avec une base de données remplie de différents produits pour le surf, les résultats varient et permettent d'apporter les meilleures solutions.</p>
+                </div>
+                <p class="font-semibold">Technologies utilisées</p>
+                <div class="flex gap-8 mt-4">
+                    <div class="ruby flex items-center gap-2">
+                        <p>Ruby on Rails</p>
+                        <img src="images/ruby.png" alt="logo-ruby" height="18px" width="20px">
+                    </div>
+                    <div class="javascript flex items-center gap-2">
+                        <p>Javascript</p>
+                        <img src="images/javascript.png" alt="logo-javascript" height="22px" width="42px">
+                    </div>
+                    <div class="sql flex items-center gap-2">
+                        <p>SQL</p>
+                        <img src="images/sql.png" alt="logo-sql" height="18px" width="42px">
+                    </div>
+                </div>
+            </div>
 
-
-  /* code pour anglais */
-  <section class="en" style="display: none;">
-    <div class="container">
-      <div class="left-col first-project-col reveal reveal-visible">
-        <h2 class="surf-course-title">The Surf Course</h2>
-        <p>The Surf Course is for surf enthusiasts who want to buy their gear but don't know where to start.</p>.
-        <p>This version is adapted as a mobile version only (for now...)</p>
-        <div class="flex-surf-project">
-          <button onclick="displayDiv('cache-ang');"><p class="en-savoir-plus">Find out more ...</p></button>
-          <a href="https://the-surf-course.one/" target="_blank" class="lien-boutique">Choose your equipment</a>
+            <div class="right-col w-1/2">
+                <video class="mockup-the-surf-course" width="320" height="600" controls autoplay>
+                    <source src="videos/mockup-the-surf-course.mp4" type="video/mp4">
+                    Error Message
+                </video>
+            </div>
         </div>
-        <div id="cache-ang">
-          <p>This project is based on a <strong class="techno-utilisees">algorithm for recommending wetsuits and surfboards based on the user's choice</strong>. With a database full of different surfing products, the results vary and provide the best solutions.</p>
-        </div>
+    </section>
 
-        <p class="techno-utilisees">Technologies used</p>
-        <div class="langage">
-          <div class="ruby ruby-mobile">
-            <p>Ruby on Rails</p>
-            <img src="images/ruby.png" alt="logo-ruby" height="18px" width="20px">
-          </div>
-          <div class="javascript javascript-mobile">
-            <p>Javascript</p>
-            <img src="images/javascript.png" alt="logo-javascript" height="22px" width="42px">
-          </div>
-          <div class="sql sql-mobile">
-            <p>SQL</p>
-            <img src="images/sql.png" alt="logo-sql" height="18px" width="42px">
-          </div>
-        </div>
-      </div>
+    <!-- Code pour anglais -->
+    <section class="en" style="display: none;">
+        <div class="container">
+            <div class="left-col first-project-col reveal reveal-visible">
+                <h2 class="surf-course-title">The Surf Course</h2>
+                <p>The Surf Course is for surf enthusiasts who want to buy their gear but don't know where to start.</p>
+                <p>This version is adapted as a mobile version only (for now...)</p>
+                <div class="flex-surf-project">
+                    <button onclick="displayDiv('cache-ang');"><p class="en-savoir-plus">Find out more ...</p></button>
+                    <a href="https://the-surf-course.one/" target="_blank" class="lien-boutique">Choose your equipment</a>
+                </div>
+                <div id="cache-ang">
+                    <p>This project is based on a <strong class="techno-utilisees">algorithm for recommending wetsuits and surfboards based on the user's choice</strong>. With a database full of different surfing products, the results vary and provide the best solutions.</p>
+                </div>
 
-      <div class="right-col reveal reveal-visible">
-        <video class="mockup-the-surf-course" width="320" height="600" controls autoplay>
-          <source src="videos/mockup-the-surf-course.mp4" type="video/mp4">
-          Error Message
-        </video>
-      </div>
-    </div>
-  </section>
+                <p class="techno-utilisees">Technologies used</p>
+                <div class="langage">
+                    <div class="ruby ruby-mobile">
+                        <p>Ruby on Rails</p>
+                        <img src="images/ruby.png" alt="logo-ruby" height="18px" width="20px">
+                    </div>
+                    <div class="javascript javascript-mobile">
+                        <p>Javascript</p>
+                        <img src="images/javascript.png" alt="logo-javascript" height="22px" width="42px">
+                    </div>
+                    <div class="sql sql-mobile">
+                        <p>SQL</p>
+                        <img src="images/sql.png" alt="logo-sql" height="18px" width="42px">
+                    </div>
+                </div>
+            </div>
+
+            <div class="right-col reveal reveal-visible">
+                <video class="mockup-the-surf-course" width="320" height="600" controls autoplay>
+                    <source src="videos/mockup-the-surf-course.mp4" type="video/mp4">
+                    Error Message
+                </video>
+            </div>
+        </div>
+    </section>
 </body>
+
 <script src="script.js" defer></script>
 </html>
+
+<style>
+    @font-face {
+      font-family: 'manrope-light';
+      src: url('fonts/manrope-light/Manrope-Bold.ttf') format('truetype'),
+           url('fonts/manrope-light/Manrope-ExtraBold.ttf') format('truetype'),
+           url('fonts/manrope-light/Manrope-ExtraLight.ttf') format('truetype'),
+           url('fonts/manrope-light/Manrope-Light.ttf') format('truetype'),
+           url('fonts/manrope-light/Manrope-Medium.ttf') format('truetype'),
+           url('fonts/manrope-light/Manrope-Regular.ttf') format('truetype'),
+           url('fonts/manrope-light/Manrope-SemiBold.ttf') format('truetype');
+    }
+    @font-face {
+      font-family: 'butler-stencil';
+      src :url('fonts/butler-stencil/Butler_Ultra_Light_Stencil.otf') format('opentype'),
+           url('fonts/butler-stencil/Butler_Black_Stencil.otf') format('opentype'),
+           url('fonts/butler-stencil/Butler_Bold_Stencil.otf') format('opentype'),
+           url('fonts/butler-stencil/Butler_ExtraBold_Stencil.otf') format('opentype'),
+           url('fonts/butler-stencil/Butler_Light_Stencil.otf') format('opentype'),
+           url('fonts/butler-stencil/Butler_Medium_Stencil.otf') format('opentype'),
+           url('fonts/butler-stencil/Butler_Regular_Stencil.otf') format('opentype');
+    }
+    @font-face {
+      font-family: 'butler';
+      src :url('fonts/butler/Butler_Ultra_Light.otf') format('opentype');
+    }
+    @font-face {
+      font-family: 'manrope';
+      src: url('fonts/manrope-light/Manrope-Light.ttf') format('truetype');
+    }
+    @font-face {
+      font-family: 'manrope-ultra-light';
+      src: url('fonts/manrope-light/Manrope-ExtraLight.ttf') format('truetype');
+    }
+    @font-face {
+      font-family: 'manrope-medium';
+      src: url('fonts/manrope-light/Manrope-Medium.ttf') format('truetype');
+    }
+    /* custom styles for specific fonts */
+    .font-butler {
+      font-family: 'butler', sans-serif;
+    }
+    .font-manrope-light {
+      font-family: 'manrope-light', sans-serif;
+    }
+    .font-manrope-ultra-light {
+      font-family: 'manrope-ultra-light', sans-serif;
+    }
+    .font-butler-stencil {
+      font-family: 'butler-stencil', sans-serif;
+    }
+    .background-color {
+        background-color: #1a1818;
+    }
+
+    .background-color-section  {
+        background-color: #ece7e1;
+    }
+
+    .text-color {
+        color: #1a1818;
+    }
+
+    .underline-animation {
+            position: relative;
+            display: inline-block;
+            overflow: hidden;
+    }
+    .underline-animation::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: currentColor;
+        transform: scaleX(0);
+        transform-origin: bottom right;
+        transition: transform 0.3s ease-out;
+    }
+    .underline-animation:hover::before {
+        transform: scaleX(1);
+        transform-origin: bottom left;
+    }
+</style>
