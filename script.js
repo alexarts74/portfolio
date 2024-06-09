@@ -35,6 +35,7 @@ document.querySelectorAll('.left-col, .right-col').forEach(function (element) {
 // Récupérer les éléments nécessaires
 document.addEventListener('DOMContentLoaded', function() {
   const langLinks = document.querySelectorAll('.lang-switch a');
+  console.log(langLinks);
   const frElements = document.querySelectorAll('.fr');
   const enElements = document.querySelectorAll('.en');
 
