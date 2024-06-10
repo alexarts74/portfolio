@@ -32,32 +32,41 @@ document.querySelectorAll('.left-col, .right-col').forEach(function (element) {
 });
 
 
-// Récupérer les éléments nécessaires
+function setLanguage(language) {
+    localStorage.setItem('language', language);
+    switchLanguage(language);
+}
+
+function applyLanguagePreference() {
+    const language = localStorage.getItem('language') || 'fr';
+    switchLanguage(language);
+}
+
+function switchLanguage(lang) {
+    const frElements = document.querySelectorAll('.fr');
+    const enElements = document.querySelectorAll('.en');
+    const langLinks = document.querySelectorAll('.lang-switch a');
+
+    if (lang === 'en') {
+        frElements.forEach(el => el.style.display = 'none');
+        enElements.forEach(el => el.style.display = 'block');
+        langLinks[0].style.display = 'none'; // Masquer le lien "English"
+        langLinks[1].style.display = 'block'; // Afficher le lien "Français"
+    } else {
+        enElements.forEach(el => el.style.display = 'none');
+        frElements.forEach(el => el.style.display = 'block');
+        langLinks[0].style.display = 'block'; // Afficher le lien "English"
+        langLinks[1].style.display = 'none'; // Masquer le lien "Français"
+    }
+}
+
 document.addEventListener('DOMContentLoaded', function() {
-  const langLinks = document.querySelectorAll('.lang-switch a');
-  console.log(langLinks);
-  const frElements = document.querySelectorAll('.fr');
-  const enElements = document.querySelectorAll('.en');
-
-  function switchLanguage(lang) {
-      if (lang === 'en') {
-          frElements.forEach(el => el.style.display = 'none');
-          enElements.forEach(el => el.style.display = 'block');
-          langLinks[0].style.display = 'none'; // Masquer le lien "English"
-          langLinks[1].style.display = 'block'; // Afficher le lien "Français"
-      } else {
-          enElements.forEach(el => el.style.display = 'none');
-          frElements.forEach(el => el.style.display = 'block');
-          langLinks[0].style.display = 'block'; // Afficher le lien "English"
-          langLinks[1].style.display = 'none'; // Masquer le lien "Français"
-      }
-  }
-
-  langLinks.forEach(link => {
-      link.addEventListener('click', function(event) {
-          event.preventDefault();
-          const selectedLang = this.getAttribute('data-lang');
-          switchLanguage(selectedLang);
-      });
-  });
+    const langLinks = document.querySelectorAll('.lang-switch a');
+    langLinks.forEach(link => {
+        link.addEventListener('click', function(event) {
+            event.preventDefault();
+            const selectedLang = this.getAttribute('data-lang');
+            setLanguage(selectedLang);
+        });
+    });
 });

@@ -8,7 +8,7 @@
   <title>My Portfolio</title>
 </head>
 
-<body class="overflow-x-hidden overflow-y-hidden background-body">
+<body class="overflow-x-hidden overflow-y-hidden background-body" onload="applyLanguagePreference()">
     <section class="fr snap-y snap-mandatory h-screen">
         <ul class="flex justify-end space-x-4 text-black">
           <li class="lang-switch mt-8 mr-8"><a href="#" data-lang="en">English</a></li>
@@ -16,11 +16,11 @@
         <div class="grid grid-cols-1 md:grid-cols-2 mb-8 gap-4 h-full">
             <div class="w-12/12 mt-[60%]">
                 <div class="flex flex ml-16">
-                    <h1 class="text-5xl text-[24px]  text-black mr-2">ALEXANDRE</h1>
+                    <h1 class="text-5xl text-[24px] text-black mr-2">ALEXANDRE</h1>
                     <h1 class="text-5xl text-[24px] font-manrope text-black">ARTUS</h1>
                 </div>
-                <hr class="border-t border-black w-[40%] ml-16 mt-4">
-                <h4 class="pres text-[18px] font-manrope-ultra-light font-bold text-black pr-4 md:pr-32 mt-8 ml-16">Hello, moi c'est Alexandre, j'ai 24 ans<br> bienvenue sur mon portfolio. Je designe, crée<br> & développe des sites internet.</h4>
+                <hr class="border-t background-text-color h-[2px] w-[40%] ml-16 mt-4">
+                <h4 class="pres text-[18px] font-manrope-ultra-light font-bold text-black pr-4 md:pr-32 mt-8 ml-16">Developpeur web front-end<br>Design et intégration de sites internet</h4>
             </div>
             <ul class="text-black text-lg font-manrope-ultra-light flex flex-col justify-center gap-y-12 h-full">
                 <li class="transition-transform hover:translate-x-4"><a href="/surf-course.html" class="font-butler transition-transform transform hover:italic font-medium text-[80px]">The Surf Course</a></li>
@@ -46,7 +46,7 @@
                     <h1 class="text-5xl text-[24px] font-manrope text-black">ARTUS</h1>
                 </div>
                 <hr class="border-t border-black w-[40%] ml-16 mt-4">
-                <h4 class="pres text-[18px] font-manrope-ultra-light font-bold text-black pr-4 md:pr-32 mt-8 ml-16">Hello, I'm Alexandre, I'm 24, welcome to my portfolio.<br> I design, create & develop websites.</h4>
+                <h4 class="pres text-[18px] font-manrope-ultra-light font-bold text-black pr-4 md:pr-32 mt-8 ml-16">Web developer front-end<br>Website design and integration</h4>
             </div>
             <ul class="text-black text-lg font-manrope-ultra-light flex flex-col justify-center gap-y-12 h-full">
                 <li class="transition-transform hover:translate-x-4"><a href="/surf-course.html" class="font-butler transition-transform transform hover:italic font-medium text-[80px]">The Surf Course</a></li>
@@ -115,6 +115,10 @@
 
     .background-body {
         background-color: #ece7e1;
+    }
+
+    .background-text-color {
+        background-color: #1a1818;
     }
 </style>
 <!-- <!DOCTYPE html>
