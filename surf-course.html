@@ -25,6 +25,7 @@
             </div>
         </div>
     </div>
+
     <section class="fr">
         <div class="w-[70%] mx-auto">
             <p class="font-butler font-medium text-[32px] mt-12 mb-24 flex justify-center text-center text-color-main">The Surf Course est destiné aux débutants adeptes du surf qui ont envie d'acheter leur matériel mais qui ne savent pas par où commencer.</p>
@@ -87,52 +88,73 @@
                 <button class="text-color-main background-color text-[24px] rounded-full h-[13%] w-[20%] hover:w-[25%] transition-all duration-300"><a href="https://the-surf-course.one/">the-surf-course.one</a></button>
             </div>
         </div>
-
-    </div>
-
     </section>
 
     <!-- Code pour anglais -->
     <section class="en" style="display: none;">
-        <div class="container text-color-main">
-            <div class="left-col first-project-col reveal reveal-visible">
-                <h2 class="surf-course-title">The Surf Course</h2>
-                <p>The Surf Course is for surf enthusiasts who want to buy their gear but don't know where to start.</p>
-                <p>This version is adapted as a mobile version only (for now...)</p>
-                <div class="flex-surf-project">
-                    <button onclick="displayDiv('cache-ang');"><p class="en-savoir-plus">Find out more ...</p></button>
-                    <a href="https://the-surf-course.one/" target="_blank" class="lien-boutique">Choose your equipment</a>
+        <div class="w-[70%] mx-auto">
+            <p class="font-butler font-medium text-[32px] mt-12 mb-24 flex justify-center text-center text-color-main">The Surf Course is for surf enthusiasts who want to buy their gear but don't know where to start.</p>
+        </div>
+        <div class="container mx-auto text-color-main text-[18px] font-manrope-ultra-light font-bold">
+            <div class="grid grid-cols-3 gap-8 mb-24">
+                <div class="flex flex-col items-center text-center">
+                    <p>ROLE</p>
+                    <hr class="border-t w-[13%] mt-2 mb-4 background-color-section">
+                    <p>Back-end and front-end development</p>
                 </div>
-                <div id="cache-ang">
-                    <p>This project is based on a <strong class="techno-utilisees">algorithm for recommending wetsuits and surfboards based on the user's choice</strong>. With a database full of different surfing products, the results vary and provide the best solutions.</p>
-                </div>
-
-                <p class="techno-utilisees">Technologies used</p>
-                <div class="langage">
-                    <div class="ruby ruby-mobile">
+                <div class="flex flex-col items-center text-center">
+                    <p>TECHNOLOGIES</p>
+                    <hr class="border-t w-[35%] mt-2 mb-4 background-color-section">
+                    <div class="ruby flex items-center gap-2">
                         <p>Ruby on Rails</p>
                         <img src="images/ruby.png" alt="logo-ruby" height="18px" width="20px">
                     </div>
-                    <div class="javascript javascript-mobile">
+                    <div class="javascript flex items-center gap-2">
                         <p>Javascript</p>
                         <img src="images/javascript.png" alt="logo-javascript" height="22px" width="42px">
                     </div>
-                    <div class="sql sql-mobile">
+                    <div class="sql flex items-center gap-2">
                         <p>SQL</p>
                         <img src="images/sql.png" alt="logo-sql" height="18px" width="42px">
                     </div>
                 </div>
+                <div class="flex flex-col items-center text-center">
+                    <p>GET YOUR BOARD</p>
+                    <hr class="border-t w-[42%] mt-2 mb-4 background-color-section">
+                    <a href="https://the-surf-course.one/" target="_blank" class="underline-animation">the-surf-course.one</a>
+                </div>
             </div>
+        </div>
 
-            <div class="right-col reveal reveal-visible">
+
+        <div class="grid grid-cols-2 gap-8 items-center">
+            <div class="text-center text-color-main text-[18px] font-manrope-ultra-light font-bold ml-32">
+                <!-- Faire une animation au click du bouton pour savoir qu'il est cliqué-->
+                <div class="flex items-center justify-center mb-4">
+                    <!--Ne marche pas en anglais-->
+                    <button onclick="displayDiv('cache');" class="text-color-main underline-animation">Find out more ...</button>
+                </div>
+                <div id="cache" class="hidden">
+                    <p>This project is based on a <strong class="font-semibold">algorithm for recommending wetsuits and surfboards based on the user's choice</strong>. With a database full of different surfing products, the results vary and provide the best solutions.</p>
+                    <p class="text-color-main text-[14px]">This version is adapted as a mobile version only (for now...)</p>
+
+                </div>
+            </div>
+            <div class="video-container mt-8 flex justify-center">
                 <video class="mockup-the-surf-course" width="320" height="600" controls autoplay>
                     <source src="videos/mockup-the-surf-course.mp4" type="video/mp4">
                     Error Message
                 </video>
             </div>
         </div>
-    </section>
 
+        <div class="h-[500px] w-screen flex items-end justify-center">
+            <div class="background-color-section h-[70%] w-[90%] flex flex-col items-center">
+                <p class="font-butler font-medium text-[48px] mt-24 mb-12 flex justify-center text-center text-color">Check it out !</p>
+                <button class="text-color-main background-color text-[24px] rounded-full h-[13%] w-[20%] hover:w-[25%] transition-all duration-300"><a href="https://the-surf-course.one/">the-surf-course.one</a></button>
+            </div>
+        </div>
+    </section>
 </body>
 
 <script src="script.js" defer></script>
