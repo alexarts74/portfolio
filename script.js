@@ -1,11 +1,15 @@
 function displayDiv(id) {
-
-  if (document.getElementById(id).style.display == 'block') {
-    document.getElementById(id).style.display = 'none';
-  }
-  else {
-      document.getElementById(id).style.display = 'block';
-  }
+    console.log('displayDiv', id);
+    if (document.getElementById(id).style.display == 'block') {
+        document.getElementById(id).style.display = 'none';
+    }
+    else {
+        console.log('displayDiv', id, 'block')
+        console.log(document.getElementById(id));
+        document.getElementById(id).classList.remove('hidden');
+        document.getElementById(id).classList.add = 'visible';
+        document.getElementById(id).style.display = 'block';
+    }
 }
 
 const ratio = .5;

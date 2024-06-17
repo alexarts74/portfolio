@@ -14,6 +14,7 @@
         <div class="background-color-section h-[90%] w-[90%] flex flex-col items-center">
             <ul class="flex justify-between w-[90%] mt-4">
                 <li class="underline-animation"><a href="/homepage.html" class="font-butler font-medium text-[24px]">Home</a></li>
+                <li class="underline-animation"><a href="/workadventure.html" class="font-butler font-medium text-[24px]">WorkAdventure</a></li>
                 <li class="underline-animation"><a href="/tudo-bem-maman.html" class="font-butler font-medium text-[24px]">Tudo Bem Maman</a></li>
                 <li class="underline-animation"><a href="/portfolio.html" class="font-butler font-medium text-[24px]">Portfolio</a></li>
                 <li class="underline-animation"><a href="/surfmate.html" class="font-butler font-medium text-[24px]">SurfMate</a></li>
@@ -56,7 +57,7 @@
                 <div class="flex flex-col items-center text-center">
                     <p>GET YOUR BOARD</p>
                     <hr class="border-t w-[42%] mt-2 mb-4 background-color-section">
-                    <a href="https://the-surf-course.one/" target="_blank" class="underline-animation">the-surf-course.one</a>
+                    <a href="https://the-surf-course.one/" target="_blank" class="hover:text-sky-600">the-surf-course.one</a>
                 </div>
             </div>
         </div>
@@ -66,9 +67,9 @@
             <div class="text-center text-color-main text-[18px] font-manrope-ultra-light font-bold ml-32">
                 <!-- Faire une animation au click du bouton pour savoir qu'il est cliqué-->
                 <div class="flex items-center justify-center mb-4">
-                    <button onclick="displayDiv('cache');" class="text-color-main underline-animation">En savoir plus ...</button>
+                    <button onclick="displayDiv('cache');" class="text-color-main hover:text-sky-600">En savoir plus ...</button>
                 </div>
-                <div id="cache" class="hidden">
+                <div id="cache" class="hidden text-start">
                     <p>Ce projet est basé sur un <strong class="font-semibold">algorithme de recommandation de combinaisons et planches de surf en fonction du choix de l'utilisateur</strong>. Avec une base de données remplie de différents produits pour le surf, les résultats varient et permettent d'apporter les meilleures solutions.</p>
                     <p class="text-color-main text-[14px]">Cette version est adaptée en version mobile uniquement (pour l'instant...)</p>
 
@@ -85,7 +86,7 @@
         <div class="h-[500px] w-screen flex items-end justify-center">
             <div class="background-color-section h-[70%] w-[90%] flex flex-col items-center">
                 <p class="font-butler font-medium text-[48px] mt-24 mb-12 flex justify-center text-center text-color">Check it out !</p>
-                <button class="text-color-main background-color text-[24px] rounded-full h-[13%] w-[20%] hover:w-[25%] transition-all duration-300"><a href="https://the-surf-course.one/">the-surf-course.one</a></button>
+                <button class="text-color-main background-color text-[24px] rounded-full h-[13%] w-[20%] hover:w-[25%] transition-all duration-300"><a href="https://the-surf-course.one/">The-Surf-Course</a></button>
             </div>
         </div>
     </section>
@@ -121,7 +122,7 @@
                 <div class="flex flex-col items-center text-center">
                     <p>GET YOUR BOARD</p>
                     <hr class="border-t w-[42%] mt-2 mb-4 background-color-section">
-                    <a href="https://the-surf-course.one/" target="_blank" class="underline-animation">the-surf-course.one</a>
+                    <a href="https://the-surf-course.one/" target="_blank" class="hover:text-sky-600">the-surf-course.one</a>
                 </div>
             </div>
         </div>
@@ -131,11 +132,10 @@
             <div class="text-center text-color-main text-[18px] font-manrope-ultra-light font-bold ml-32">
                 <!-- Faire une animation au click du bouton pour savoir qu'il est cliqué-->
                 <div class="flex items-center justify-center mb-4">
-                    <!--Ne marche pas en anglais-->
-                    <button onclick="displayDiv('cache');" class="text-color-main underline-animation">Find out more ...</button>
+                    <button onclick="displayDiv('cache-2');" class="text-color-main hover:text-sky-600">Find out more ...</button>
                 </div>
-                <div id="cache" class="hidden">
-                    <p>This project is based on a <strong class="font-semibold">algorithm for recommending wetsuits and surfboards based on the user's choice</strong>. With a database full of different surfing products, the results vary and provide the best solutions.</p>
+                <div id="cache-2" class="hidden text-start">
+                    <p class="text-color-main">This project is based on a <strong class="font-semibold">algorithm for recommending wetsuits and surfboards based on the user's choice</strong>. With a database full of different surfing products, the results vary and provide the best solutions.</p>
                     <p class="text-color-main text-[14px]">This version is adapted as a mobile version only (for now...)</p>
 
                 </div>
@@ -151,7 +151,7 @@
         <div class="h-[500px] w-screen flex items-end justify-center">
             <div class="background-color-section h-[70%] w-[90%] flex flex-col items-center">
                 <p class="font-butler font-medium text-[48px] mt-24 mb-12 flex justify-center text-center text-color">Check it out !</p>
-                <button class="text-color-main background-color text-[24px] rounded-full h-[13%] w-[20%] hover:w-[25%] transition-all duration-300"><a href="https://the-surf-course.one/">the-surf-course.one</a></button>
+                <button class="text-color-main background-color text-[24px] rounded-full h-[13%] w-[20%] hover:w-[25%] transition-all duration-300"><a href="https://the-surf-course.one/">The-Surf-Course</a></button>
             </div>
         </div>
     </section>
@@ -246,5 +246,9 @@
     .underline-animation:hover::before {
         transform: scaleX(1);
         transform-origin: bottom left;
+    }
+
+    .block {
+        display: block;
     }
 </style>

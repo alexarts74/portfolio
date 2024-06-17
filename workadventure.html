@@ -2,12 +2,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="icon" href="images/favicon.png">
-  <title>Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/favicon.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Workadventure</title>
 </head>
 
 <body class="background-color" onload="applyLanguagePreference()">
@@ -16,49 +15,49 @@
             <ul class="flex justify-between w-[90%] mt-4">
                 <li class="underline-animation"><a href="/homepage.html" class="font-butler font-medium text-[24px]">Home</a></li>
                 <li class="underline-animation"><a href="/surf-course.html" class="font-butler font-medium text-[24px]">The Surf Course</a></li>
-                <li class="underline-animation"><a href="/workadventure.html" class="font-butler font-medium text-[24px]">WorkAdventure</a></li>
                 <li class="underline-animation"><a href="/tudo-bem-maman.html" class="font-butler font-medium text-[24px]">Tudo Bem Maman</a></li>
+                <li class="underline-animation"><a href="/portfolio.html" class="font-butler font-medium text-[24px]">Portfolio</a></li>
                 <li class="underline-animation"><a href="/surfmate.html" class="font-butler font-medium text-[24px]">SurfMate</a></li>
                 <li class="underline-animation"><a href="/others-projects.html" class="font-butler font-medium text-[24px]">Others Projects</a></li>
                 <li class="underline-animation"><a href="/contact.html" class="font-butler font-medium text-[24px]">Contact</a></li>
             </ul>
             <div class="flex flex-grow items-center justify-center w-full">
-                <h1 class="font-butler font-medium text-[80px] text-center text-color">Portfolio</h1>
+                <h1 class="font-butler font-medium text-[80px] text-center text-color">WorkAdventure</h1>
             </div>
         </div>
     </div>
 
     <section class="fr">
         <div class="w-[70%] mx-auto">
-            <p class="font-butler font-medium text-[32px] mt-12 mb-24 flex justify-center text-center text-color-main">Projet personnel qui me permet de mettre en avant mes projets et compétences</p>
+            <p class="font-butler font-medium text-[32px] mt-12 mb-24 flex justify-center text-center text-color-main">Intégration de la refonte graphique. Mise en place de script d'upload de map</p>
         </div>
         <div class="container mx-auto text-color-main text-[18px] font-manrope-ultra-light font-bold">
             <div class="grid grid-cols-3 gap-8 mb-24">
                 <div class="flex flex-col items-center text-center">
                     <p>ROLE</p>
                     <hr class="border-t w-[13%] mt-2 mb-4 background-color-section">
-                    <p>Développement front-end</p>
+                    <p>Développement back-end et front-end</p>
                 </div>
                 <div class="flex flex-col items-center text-center">
                     <p>TECHNOLOGIES</p>
                     <hr class="border-t w-[35%] mt-2 mb-4 background-color-section">
                     <div class="ruby flex items-center gap-2">
-                        <p>HTML</p>
-                        <img src="images/html-3.png" alt="logo-ruby" height="24px" width="24px">
+                        <p>Typescript</p>
+                        <img src="images/Typescript_logo_2020.svg.png" alt="logo-ruby" height="18px" width="20px">
                     </div>
                     <div class="javascript flex items-center gap-2">
-                        <p>Tailwind</p>
-                        <img src="images/Logo Tailwind.svg.png" alt="logo-javascript" height="12px" width="24px">
+                        <p>Svelte</p>
+                        <img src="images/Logo Svelte.png" alt="logo-javascript" height="18px" width="18px">
                     </div>
                     <div class="sql flex items-center gap-2">
-                        <p>Javascript</p>
-                        <img src="images/javascript.png" alt="logo-sql" height="18px" width="42px">
+                        <p>Tailwind</p>
+                        <img src="images/Logo Tailwind.svg.png" alt="logo-sql" height="12px" width="24px">
                     </div>
                 </div>
                 <div class="flex flex-col items-center text-center">
-                    <p>SEE ON GITHUB</p>
+                    <p>SEE THE DESIGN</p>
                     <hr class="border-t w-[42%] mt-2 mb-4 background-color-section">
-                    <a href="https://github.com/alexarts74/portfolio" target="_blank" class="hover:text-sky-600">github-portfolio.com</a>
+                    <a href="https://play.staging.workadventu.re/@/tcm/workadventure/wa-village" target="_blank" class="hover:text-sky-600">workadventure-staging.com</a>
                 </div>
             </div>
         </div>
@@ -68,26 +67,29 @@
             <div class="text-center text-color-main text-[18px] font-manrope-ultra-light font-bold ml-32">
                 <!-- Faire une animation au click du bouton pour savoir qu'il est cliqué-->
                 <div class="flex items-center justify-center mb-4">
-                    <button onclick="displayDiv('cache');" class="text-color-main hover:text-sky-600">En savoir plus ...</button>
+                    <button onclick="displayDiv('cache-2');" class="text-color-main hover:text-sky-600">En savoir plus ...</button>
                 </div>
-                <div id="cache" class="hidden">
+                <div id="cache-2" class="hidden">
                     <!--le semi bold en class n'a pas d'effet-->
                     <ul class="text-start">
-                        <li>Une page d'accueil</li>
-                        <li>Une page de présentation de mes projets avec un lien vers les sites</li>
-                        <li>Une page de contact</li>
+                        <li class="point">Intégration des différents projets (gestion des caméras, intégration de cowebsite avec iframe, popup réactif...) de la refonte graphique en collaboration avec le designer</li>
+                        <li>Script permettant aux entreprises partenaires d'uploader et d'hoster leurs propres map intéractive en entrant une commande dans le terminal afin de simplifier au maximum l'expérience utilisateur.</li>
+                        <li>Réalisation de la documentation pour les différents projets (écris et vidéos en anglais)</li>
                     </ul>
                 </div>
             </div>
             <div class="video-container mt-8 flex justify-center">
-                <img src="images/portfolio.png" alt="portfolio-code" width="520" height="400" class="portfolio">
+                <video class="mockup-the-surf-course" width="320" height="600" controls autoplay>
+                    <source src="videos/mockup-the-surf-course.mp4" type="video/mp4">
+                    Error Message
+                </video>
             </div>
         </div>
 
         <div class="h-[500px] w-screen flex items-end justify-center">
             <div class="background-color-section h-[70%] w-[90%] flex flex-col items-center">
                 <p class="font-butler font-medium text-[48px] mt-24 mb-12 flex justify-center text-center text-color">Check it out !</p>
-                <button class="text-color-main background-color text-[24px] rounded-full h-[13%] w-[20%] hover:w-[25%] transition-all duration-300"><a href="https://github.com/alexarts74/portfolio">Portfolio</a></button>
+                <button class="text-color-main background-color text-[24px] rounded-full h-[13%] w-[20%] hover:w-[25%] transition-all duration-300"><a href="https://play.staging.workadventu.re/@/tcm/workadventure/wa-village">WorkAdventure</a></button>
             </div>
         </div>
     </section>
@@ -95,35 +97,35 @@
     <!-- Code pour anglais -->
     <section class="en" style="display: none;">
         <div class="w-[70%] mx-auto">
-            <p class="font-butler font-medium text-[32px] mt-12 mb-24 flex justify-center text-center text-color-main">Personal project that allows me to showcase my projects and skills</p>
+            <p class="font-butler font-medium text-[32px] mt-12 mb-24 flex justify-center text-center text-color-main">The Surf Course is for surf enthusiasts who want to buy their gear but don't know where to start.</p>
         </div>
         <div class="container mx-auto text-color-main text-[18px] font-manrope-ultra-light font-bold">
             <div class="grid grid-cols-3 gap-8 mb-24">
                 <div class="flex flex-col items-center text-center">
                     <p>ROLE</p>
                     <hr class="border-t w-[13%] mt-2 mb-4 background-color-section">
-                    <p>Front-end development</p>
+                    <p>Back-end and front-end development</p>
                 </div>
                 <div class="flex flex-col items-center text-center">
                     <p>TECHNOLOGIES</p>
                     <hr class="border-t w-[35%] mt-2 mb-4 background-color-section">
                     <div class="ruby flex items-center gap-2">
-                        <p>HTML</p>
-                        <img src="images/html-3.png" alt="logo-ruby" height="24px" width="24px">
+                        <p>Ruby on Rails</p>
+                        <img src="images/ruby.png" alt="logo-ruby" height="18px" width="20px">
                     </div>
                     <div class="javascript flex items-center gap-2">
-                        <p>Tailwind</p>
-                        <img src="images/Logo Tailwind.svg.png" alt="logo-javascript" height="12px" width="24px">
+                        <p>Javascript</p>
+                        <img src="images/javascript.png" alt="logo-javascript" height="22px" width="42px">
                     </div>
                     <div class="sql flex items-center gap-2">
-                        <p>Javascript</p>
-                        <img src="images/javascript.png" alt="logo-sql" height="18px" width="42px">
+                        <p>SQL</p>
+                        <img src="images/sql.png" alt="logo-sql" height="18px" width="42px">
                     </div>
                 </div>
                 <div class="flex flex-col items-center text-center">
-                    <p>SEE ON GITHUB</p>
+                    <p>GET YOUR BOARD</p>
                     <hr class="border-t w-[42%] mt-2 mb-4 background-color-section">
-                    <a href="https://github.com/alexarts74/portfolio" target="_blank" class="underline-animation">github-portfolio.com</a>
+                    <a href="https://play.staging.workadventu.re/@/tcm/workadventure/wa-village" target="_blank" class="underline-animation">workadventure-staging.com</a>
                 </div>
             </div>
         </div>
@@ -134,25 +136,26 @@
                 <!-- Faire une animation au click du bouton pour savoir qu'il est cliqué-->
                 <div class="flex items-center justify-center mb-4">
                     <!--Ne marche pas en anglais-->
-                    <button onclick="displayDiv('cache-2');" class="text-color-main underline-animation">Find out more ...</button>
+                    <button onclick="displayDiv('cache');" class="text-color-main underline-animation">Find out more ...</button>
                 </div>
-                <div id="cache-2" class="hidden">
-                    <ul class="text-start">
-                        <li>A homepage</li>
-                        <li>A project presentation page with a link to the sites</li>
-                        <li>A contact page</li>
-                    </ul>
+                <div id="cache" class="hidden">
+                    <p>This project is based on a <strong class="font-semibold">algorithm for recommending wetsuits and surfboards based on the user's choice</strong>. With a database full of different surfing products, the results vary and provide the best solutions.</p>
+                    <p class="text-color-main text-[14px]">This version is adapted as a mobile version only (for now...)</p>
+
                 </div>
             </div>
             <div class="video-container mt-8 flex justify-center">
-                <img src="images/portfolio.png" alt="portfolio-code" width="520" height="400" class="portfolio">
+                <video class="mockup-the-surf-course" width="320" height="600" controls autoplay>
+                    <source src="videos/mockup-the-surf-course.mp4" type="video/mp4">
+                    Error Message
+                </video>
             </div>
         </div>
 
         <div class="h-[500px] w-screen flex items-end justify-center">
             <div class="background-color-section h-[70%] w-[90%] flex flex-col items-center">
                 <p class="font-butler font-medium text-[48px] mt-24 mb-12 flex justify-center text-center text-color">Check it out !</p>
-                <button class="text-color-main background-color text-[24px] rounded-full h-[13%] w-[20%] hover:w-[25%] transition-all duration-300"><a href="https://github.com/alexarts74/portfolio">Github Portfolio</a></button>
+                <button class="text-color-main background-color text-[24px] rounded-full h-[13%] w-[20%] hover:w-[25%] transition-all duration-300"><a href="https://play.staging.workadventu.re/@/tcm/workadventure/wa-village">WorkAdventure</a></button>
             </div>
         </div>
     </section>
