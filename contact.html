@@ -3,12 +3,51 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
   <link rel="icon" href="images/favicon.png">
   <title>Contact</title>
 </head>
-<body>
-    <section>
+<body class="background-color" onload="applyLanguagePreference()">
+    <div class="h-screen w-screen flex items-start justify-center">
+        <div class="h-[100%] w-[90%] flex flex-col items-center">
+            <ul class="flex text-color-main justify-between w-[90%] mt-4">
+                <li class="underline-animation"><a href="/homepage.html" class="font-butler font-medium text-[24px]">Home</a></li>
+                <li class="underline-animation"><a href="/surf-course.html" class="font-butler font-medium text-[24px]">The Surf Course</a></li>
+                <li class="underline-animation"><a href="/tudo-bem-maman.html" class="font-butler font-medium text-[24px]">Tudo Bem Maman</a></li>
+                <li class="underline-animation"><a href="/portfolio.html" class="font-butler font-medium text-[24px]">Portfolio</a></li>
+                <li class="underline-animation"><a href="/surfmate.html" class="font-butler font-medium text-[24px]">SurfMate</a></li>
+                <li class="underline-animation"><a href="/workadventure.html" class="font-butler font-medium text-[24px]">WorkAdventure</a></li>
+                <li class="underline-animation"><a href="/contact.html" class="font-butler font-medium text-[24px]">Contact</a></li>
+            </ul>
+
+            <div class="flex flex-grow items-center justify-around w-full">
+                <div class="block">
+                    <h1 class="font-butler font-medium text-[124px] text-center text-color-main">Contact.</h1>
+                    <hr class="border-t w-[42%] mt-[-32px] background-color-section">
+                </div>
+                <section>
+                    <div class="container mx-auto text-color-main text-[18px] font-manrope-ultra-light font-bold">
+                        <div class="flex justify-around gap-24">
+                            <div class="flex flex-col items-center text-center">
+                                <p>GITHUB</p>
+                                <a href="https://github.com/alexarts74"><img src="images/github-mark-white.png" alt="github-logo" height="72px" width="54px"></a>
+                            </div>
+                            <div class="flex flex-col items-center text-center">
+                                <p>MAIL</p>
+                                <a href="mailto:artusalexandre74@gmail.com"><img src="images/gmail-logo.png" alt="logo-linkedin" height="48px" width="62px" class="gmail-logo"></a>
+                            </div>
+                            <div class="flex flex-col items-center text-center">
+                                <p>LINKEDIN</p>
+                                <a href="https://www.linkedin.com/in/alexandre-artus-27a71b1a4/"><img src="images/logo-linkedin.png" alt="logo-linkedin" height="48px" width="62px"></a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <!-- <section>
         <h2 class="contact">Contact</h2>
         <div class="flex flex-other-project">
           <div class="socials">
@@ -24,7 +63,97 @@
             <a href="mailto:artusalexandre74@gmail.com"><img src="images/gmail-logo.png" alt="logo-linkedin" height="48px" width="72px" class="gmail-logo"></a>
           </div>
         </div>
-    </section>
+    </section> -->
 </body>
 <script src="script.js" defer></script>
 </html>
+
+<style>
+    @font-face {
+      font-family: 'manrope-light';
+      src: url('fonts/manrope-light/Manrope-Bold.ttf') format('truetype'),
+           url('fonts/manrope-light/Manrope-ExtraBold.ttf') format('truetype'),
+           url('fonts/manrope-light/Manrope-ExtraLight.ttf') format('truetype'),
+           url('fonts/manrope-light/Manrope-Light.ttf') format('truetype'),
+           url('fonts/manrope-light/Manrope-Medium.ttf') format('truetype'),
+           url('fonts/manrope-light/Manrope-Regular.ttf') format('truetype'),
+           url('fonts/manrope-light/Manrope-SemiBold.ttf') format('truetype');
+    }
+    @font-face {
+      font-family: 'butler-stencil';
+      src :url('fonts/butler-stencil/Butler_Ultra_Light_Stencil.otf') format('opentype'),
+           url('fonts/butler-stencil/Butler_Black_Stencil.otf') format('opentype'),
+           url('fonts/butler-stencil/Butler_Bold_Stencil.otf') format('opentype'),
+           url('fonts/butler-stencil/Butler_ExtraBold_Stencil.otf') format('opentype'),
+           url('fonts/butler-stencil/Butler_Light_Stencil.otf') format('opentype'),
+           url('fonts/butler-stencil/Butler_Medium_Stencil.otf') format('opentype'),
+           url('fonts/butler-stencil/Butler_Regular_Stencil.otf') format('opentype');
+    }
+    @font-face {
+      font-family: 'butler';
+      src :url('fonts/butler/Butler_Ultra_Light.otf') format('opentype');
+    }
+    @font-face {
+      font-family: 'manrope';
+      src: url('fonts/manrope-light/Manrope-Light.ttf') format('truetype');
+    }
+    @font-face {
+      font-family: 'manrope-ultra-light';
+      src: url('fonts/manrope-light/Manrope-ExtraLight.ttf') format('truetype');
+    }
+    @font-face {
+      font-family: 'manrope-medium';
+      src: url('fonts/manrope-light/Manrope-Medium.ttf') format('truetype');
+    }
+    /* custom styles for specific fonts */
+    .font-butler {
+      font-family: 'butler', sans-serif;
+    }
+    .font-manrope-light {
+      font-family: 'manrope-light', sans-serif;
+    }
+    .font-manrope-ultra-light {
+      font-family: 'manrope-ultra-light', sans-serif;
+    }
+    .font-butler-stencil {
+      font-family: 'butler-stencil', sans-serif;
+    }
+    .background-color {
+        background-color: #1a1818;
+    }
+
+    .background-color-section  {
+        background-color: #ece7e1;
+    }
+
+    .text-color {
+        color: #1a1818;
+    }
+
+    .text-color-main {
+        color: #ece7e1;
+    }
+
+    .underline-animation {
+            position: relative;
+            display: inline-block;
+            overflow: hidden;
+    }
+    .underline-animation::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: currentColor;
+        transform: scaleX(0);
+        transform-origin: bottom right;
+        transition: transform 0.3s ease-out;
+    }
+    .underline-animation:hover::before {
+        transform: scaleX(1);
+        transform-origin: bottom left;
+    }
+
+</style>
