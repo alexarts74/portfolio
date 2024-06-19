@@ -24,10 +24,15 @@
             <div class="flex flex-grow items-center justify-center w-full">
                 <h1 class="font-butler font-medium text-[80px] text-center text-color">Portfolio</h1>
             </div>
+            <a href="#section-fr" class="arrow-container hover:cursor-pointer flex justify-center">
+                <div class="arrow cursor-default"></div>
+                <div class="arrow cursor-default"></div>
+                <div class="arrow cursor-default"></div>
+            </a>
         </div>
     </div>
 
-    <section class="fr">
+    <section class="fr" id="section-fr">
         <div class="w-[70%] mx-auto">
             <p class="font-butler font-medium text-[32px] mt-12 mb-24 flex justify-center text-center text-color-main">Projet personnel qui me permet de mettre en avant mes projets et compétences</p>
         </div>
@@ -66,17 +71,15 @@
         <div class="grid grid-cols-2 gap-8 items-center">
             <div class="text-center text-color-main text-[18px] font-manrope-ultra-light font-bold ml-32">
                 <!-- Faire une animation au click du bouton pour savoir qu'il est cliqué-->
-                <div class="flex items-center justify-center mb-4">
-                    <button onclick="displayDiv('cache');" class="text-color-main hover:text-sky-600">En savoir plus ...</button>
+                <div class="mb-4">
+                    <p class="text-color-main hover:text-sky-600 text-center">En savoir plus ...</p>
+                    <hr class="border-t w-[35%] mt-2 background-color-section mb-12 mx-auto">
                 </div>
-                <div id="cache" class="hidden">
-                    <!--le semi bold en class n'a pas d'effet-->
-                    <ul class="text-start">
-                        <li>Une page d'accueil</li>
-                        <li>Une page de présentation de mes projets avec un lien vers les sites</li>
-                        <li>Une page de contact</li>
-                    </ul>
-                </div>
+                <ul class="list-disc text-start">
+                    <li class="mb-2">Une page d'accueil</li>
+                    <li class="mb-2">Une page de présentation de mes projets avec un lien vers les sites</li>
+                    <li class="mb-2">Une page de contact</li>
+                </ul>
             </div>
             <div class="video-container mt-8 flex justify-center">
                 <img src="images/portfolio.png" alt="portfolio-code" width="520" height="400" class="portfolio">
@@ -86,7 +89,7 @@
         <div class="h-[500px] w-screen flex items-end justify-center">
             <div class="background-color-section h-[70%] w-[90%] flex flex-col items-center">
                 <p class="font-butler font-medium text-[48px] mt-24 mb-12 flex justify-center text-center text-color">Check it out !</p>
-                <button class="text-color-main background-color text-[24px] rounded-full h-[13%] w-[20%] hover:w-[25%] transition-all duration-300"><a href="https://github.com/alexarts74/portfolio">Portfolio</a></button>
+                <button class="text-color-main background-color text-[24px] rounded-full h-[13%] w-[20%] hover:w-[25%] transition-all duration-300"><a href="https://github.com/alexarts74/portfolio" target="_blank">Portfolio</a></button>
             </div>
         </div>
     </section>
@@ -131,17 +134,15 @@
         <div class="grid grid-cols-2 gap-8 items-center">
             <div class="text-center text-color-main text-[18px] font-manrope-ultra-light font-bold ml-32">
                 <!-- Faire une animation au click du bouton pour savoir qu'il est cliqué-->
-                <div class="flex items-center justify-center mb-4">
-                    <!--Ne marche pas en anglais-->
-                    <button onclick="displayDiv('cache-2');" class="text-color-main underline-animation">Find out more ...</button>
+                <div class="mb-4">
+                    <p class="text-color-main hover:text-sky-600 text-center">Find out more ...</p>
+                    <hr class="border-t w-[35%] mt-2 background-color-section mb-12 mx-auto">
                 </div>
-                <div id="cache-2" class="hidden">
-                    <ul class="text-start">
-                        <li>A homepage</li>
-                        <li>A project presentation page with a link to the sites</li>
-                        <li>A contact page</li>
-                    </ul>
-                </div>
+                <ul class="list-disc text-start">
+                    <li class="mb-2">A homepage</li>
+                    <li class="mb-2">A project presentation page with a link to the sites</li>
+                    <li class="mb-2">A contact page</li>
+                </ul>
             </div>
             <div class="video-container mt-8 flex justify-center">
                 <img src="images/portfolio.png" alt="portfolio-code" width="520" height="400" class="portfolio">
@@ -151,7 +152,7 @@
         <div class="h-[500px] w-screen flex items-end justify-center">
             <div class="background-color-section h-[70%] w-[90%] flex flex-col items-center">
                 <p class="font-butler font-medium text-[48px] mt-24 mb-12 flex justify-center text-center text-color">Check it out !</p>
-                <button class="text-color-main background-color text-[24px] rounded-full h-[13%] w-[20%] hover:w-[25%] transition-all duration-300"><a href="https://github.com/alexarts74/portfolio">Github Portfolio</a></button>
+                <button class="text-color-main background-color text-[24px] rounded-full h-[13%] w-[20%] hover:w-[25%] transition-all duration-300"><a href="https://github.com/alexarts74/portfolio" target="_blank">Github Portfolio</a></button>
             </div>
         </div>
     </section>
@@ -246,5 +247,65 @@
     .underline-animation:hover::before {
         transform: scaleX(1);
         transform-origin: bottom left;
+    }
+
+    .arrow-container {
+        position: absolute;
+        top: 75%;
+        left: 50%;
+        width: 100px;
+        height: 100px;
+        transform: translate(-50%, -50%) rotateZ(0deg);
+    }
+
+    .arrow-container:hover .arrow {
+        top: 50%;
+    }
+
+    .arrow-container:hover .arrow:before {
+        transform: translate(-50%, -50%) rotateZ(-30deg);
+    }
+
+    .arrow-container:hover .arrow:after {
+        transform: translate(-50%, -50%) rotateZ(30deg);
+    }
+
+    .arrow {
+        position: relative;
+        transition: all 0.4s ease;
+    }
+
+    .arrow:before,
+    .arrow:after {
+        transition: all 0.4s ease;
+        content: '';
+        display: block;
+        position: absolute;
+        transform-origin: bottom right;
+        background: #1a1818;
+        width: 4px;
+        height: 50px;
+        border-radius: 10px;
+        transform: translate(-50%, -50%) rotateZ(-45deg);
+    }
+
+    .arrow:after {
+        transform-origin: bottom left;
+        transform: translate(-50%, -50%) rotateZ(45deg);
+    }
+
+    .arrow:nth-child(1) {
+        opacity: 0.3;
+        top: calc(15% + (100% / 5));
+    }
+
+    .arrow:nth-child(2) {
+        opacity: 0.6;
+        top: calc(15% + (100% * 2 / 5));
+    }
+
+    .arrow:nth-child(3) {
+        opacity: 0.9;
+        top: calc(15% + (100% * 3 / 5));
     }
 </style>

@@ -24,10 +24,15 @@
             <div class="flex flex-grow items-center justify-center w-full">
                 <h1 class="font-butler font-medium text-[80px] text-center text-color">WorkAdventure</h1>
             </div>
+            <a href="#section-fr" class="arrow-container hover:cursor-pointer flex justify-center">
+                <div class="arrow cursor-default"></div>
+                <div class="arrow cursor-default"></div>
+                <div class="arrow cursor-default"></div>
+            </a>
         </div>
     </div>
 
-    <section class="fr">
+    <section class="fr" id="section-fr">
         <div class="w-[70%] mx-auto">
             <p class="font-butler font-medium text-[32px] mt-12 mb-24 flex justify-center text-center text-color-main">Intégration de la refonte graphique. Mise en place de script d'upload de map</p>
         </div>
@@ -66,17 +71,17 @@
         <div class="grid grid-cols-2 gap-8 items-center">
             <div class="text-center text-color-main text-[18px] font-manrope-ultra-light font-bold ml-32">
                 <!-- Faire une animation au click du bouton pour savoir qu'il est cliqué-->
-                <div class="flex items-center justify-center mb-4">
-                    <button onclick="displayDiv('cache-2');" class="text-color-main hover:text-sky-600">En savoir plus ...</button>
+                <div class="mb-4">
+                    <p class="text-color-main hover:text-sky-600 text-center">En savoir plus ...</p>
+                    <hr class="border-t w-[35%] mt-2 background-color-section mb-12 mx-auto">
                 </div>
-                <div id="cache-2" class="hidden">
                     <!--le semi bold en class n'a pas d'effet-->
-                    <ul class="text-start">
-                        <li class="point">Intégration des différents projets (gestion des caméras, intégration de cowebsite avec iframe, popup réactif...) de la refonte graphique en collaboration avec le designer</li>
-                        <li>Script permettant aux entreprises partenaires d'uploader et d'hoster leurs propres map intéractive en entrant une commande dans le terminal afin de simplifier au maximum l'expérience utilisateur.</li>
-                        <li>Réalisation de la documentation pour les différents projets (écris et vidéos en anglais)</li>
-                    </ul>
-                </div>
+                <ul class="list-disc text-start">
+                    <li class="mb-2">Intégration des différents projets (gestion des caméras, intégration de cowebsite avec iframe, popup réactif...) de la refonte graphique en collaboration avec le designer</li>
+                    <li class="mb-2">Script permettant aux entreprises partenaires d'uploader et d'hoster leurs propres map intéractive en entrant une commande dans le terminal afin de simplifier au maximum l'expérience utilisateur.</li>
+                    <li class="mb-2">Réalisation de la documentation pour les différents projets (écris et vidéos en anglais)</li>
+                    <li class="mb-2">Création d'une CI avec workflow github afin de vérifier le bon fonctionnement du script</li>
+                </ul>
             </div>
             <div class="video-container mt-8 flex justify-center">
                 <video class="mockup-the-surf-course" width="320" height="600" controls autoplay>
@@ -89,7 +94,7 @@
         <div class="h-[500px] w-screen flex items-end justify-center">
             <div class="background-color-section h-[70%] w-[90%] flex flex-col items-center">
                 <p class="font-butler font-medium text-[48px] mt-24 mb-12 flex justify-center text-center text-color">Check it out !</p>
-                <button class="text-color-main background-color text-[24px] rounded-full h-[13%] w-[20%] hover:w-[25%] transition-all duration-300"><a href="https://play.staging.workadventu.re/@/tcm/workadventure/wa-village">WorkAdventure</a></button>
+                <button class="text-color-main background-color text-[24px] rounded-full h-[13%] w-[20%] hover:w-[25%] transition-all duration-300"><a href="https://play.staging.workadventu.re/@/tcm/workadventure/wa-village" target="_blank">WorkAdventure</a></button>
             </div>
         </div>
     </section>
@@ -97,7 +102,7 @@
     <!-- Code pour anglais -->
     <section class="en" style="display: none;">
         <div class="w-[70%] mx-auto">
-            <p class="font-butler font-medium text-[32px] mt-12 mb-24 flex justify-center text-center text-color-main">The Surf Course is for surf enthusiasts who want to buy their gear but don't know where to start.</p>
+            <p class="font-butler font-medium text-[32px] mt-12 mb-24 flex justify-center text-center text-color-main">Integration of graphic redesign. Implementation of map upload script.</p>
         </div>
         <div class="container mx-auto text-color-main text-[18px] font-manrope-ultra-light font-bold">
             <div class="grid grid-cols-3 gap-8 mb-24">
@@ -110,20 +115,20 @@
                     <p>TECHNOLOGIES</p>
                     <hr class="border-t w-[35%] mt-2 mb-4 background-color-section">
                     <div class="ruby flex items-center gap-2">
-                        <p>Ruby on Rails</p>
-                        <img src="images/ruby.png" alt="logo-ruby" height="18px" width="20px">
+                        <p>Typescript</p>
+                        <img src="images/Typescript_logo_2020.svg.png" alt="logo-ruby" height="18px" width="20px">
                     </div>
                     <div class="javascript flex items-center gap-2">
-                        <p>Javascript</p>
-                        <img src="images/javascript.png" alt="logo-javascript" height="22px" width="42px">
+                        <p>Svelte</p>
+                        <img src="images/Logo Svelte.png" alt="logo-javascript" height="18px" width="18px">
                     </div>
                     <div class="sql flex items-center gap-2">
-                        <p>SQL</p>
-                        <img src="images/sql.png" alt="logo-sql" height="18px" width="42px">
+                        <p>Tailwind</p>
+                        <img src="images/Logo Tailwind.svg.png" alt="logo-sql" height="12px" width="24px">
                     </div>
                 </div>
                 <div class="flex flex-col items-center text-center">
-                    <p>GET YOUR BOARD</p>
+                    <p>SEE THE DESIGN</p>
                     <hr class="border-t w-[42%] mt-2 mb-4 background-color-section">
                     <a href="https://play.staging.workadventu.re/@/tcm/workadventure/wa-village" target="_blank" class="underline-animation">workadventure-staging.com</a>
                 </div>
@@ -134,15 +139,18 @@
         <div class="grid grid-cols-2 gap-8 items-center">
             <div class="text-center text-color-main text-[18px] font-manrope-ultra-light font-bold ml-32">
                 <!-- Faire une animation au click du bouton pour savoir qu'il est cliqué-->
-                <div class="flex items-center justify-center mb-4">
-                    <!--Ne marche pas en anglais-->
-                    <button onclick="displayDiv('cache');" class="text-color-main underline-animation">Find out more ...</button>
-                </div>
-                <div id="cache" class="hidden">
-                    <p>This project is based on a <strong class="font-semibold">algorithm for recommending wetsuits and surfboards based on the user's choice</strong>. With a database full of different surfing products, the results vary and provide the best solutions.</p>
-                    <p class="text-color-main text-[14px]">This version is adapted as a mobile version only (for now...)</p>
 
+                    <!--Ne marche pas en anglais-->
+                <div class="mb-4">
+                    <p class="text-color-main hover:text-sky-600 text-center">En savoir plus ...</p>
+                    <hr class="border-t w-[35%] mt-2 background-color-section mb-12 mx-auto">
                 </div>
+                <ul class="list-disc text-start">
+                    <li class="mb-2">Integration of various projects (camera management, integration of cowebsite with iframe, reactive popup...) for the graphic redesign in collaboration with the designer</li class="mb-2">
+                    <li class="mb-2">Script allowing partner companies to upload and host their own interactive map by entering a command in the terminal to simplify the user experience as much as possible.</li>
+                    <li class="mb-2">Creation of documentation for the various projects (written and video, in English)</li>
+                    <li class="mb-2">Setting up a CI with GitHub workflows to verify the proper functioning of the script</li>
+                </ul>
             </div>
             <div class="video-container mt-8 flex justify-center">
                 <video class="mockup-the-surf-course" width="320" height="600" controls autoplay>
@@ -155,7 +163,7 @@
         <div class="h-[500px] w-screen flex items-end justify-center">
             <div class="background-color-section h-[70%] w-[90%] flex flex-col items-center">
                 <p class="font-butler font-medium text-[48px] mt-24 mb-12 flex justify-center text-center text-color">Check it out !</p>
-                <button class="text-color-main background-color text-[24px] rounded-full h-[13%] w-[20%] hover:w-[25%] transition-all duration-300"><a href="https://play.staging.workadventu.re/@/tcm/workadventure/wa-village">WorkAdventure</a></button>
+                <button class="text-color-main background-color text-[24px] rounded-full h-[13%] w-[20%] hover:w-[25%] transition-all duration-300"><a href="https://play.staging.workadventu.re/@/tcm/workadventure/wa-village" target="_blank">WorkAdventure</a></button>
             </div>
         </div>
     </section>
@@ -250,5 +258,66 @@
     .underline-animation:hover::before {
         transform: scaleX(1);
         transform-origin: bottom left;
+    }
+
+    .arrow-container {
+        position: absolute;
+        top: 75%;
+        left: 50%;
+        width: 100px;
+        height: 100px;
+        transform: translate(-50%, -50%) rotateZ(0deg);
+    }
+
+    .arrow-container:hover .arrow {
+        top: 50%;
+    }
+
+    .arrow-container:hover .arrow:before {
+        transform: translate(-50%, -50%) rotateZ(-30deg);
+    }
+
+    .arrow-container:hover .arrow:after {
+        transform: translate(-50%, -50%) rotateZ(30deg);
+    }
+
+    .arrow {
+        position: relative;
+        transition: all 0.4s ease;
+    }
+
+    .arrow:before,
+    .arrow:after {
+        transition: all 0.4s ease;
+        content: '';
+        display: block;
+        position: absolute;
+        transform-origin: bottom right;
+        background: #1a1818;
+        width: 4px; /* arrow-line-width */
+        height: 50px; /* arrow-line-length */
+        border-radius: 10px;
+        transform: translate(-50%, -50%) rotateZ(-45deg);
+    }
+
+    .arrow:after {
+        transform-origin: bottom left;
+        transform: translate(-50%, -50%) rotateZ(45deg);
+    }
+
+    /* Arrow opacity and positioning */
+    .arrow:nth-child(1) {
+        opacity: 0.3;
+        top: calc(15% + (100% / 5));
+    }
+
+    .arrow:nth-child(2) {
+        opacity: 0.6;
+        top: calc(15% + (100% * 2 / 5));
+    }
+
+    .arrow:nth-child(3) {
+        opacity: 0.9;
+        top: calc(15% + (100% * 3 / 5));
     }
 </style>

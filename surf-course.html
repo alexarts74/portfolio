@@ -24,10 +24,16 @@
             <div class="flex flex-grow items-center justify-center w-full">
                 <h1 class="font-butler font-medium text-[80px] text-center text-color">The Surf Course</h1>
             </div>
+
+            <a href="#section-fr" class="arrow-container hover:cursor-pointer flex justify-center">
+                <div class="arrow cursor-default"></div>
+                <div class="arrow cursor-default"></div>
+                <div class="arrow cursor-default"></div>
+            </a>
         </div>
     </div>
 
-    <section class="fr">
+    <section class="fr" id="section-fr">
         <div class="w-[70%] mx-auto">
             <p class="font-butler font-medium text-[32px] mt-12 mb-24 flex justify-center text-center text-color-main">The Surf Course est destiné aux débutants adeptes du surf qui ont envie d'acheter leur matériel mais qui ne savent pas par où commencer.</p>
         </div>
@@ -66,14 +72,15 @@
         <div class="grid grid-cols-2 gap-8 items-center">
             <div class="text-center text-color-main text-[18px] font-manrope-ultra-light font-bold ml-32">
                 <!-- Faire une animation au click du bouton pour savoir qu'il est cliqué-->
-                <div class="flex items-center justify-center mb-4">
-                    <button onclick="displayDiv('cache');" class="text-color-main hover:text-sky-600">En savoir plus ...</button>
+                <div class="mb-4">
+                    <p class="text-color-main text-center">En savoir plus ...</p>
+                    <hr class="border-t w-[35%] mt-2 background-color-section mb-12 mx-auto">
                 </div>
-                <div id="cache" class="hidden text-start">
-                    <p>Ce projet est basé sur un <strong class="font-semibold">algorithme de recommandation de combinaisons et planches de surf en fonction du choix de l'utilisateur</strong>. Avec une base de données remplie de différents produits pour le surf, les résultats varient et permettent d'apporter les meilleures solutions.</p>
-                    <p class="text-color-main text-[14px]">Cette version est adaptée en version mobile uniquement (pour l'instant...)</p>
-
-                </div>
+                <ul class="list-disc text-start">
+                    <li class="mb-2">Ce projet est basé sur un <strong class="font-semibold">algorithme de recommandation de combinaisons et planches de surf en fonction du choix de l'utilisateur.</strong></li>
+                    <li class="mb-2">Avec une base de données remplie de différents produits pour le surf, les résultats varient et permettent d'apporter les meilleures solutions.</li>
+                    <li class="mb-2">Cette version est adaptée en version mobile uniquement (pour l'instant...)</li>
+                </ul>
             </div>
             <div class="video-container mt-8 flex justify-center">
                 <video class="mockup-the-surf-course" width="320" height="600" controls autoplay>
@@ -86,7 +93,7 @@
         <div class="h-[500px] w-screen flex items-end justify-center">
             <div class="background-color-section h-[70%] w-[90%] flex flex-col items-center">
                 <p class="font-butler font-medium text-[48px] mt-24 mb-12 flex justify-center text-center text-color">Check it out !</p>
-                <button class="text-color-main background-color text-[24px] rounded-full h-[13%] w-[20%] hover:w-[25%] transition-all duration-300"><a href="https://the-surf-course.one/">The-Surf-Course</a></button>
+                <button class="text-color-main background-color text-[24px] rounded-full h-[13%] w-[20%] hover:w-[25%] transition-all duration-300"><a href="https://the-surf-course.one/" target="_blank">The-Surf-Course</a></button>
             </div>
         </div>
     </section>
@@ -131,14 +138,15 @@
         <div class="grid grid-cols-2 gap-8 items-center">
             <div class="text-center text-color-main text-[18px] font-manrope-ultra-light font-bold ml-32">
                 <!-- Faire une animation au click du bouton pour savoir qu'il est cliqué-->
-                <div class="flex items-center justify-center mb-4">
-                    <button onclick="displayDiv('cache-2');" class="text-color-main hover:text-sky-600">Find out more ...</button>
+                <div class="mb-4">
+                    <p class="text-color-main text-center">Find out more ...</p>
+                    <hr class="border-t w-[35%] mt-2 background-color-section mb-12 mx-auto">
                 </div>
-                <div id="cache-2" class="hidden text-start">
-                    <p class="text-color-main">This project is based on a <strong class="font-semibold">algorithm for recommending wetsuits and surfboards based on the user's choice</strong>. With a database full of different surfing products, the results vary and provide the best solutions.</p>
-                    <p class="text-color-main text-[14px]">This version is adapted as a mobile version only (for now...)</p>
-
-                </div>
+                <ul class="list-disc text-start">
+                    <li class="mb-2">This project is based on a <strong class="font-semibold">recommendation algorithm for surfboard and wetsuit combinations based on user choices.</strong></li>
+                    <li class="mb-2">With a database filled with various surfing products, the results vary and provide the best solutions.</li>
+                    <li class="mb-2">This version is adapted for mobile use only (for now...)</li>
+                </ul>
             </div>
             <div class="video-container mt-8 flex justify-center">
                 <video class="mockup-the-surf-course" width="320" height="600" controls autoplay>
@@ -151,7 +159,7 @@
         <div class="h-[500px] w-screen flex items-end justify-center">
             <div class="background-color-section h-[70%] w-[90%] flex flex-col items-center">
                 <p class="font-butler font-medium text-[48px] mt-24 mb-12 flex justify-center text-center text-color">Check it out !</p>
-                <button class="text-color-main background-color text-[24px] rounded-full h-[13%] w-[20%] hover:w-[25%] transition-all duration-300"><a href="https://the-surf-course.one/">The-Surf-Course</a></button>
+                <button class="text-color-main background-color text-[24px] rounded-full h-[13%] w-[20%] hover:w-[25%] transition-all duration-300"><a href="https://the-surf-course.one/" target="_blank">The-Surf-Course</a></button>
             </div>
         </div>
     </section>
@@ -227,9 +235,9 @@
     }
 
     .underline-animation {
-            position: relative;
-            display: inline-block;
-            overflow: hidden;
+        position: relative;
+        display: inline-block;
+        overflow: hidden;
     }
     .underline-animation::before {
         content: '';
@@ -250,5 +258,66 @@
 
     .block {
         display: block;
+    }
+
+    .arrow-container {
+        position: absolute;
+        top: 75%;
+        left: 50%;
+        width: 100px;
+        height: 100px;
+        transform: translate(-50%, -50%) rotateZ(0deg);
+    }
+
+    .arrow-container:hover .arrow {
+        top: 50%;
+    }
+
+    .arrow-container:hover .arrow:before {
+        transform: translate(-50%, -50%) rotateZ(-30deg);
+    }
+
+    .arrow-container:hover .arrow:after {
+        transform: translate(-50%, -50%) rotateZ(30deg);
+    }
+
+    .arrow {
+        position: relative;
+        transition: all 0.4s ease;
+    }
+
+    .arrow:before,
+    .arrow:after {
+        transition: all 0.4s ease;
+        content: '';
+        display: block;
+        position: absolute;
+        transform-origin: bottom right;
+        background: #1a1818;
+        width: 4px; /* arrow-line-width */
+        height: 50px; /* arrow-line-length */
+        border-radius: 10px;
+        transform: translate(-50%, -50%) rotateZ(-45deg);
+    }
+
+    .arrow:after {
+        transform-origin: bottom left;
+        transform: translate(-50%, -50%) rotateZ(45deg);
+    }
+
+    /* Arrow opacity and positioning */
+    .arrow:nth-child(1) {
+        opacity: 0.3;
+        top: calc(15% + (100% / 5));
+    }
+
+    .arrow:nth-child(2) {
+        opacity: 0.6;
+        top: calc(15% + (100% * 2 / 5));
+    }
+
+    .arrow:nth-child(3) {
+        opacity: 0.9;
+        top: calc(15% + (100% * 3 / 5));
     }
 </style>

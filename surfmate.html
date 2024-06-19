@@ -9,7 +9,7 @@
   <title>SurfMate</title>
 </head>
 
-<body class="background-color" onload="applyLanguagePreference()">
+<body class="background-color scroll-smooth" onload="applyLanguagePreference()">
     <div class="h-screen w-screen flex items-start justify-center">
         <div class="background-color-section h-[90%] w-[90%] flex flex-col items-center">
             <ul class="flex justify-between w-[90%] mt-4">
@@ -24,10 +24,15 @@
             <div class="flex flex-grow items-center justify-center w-full">
                 <h1 class="font-butler font-medium text-[80px] text-center text-color">SurfMate</h1>
             </div>
+            <a href="#section-fr" class="arrow-container hover:cursor-pointer flex justify-center">
+                <div class="arrow cursor-default"></div>
+                <div class="arrow cursor-default"></div>
+                <div class="arrow cursor-default"></div>
+            </a>
         </div>
     </div>
 
-    <section class="fr">
+    <section class="fr" id="section-fr">
         <div class="w-[70%] mx-auto">
             <p class="font-butler font-medium text-[32px] mt-12 mb-24 flex justify-center text-center text-color-main">Application mobile en réalisation mettant en relation des personnes passionnées de surf</p>
         </div>
@@ -66,17 +71,15 @@
         <div class="grid grid-cols-2 gap-8 items-center mt-[156px] mb-12">
             <div class="text-center text-color-main text-[18px] font-manrope-ultra-light font-bold ml-32">
                 <!-- Faire une animation au click du bouton pour savoir qu'il est cliqué-->
-                <div class="flex items-center justify-center mb-4">
-                    <button onclick="displayDiv('cache');" class="text-color-main hover:text-sky-600">En savoir plus ...</button>
+                <div class="mb-4">
+                    <p class="text-color-main hover:text-sky-600 text-center">En savoir plus ...</p>
+                    <hr class="border-t w-[35%] mt-2 background-color-section mb-12 mx-auto">
                 </div>
-                <div id="cache" class="hidden">
-                    <!--le semi bold en class n'a pas d'effet-->
-                    <ul class="text-start">
-                        <li>Un surfeur pourra proposer des sessions (date / lieu ...)</li>
-                        <li>Visibilité de sessions proche de chez soi</li>
-                        <li>Possibilité de rentrer en contact avec l'administrateur de la session</li>
-                    </ul>
-                </div>
+                <ul class="list-disc text-start">
+                    <li class="mb-2">Un surfeur pourra proposer des sessions (date / lieu ...)</li>
+                    <li class="mb-2">Visibilité de sessions proche de chez soi</li>
+                    <li class="mb-2">Possibilité de rentrer en contact avec l'administrateur de la session</li>
+                </ul>
             </div>
             <div class="left-col-2 col-loader">
                 <div class="reveal-test reveal-visible-test">
@@ -137,17 +140,15 @@
         <div class="grid grid-cols-2 gap-8 items-center mt-[156px] mb-12">
             <div class="text-center text-color-main text-[18px] font-manrope-ultra-light font-bold ml-32">
                 <!-- Faire une animation au click du bouton pour savoir qu'il est cliqué-->
-                <div class="flex items-center justify-center mb-4">
-                    <button onclick="displayDiv('cache-2');" class="text-color-main hover:text-sky-600">Find out more ...</button>
+                <div class="mb-4">
+                    <p class="text-color-main hover:text-sky-600 text-center">Find out more ...</p>
+                    <hr class="border-t w-[35%] mt-2 background-color-section mb-12 mx-auto">
                 </div>
-                <div id="cache-2" class="hidden">
-                    <!--le semi bold en class n'a pas d'effet-->
-                    <ul class="text-start">
-                        <li>A surfer can propose sessions (date/location ...)</li>
-                        <li>Visibility of sessions near one's location</li>
-                        <li>Ability to contact the session administrator</li>
-                    </ul>
-                </div>
+                <ul class="list-disc text-start">
+                    <li class="mb-2">A surfer can propose sessions (date/location ...)</li>
+                    <li class="mb-2">Visibility of sessions near one's location</li>
+                    <li class="mb-2">Ability to contact the session administrator</li>
+                </ul>
             </div>
             <div class="left-col-2 col-loader">
                 <div class="reveal-test reveal-visible-test">
@@ -289,6 +290,67 @@
     .hover-disabled:hover {
         background-color: #4b4b4b;
         cursor: not-allowed;
+    }
+
+    .arrow-container {
+        position: absolute;
+        top: 75%;
+        left: 50%;
+        width: 100px;
+        height: 100px;
+        transform: translate(-50%, -50%) rotateZ(0deg);
+    }
+
+    .arrow-container:hover .arrow {
+        top: 50%;
+    }
+
+    .arrow-container:hover .arrow:before {
+        transform: translate(-50%, -50%) rotateZ(-30deg);
+    }
+
+    .arrow-container:hover .arrow:after {
+        transform: translate(-50%, -50%) rotateZ(30deg);
+    }
+
+    .arrow {
+        position: relative;
+        transition: all 0.4s ease;
+    }
+
+    .arrow:before,
+    .arrow:after {
+        transition: all 0.4s ease;
+        content: '';
+        display: block;
+        position: absolute;
+        transform-origin: bottom right;
+        background: #1a1818;
+        width: 4px; /* arrow-line-width */
+        height: 50px; /* arrow-line-length */
+        border-radius: 10px;
+        transform: translate(-50%, -50%) rotateZ(-45deg);
+    }
+
+    .arrow:after {
+        transform-origin: bottom left;
+        transform: translate(-50%, -50%) rotateZ(45deg);
+    }
+
+    /* Arrow opacity and positioning */
+    .arrow:nth-child(1) {
+        opacity: 0.3;
+        top: calc(15% + (100% / 5));
+    }
+
+    .arrow:nth-child(2) {
+        opacity: 0.6;
+        top: calc(15% + (100% * 2 / 5));
+    }
+
+    .arrow:nth-child(3) {
+        opacity: 0.9;
+        top: calc(15% + (100% * 3 / 5));
     }
 
 </style>
