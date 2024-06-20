@@ -74,3 +74,8 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+document.getElementById('burger-menu').addEventListener('click', function() {
+    const menu = document.getElementById('burger-menu-content');
+    menu.classList.toggle('hidden');
+});
