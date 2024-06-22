@@ -7,36 +7,55 @@
   <link rel="icon" href="images/favicon.png">
   <title>Contact</title>
 </head>
-<body class="background-color" onload="applyLanguagePreference()">
+<body class="background-color overflow-x-hidden" onload="applyLanguagePreference()">
     <div class="h-screen w-screen flex items-start justify-center">
         <div class="h-[100%] w-[90%] flex flex-col items-center">
-            <ul class="flex text-color-main justify-between w-[90%] mt-4">
-                <li class="underline-animation"><a href="index.html" class="font-butler font-medium text-[24px]">Home</a></li>
-                <li class="underline-animation"><a href="surf-course.html" class="font-butler font-medium text-[24px]">The Surf Course</a></li>
-                <li class="underline-animation"><a href="tudo-bem-maman.html" class="font-butler font-medium text-[24px]">Tudo Bem Maman</a></li>
-                <li class="underline-animation"><a href="portfolio.html" class="font-butler font-medium text-[24px]">Portfolio</a></li>
-                <li class="underline-animation"><a href="surfmate.html" class="font-butler font-medium text-[24px]">SurfMate</a></li>
-                <li class="underline-animation"><a href="workadventure.html" class="font-butler font-medium text-[24px]">WorkAdventure</a></li>
-                <li class="underline-animation"><a href="contact.html" class="font-butler font-medium text-[24px]">Contact</a></li>
-            </ul>
+            <div class="flex justify-end md:hidden p-4">
+                <button id="burger-menu" class="text-color-main">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+            <nav class="w-full flex justify-center overflow-y-hidden">
+                <ul class="hidden md:flex justify-between w-[90%] mt-4 text-color-main">
+                  <li class="underline-animation"><a href="index.html" class="font-butler font-medium md:text-[18px] lg:text-[24px] text-color-main">Home</a></li>
+                  <li class="underline-animation"><a href="surf-course.html" class="font-butler font-medium md:text-[18px] lg:text-[24px] text-color-main">The Surf Course</a></li>
+                  <li class="underline-animation"><a href="tudo-bem-maman.html" class="font-butler font-medium md:text-[18px] lg:text-[24px] text-color-main">Tudo Bem Maman</a></li>
+                  <li class="underline-animation"><a href="portfolio.html" class="font-butler font-medium md:text-[18px] lg:text-[24px] text-color-main">Portfolio</a></li>
+                  <li class="underline-animation"><a href="workadventure.html" class="font-butler font-medium md:text-[18px] lg:text-[24px] text-color-main">WorkAdventure</a></li>
+                  <li class="underline-animation"><a href="surfmate.html" class="font-butler font-medium md:text-[18px] lg:text-[24px] text-color-main">SurfMate</a></li>
+                  <li class="underline-animation"><a href="others-projects.html" class="font-butler font-medium md:text-[18px] lg:text-[24px] text-color-main">Others Projects</a></li>
+                </ul>
+                <!-- Burger Menu Content -->
+                <ul id="burger-menu-content" class="absolute top-[5%] left-[5%] right-[5%] background-color flex-col hidden md:hidden mt-8 px-2 py-1 rounded-md text-center">
+                  <li class="underline-animation"><a href="index.html" class="block p-2 font-butler font-medium text-color-main">Home</a></li>
+                  <li class="underline-animation"><a href="surf-course.html" class="block p-2 font-butler font-medium text-color-main">The Surf Course</a></li>
+                  <li class="underline-animation"><a href="tudo-bem-maman.html" class="block p-2 font-butler font-medium text-color-main">Tudo Bem Maman</a></li>
+                  <li class="underline-animation"><a href="portfolio.html" class="block p-2 font-butler font-medium text-color-main">Portfolio</a></li>
+                  <li class="underline-animation"><a href="workadventure.html" class="block p-2 font-butler font-medium text-color-main">WorkAdventure</a></li>
+                  <li class="underline-animation"><a href="surfmate.html" class="block p-2 font-butler font-medium text-color-main">SurfMate</a></li>
+                  <li class="underline-animation"><a href="others-projects.html" class="block p-2 font-butler font-medium text-color-main">Others Projects</a></li>
+                </ul>
+              </nav>
 
-            <div class="flex flex-grow items-center justify-around w-full">
+            <div class="mt-40 md:mt-0 md:flex md:flex-grow items-center justify-around w-full">
                 <div class="block">
-                    <h1 class="font-butler font-medium text-[124px] text-center text-color-main">Contact.</h1>
-                    <hr class="border-t w-[42%] mt-[-32px] background-color-section">
+                    <h1 class="font-butler font-medium text-[48px] md:text-[124px] text-center text-color-main">Contact.</h1>
+                    <hr class="border-t w-[42%] mt-[-12px] mx-auto md:mx-0 md:mt-[-32px] background-color-section">
                 </div>
                 <section>
                     <div class="container mx-auto text-color-main text-[18px] font-manrope-ultra-light font-bold">
-                        <div class="flex justify-around gap-24">
-                            <div class="flex flex-col items-center text-center">
+                        <div class="md:flex justify-around gap-24">
+                            <div class="flex flex-col items-center text-center mt-20 md:mt-0">
                                 <p>GITHUB</p>
                                 <a href="https://github.com/alexarts74"><img src="images/github-mark-white.png" alt="github-logo" height="72px" width="54px"></a>
                             </div>
-                            <div class="flex flex-col items-center text-center">
+                            <div class="flex flex-col items-center mt-20 md:mt-0 text-center">
                                 <p>MAIL</p>
                                 <a href="mailto:artusalexandre74@gmail.com"><img src="images/gmail-logo.png" alt="logo-linkedin" height="48px" width="62px" class="gmail-logo"></a>
                             </div>
-                            <div class="flex flex-col items-center text-center">
+                            <div class="flex flex-col items-center mt-20 md:mt-0 text-center">
                                 <p>LINKEDIN</p>
                                 <a href="https://www.linkedin.com/in/alexandre-artus-27a71b1a4/"><img src="images/logo-linkedin.png" alt="logo-linkedin" height="48px" width="62px"></a>
                             </div>

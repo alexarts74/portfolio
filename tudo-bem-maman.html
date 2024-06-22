@@ -9,22 +9,41 @@
   <title>Tudo Bem Maman</title>
 </head>
 
-<body class="background-color" onload="applyLanguagePreference()">
+<body class="background-color overflow-x-hidden" onload="applyLanguagePreference()">
     <div class="h-screen w-screen flex items-start justify-center">
-        <div class="background-color-section h-[90%] w-[90%] flex flex-col items-center">
-            <ul class="flex justify-between w-[90%] mt-4">
-                <li class="underline-animation"><a href="index.html" class="font-butler font-medium text-[24px]">Home</a></li>
-                <li class="underline-animation"><a href="surf-course.html" class="font-butler font-medium text-[24px]">The Surf Course</a></li>
-                <li class="underline-animation"><a href="workadventure.html" class="font-butler font-medium text-[24px]">WorkAdventure</a></li>
-                <li class="underline-animation"><a href="portfolio.html" class="font-butler font-medium text-[24px]">Portfolio</a></li>
-                <li class="underline-animation"><a href="surfmate.html" class="font-butler font-medium text-[24px]">SurfMate</a></li>
-                <li class="underline-animation"><a href="others-projects.html" class="font-butler font-medium text-[24px]">Others Projects</a></li>
-                <li class="underline-animation"><a href="contact.html" class="font-butler font-medium text-[24px]">Contact</a></li>
-            </ul>
-            <div class="flex flex-grow items-center justify-center w-full">
-                <h1 class="font-butler font-medium text-[80px] text-center text-color">Tudo Bem Maman</h1>
+        <div class="background-color-section h-[90%] w-[90%] flex flex-col items-center overflow-y-hidden">
+            <div class="flex justify-end md:hidden p-4">
+                <button id="burger-menu" class="text-black">
+                  <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                  </svg>
+                </button>
+              </div>
+              <!-- Navigation Menu -->
+              <nav class="w-full flex justify-center overflow-y-hidden">
+                <ul class="hidden md:flex justify-between w-[90%] mt-4">
+                  <li class="underline-animation"><a href="index.html" class="font-butler font-medium md:text-[18px] lg:text-[24px]">Home</a></li>
+                  <li class="underline-animation"><a href="workadventure.html" class="font-butler font-medium md:text-[18px] lg:text-[24px]">WorkAdventure</a></li>
+                  <li class="underline-animation"><a href="surf-course.html" class="font-butler font-medium md:text-[18px] lg:text-[24px]">The Surf Course</a></li>
+                  <li class="underline-animation"><a href="portfolio.html" class="font-butler font-medium md:text-[18px] lg:text-[24px]">Portfolio</a></li>
+                  <li class="underline-animation"><a href="surfmate.html" class="font-butler font-medium md:text-[18px] lg:text-[24px]">SurfMate</a></li>
+                  <li class="underline-animation"><a href="others-projects.html" class="font-butler font-medium md:text-[18px] lg:text-[24px]">Others Projects</a></li>
+                  <li class="underline-animation"><a href="contact.html" class="font-butler font-medium md:text-[18px] lg:text-[24px]">Contact</a></li>
+                </ul>
+                <!-- Burger Menu Content -->
+                <ul id="burger-menu-content" class="absolute top-[5%] left-[5%] right-[5%] background-color-section flex-col hidden md:hidden mt-8 px-2 py-1 rounded-md text-center">
+                  <li class="underline-animation"><a href="index.html" class="block p-2 font-butler font-medium">Home</a></li>
+                  <li class="underline-animation"><a href="workadventure.html" class="block p-2 font-butler font-medium">WorkAdventure</a></li>
+                  <li class="underline-animation"><a href="surf-course.html" class="block p-2 font-butler font-medium">The Surf Course</a></li>
+                  <li class="underline-animation"><a href="portfolio.html" class="block p-2 font-butler font-medium">Portfolio</a></li>
+                  <li class="underline-animation"><a href="surfmate.html" class="block p-2 font-butler font-medium">SurfMate</a></li>
+                  <li class="underline-animation"><a href="others-projects.html" class="block p-2 font-butler font-medium">Others Projects</a></li>
+                  <li class="underline-animation"><a href="contact.html" class="block p-2 font-butler font-medium">Contact</a></li>
+                </ul>
+              </nav>
+            <div class="flex flex-grow items-center justify-center mb-[75px] md:mb-0 lg:mb-0 w-full">
+                <h1 class="font-butler font-medium text-[48px] md:text-[80px] lg:text-[80px] text-center text-color">Tudo Bem Maman</h1>
             </div>
-
             <a href="#section-fr" class="arrow-container hover:cursor-pointer flex justify-center">
                 <div class="arrow cursor-default"></div>
                 <div class="arrow cursor-default"></div>
@@ -35,33 +54,33 @@
 
     <section class="fr" id="section-fr">
         <div class="w-[70%] mx-auto">
-            <p class="font-butler font-medium text-[32px] mt-12 mb-24 flex justify-center text-center text-color-main">Création d'une boutique en ligne de vêtements</p>
+            <p class="font-butler font-medium text-[32px] mt-12 mb-24 flex justify-center text-center text-color-main">Création d'une boutique en ligne de vêtements.</p>
         </div>
         <div class="container mx-auto text-color-main text-[18px] font-manrope-ultra-light font-bold">
-            <div class="grid grid-cols-3 gap-8 mb-24">
-                <div class="flex flex-col items-center text-center">
+            <div class="md:grid md:grid-cols-3 gap-8 mb-24">
+                <div class="flex flex-col items-center mb-20 md:mb-0 text-center">
                     <p>ROLE</p>
                     <hr class="border-t w-[13%] mt-2 mb-4 background-color-section">
                     <p>Développement back-end et front-end</p>
                 </div>
-                <div class="flex flex-col items-center text-center">
+                <div class="flex flex-col items-center mb-20 md:mb-0 text-center">
                     <p>TECHNOLOGIES</p>
                     <hr class="border-t w-[35%] mt-2 mb-4 background-color-section">
                     <div class="ruby flex items-center gap-2">
-                        <p>Ruby on Rails</p>
-                        <img src="images/ruby.png" alt="logo-ruby" height="18px" width="20px">
+                        <p>Ruby On Rails</p>
+                        <img src="images/Typescript_logo_2020.svg.png" alt="logo-ruby" height="18px" width="20px">
                     </div>
                     <div class="javascript flex items-center gap-2">
                         <p>Javascript</p>
-                        <img src="images/javascript.png" alt="logo-javascript" height="22px" width="42px">
+                        <img src="images/Logo Svelte.png" alt="logo-javascript" height="18px" width="18px">
                     </div>
                     <div class="sql flex items-center gap-2">
                         <p>SQL</p>
-                        <img src="images/sql.png" alt="logo-sql" height="18px" width="42px">
+                        <img src="images/Logo Tailwind.svg.png" alt="logo-sql" height="12px" width="24px">
                     </div>
                 </div>
                 <div class="flex flex-col items-center text-center">
-                    <p>SHOP SOME CLOTHES</p>
+                    <p>SHOP YOUR CLOTHES</p>
                     <hr class="border-t w-[42%] mt-2 mb-4 background-color-section">
                     <a href="https://tudobemmaman.herokuapp.com/" target="_blank" class="hover:text-sky-600">tudo-bem-maman.com</a>
                 </div>
@@ -69,10 +88,10 @@
         </div>
 
 
-        <div class="grid grid-cols-2 gap-8 items-center">
-            <div class="text-center text-color-main text-[18px] font-manrope-ultra-light font-bold ml-32">
+        <div class="flex flex-col-reverse md:grid md:grid-cols-2 gap-8 items-center">
+            <div class="text-center text-color-main text-[18px] font-manrope-ultra-light font-bold ml-16 mr-12 md:ml-32 md:mr-0">
                 <div class="mb-4">
-                    <p class="text-color-main text-center">En savoir plus ...</p>
+                    <p class="text-color-main hover:text-sky-600 text-center">En savoir plus ...</p>
                     <hr class="border-t w-[35%] mt-2 background-color-section mb-12 mx-auto">
                 </div>
                 <ul class="list-disc text-start">
@@ -81,9 +100,10 @@
                     <li class="mb-2">Possibilité <span class="font-manrope-medium">d'ajouter des articles au panier avant de faire une commande de groupe.</span></li>
                 </ul>
             </div>
-            <div class="video-container mt-8 flex justify-center">
-                <video class="mockup-tudobemmaman" width="520" height="400" controls autoplay>
+            <div class="video-container md:mt-8 mt-[-72] flex justify-center">
+                <video class="mockup-the-surf-course" width="520" height="350" controls autoplay>
                     <source src="videos/mockup-tudobemmaman.mp4" type="video/mp4">
+                    Error Message
                 </video>
             </div>
         </div>
@@ -91,7 +111,7 @@
         <div class="h-[500px] w-screen flex items-end justify-center">
             <div class="background-color-section h-[70%] w-[90%] flex flex-col items-center">
                 <p class="font-butler font-medium text-[48px] mt-24 mb-12 flex justify-center text-center text-color">Check it out !</p>
-                <button class="text-color-main background-color text-[24px] rounded-full h-[13%] w-[20%] hover:w-[25%] transition-all duration-300"><a href="https://tudobemmaman.herokuapp.com/" target="_blank">tudo-bem-maman.com</a></button>
+                <button class="text-color-main background-color text-[24px] rounded-full w-[60%] h-[13%] md:w-[20%] hover:w-[25%] transition-all duration-300"><a href="https://tudobemmaman.herokuapp.com/" target="_blank">Tudo Bem Maman</a></button>
             </div>
         </div>
     </section>
@@ -99,63 +119,65 @@
     <!-- Code pour anglais -->
     <section class="en" style="display: none;">
         <div class="w-[70%] mx-auto">
-            <p class="font-butler font-medium text-[32px] mt-12 mb-24 flex justify-center text-center text-color-main">Creation of an online clothing shop</p>
+            <p class="font-butler font-medium text-[32px] mt-12 mb-24 flex justify-center text-center text-color-main">Creation of an online clothing store.</p>
         </div>
         <div class="container mx-auto text-color-main text-[18px] font-manrope-ultra-light font-bold">
-            <div class="grid grid-cols-3 gap-8 mb-24">
-                <div class="flex flex-col items-center text-center">
+            <div class="md:grid md:grid-cols-3 gap-8 mb-24">
+                <div class="flex flex-col items-center mb-20 md:mb-0 text-center">
                     <p>ROLE</p>
                     <hr class="border-t w-[13%] mt-2 mb-4 background-color-section">
                     <p>Back-end and front-end development</p>
                 </div>
-                <div class="flex flex-col items-center text-center">
+                <div class="flex flex-col items-center mb-20 md:mb-0 text-center">
                     <p>TECHNOLOGIES</p>
                     <hr class="border-t w-[35%] mt-2 mb-4 background-color-section">
                     <div class="ruby flex items-center gap-2">
-                        <p>Ruby on Rails</p>
-                        <img src="images/ruby.png" alt="logo-ruby" height="18px" width="20px">
+                        <p>Ruby On Rails</p>
+                        <img src="images/Typescript_logo_2020.svg.png" alt="logo-ruby" height="18px" width="20px">
                     </div>
                     <div class="javascript flex items-center gap-2">
-                        <p>Javascript</p>
-                        <img src="images/javascript.png" alt="logo-javascript" height="22px" width="42px">
+                        <p>JavaScript</p>
+                        <img src="images/Logo Svelte.png" alt="logo-javascript" height="18px" width="18px">
                     </div>
                     <div class="sql flex items-center gap-2">
                         <p>SQL</p>
-                        <img src="images/sql.png" alt="logo-sql" height="18px" width="42px">
+                        <img src="images/Logo Tailwind.svg.png" alt="logo-sql" height="12px" width="24px">
                     </div>
                 </div>
                 <div class="flex flex-col items-center text-center">
-                    <p>SHOP SOME CLOTHES</p>
+                    <p>SHOP YOUR CLOTHES</p>
                     <hr class="border-t w-[42%] mt-2 mb-4 background-color-section">
-                    <a href="https://tudobemmaman.herokuapp.com/" target="_blank" class="underline-animation">tudo-bem-maman.com</a>
+                    <a href="https://tudobemmaman.herokuapp.com/" target="_blank" class="hover:text-sky-600">tudo-bem-maman.com</a>
                 </div>
             </div>
         </div>
 
-
-        <div class="grid grid-cols-2 gap-8 items-center">
-            <div class="text-center text-color-main text-[18px] font-manrope-ultra-light font-bold ml-32">
+        <div class="flex flex-col-reverse md:grid md:grid-cols-2 gap-8 items-center">
+            <div class="text-center text-color-main text-[18px] font-manrope-ultra-light font-bold ml-16 mr-12 md:ml-32 md:mr-0">
                 <div class="mb-4">
-                    <p class="text-color-main text-center">Find out more ...</p>
+                    <p class="text-color-main hover:text-sky-600 text-center">Learn more ...</p>
                     <hr class="border-t w-[35%] mt-2 background-color-section mb-12 mx-auto">
                 </div>
                 <ul class="list-disc text-start">
-                    <li class="mb-2">Option <span class="font-manrope-medium">to purchase online via Stripe.</span></li>
-                    <li class="mb-2">Option <span class="font-manrope-medium">exclusively for the administrator to manage their collections</span> directly on the site and have a <span class="font-manrope-medium">dashboard with all sales information.</span></li>
-                    <li class="mb-2">Option <span class="font-manrope-medium">to add items to the cart before placing a group order.</span></li>
+                    <li class="mb-2">Ability to <span class="font-manrope-medium">purchase online via Stripe.</span></li>
+                    <li class="mb-2">Ability for the <span class="font-manrope-medium">administrator to manage their collections</span> directly on the site and have a <span class="font-manrope-medium">dashboard with all the sales information.</span></li>
+                    <li class="mb-2">Ability to <span class="font-manrope-medium">add items to the cart before making a group order.</span></li>
                 </ul>
             </div>
-            <div class="video-container mt-8 flex justify-center">
-                <video class="mockup-tudobemmaman" width="520" height="400" controls autoplay>
+            <div class="video-container md:mt-8 mt-[-72] flex justify-center">
+                <video class="mockup-the-surf-course" width="520" height="350" controls autoplay>
                     <source src="videos/mockup-tudobemmaman.mp4" type="video/mp4">
+                    Error Message
                 </video>
             </div>
         </div>
 
         <div class="h-[500px] w-screen flex items-end justify-center">
             <div class="background-color-section h-[70%] w-[90%] flex flex-col items-center">
-                <p class="font-butler font-medium text-[48px] mt-24 mb-12 flex justify-center text-center text-color">Check it out !</p>
-                <button class="text-color-main background-color text-[24px] rounded-full h-[13%] w-[20%] hover:w-[25%] transition-all duration-300"><a href="https://tudobemmaman.herokuapp.com/" target="_blank">Tudo Bem Maman</a></button>
+                <p class="font-butler font-medium text-[48px] mt-24 mb-12 flex justify-center text-center text-color">Check it out!</p>
+                <button class="text-color-main background-color text-[24px] rounded-full w-[60%] h-[13%] md:w-[20%] hover:w-[25%] transition-all duration-300">
+                    <a href="https://tudobemmaman.herokuapp.com/" target="_blank">Tudo Bem Maman</a>
+                </button>
             </div>
         </div>
     </section>
