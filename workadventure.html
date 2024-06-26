@@ -19,7 +19,6 @@
                   </svg>
                 </button>
               </div>
-              <!-- Navigation Menu -->
               <nav class="w-full flex justify-center overflow-y-hidden">
                 <ul class="hidden md:flex justify-between w-[90%] mt-4">
                   <li class="underline-animation"><a href="index.html" class="font-butler font-medium md:text-[18px] lg:text-[24px]">Home</a></li>
@@ -30,7 +29,6 @@
                   <li class="underline-animation"><a href="others-projects.html" class="font-butler font-medium md:text-[18px] lg:text-[24px]">Others Projects</a></li>
                   <li class="underline-animation"><a href="contact.html" class="font-butler font-medium md:text-[18px] lg:text-[24px]">Contact</a></li>
                 </ul>
-                <!-- Burger Menu Content -->
                 <ul id="burger-menu-content" class="absolute top-[5%] left-[5%] right-[5%] background-color-section flex-col hidden md:hidden mt-8 px-2 py-1 rounded-md text-center">
                   <li class="underline-animation"><a href="index.html" class="block p-2 font-butler font-medium">Home</a></li>
                   <li class="underline-animation"><a href="surf-course.html" class="block p-2 font-butler font-medium">The Surf Course</a></li>
@@ -90,7 +88,7 @@
         <div class="text-color-main w-[80%] font-manrope-ultra-light text-[18px] mx-auto">
             <div class="mb-4">
                 <p class="text-color-main hover:text-sky-600 text-center">En savoir plus ...</p>
-                <hr class="border-t w-[15%] mt-2 background-color-section mb-12 mx-auto">
+                <hr class="border-t w-[50%] md:w-[15%] mt-2 background-color-section mb-12 mx-auto">
             </div>
             <ul class="list-disc text-left">
                 <li class="mb-2"><span class="font-manrope-medium">Intégration des différents projets</span> (gestion des caméras, intégration de cowebsite avec iframe, popup réactif...) de la refonte graphique en collaboration avec le designer</li>
@@ -102,42 +100,55 @@
         <div class="flex flex-col-reverse items-center mt-24">
             <div class="text-center text-color-main text-[18px] font-manrope-ultra-light font-bold ml-16 mr-12 md:ml-32 md:mr-0">
             </div>
-            <div class="video-container md:mt-8 mt-[-72] justify-center">
-                <div class="md:flex gap-24 mb-12">
-                    <video class="scale-90 md:scale-100 " width="520" height="350" controls autoplay>
-                        <source src="videos/ancien-cam.mp4" type="video/mp4">
-                    </video>
-                    <figcaption class="text-center mb-8 md:mb-0 text-color-main">Ancien design et gestion des caméras</figcaption>
-                    <img src="images/arrow-down.png" alt="arrow-down" class="mx-auto w-[56px] h-[72px] mb-8">
-                    <video class="scale-90 md:scale-100 " width="520" height="350" controls>
-                        <source src="videos/ancien-cowebsite.mp4" type="video/mp4">
-                    </video>
-                    <figcaption class="text-center text-color-main mb-12 md:mb-0">Nouveau design et gestion des caméras</figcaption>
-                </div>
-                <hr class="border-t w-[50%] mt-2 background-color-section mb-12 mx-auto">
-                <div class="md:flex gap-24">
-                    <figure class="scale-90 md:scale-100 mb-8 md:mb-0">
-                        <video width="520" height="350" controls>
-                            <source src="videos/new-cam-2.mp4" type="video/mp4">
+            <div class="video-container md:mt-8 mt-[-72] flex flex-col items-center"  id="container-video">
+                <div class="md:flex md:flex-row gap-24 mb-12">
+                    <div class="md:block">
+                        <video class="scale-90 md:scale-100" width="520" height="350" controls autoplay>
+                            <source src="videos/Mockup ancien cam.mp4" type="video/mp4">
                         </video>
-                        <figcaption class="text-center text-color-main">Ancien design et fonctionnement des cowebsites</figcaption>
-                    </figure>
-                    <img src="images/arrow-down.png" alt="arrow-down" class="mx-auto w-[56px] h-[72px] mb-8">
-                    <figure class="scale-90 md:scale-100">
+                        <figcaption class="text-center mb-8 md:mb-0 text-color-main">Ancien design et gestion des caméras</figcaption>
+                    </div>
+                    <!-- Mettre animation apparition au scroll fonction déjà dans le javascript-->
+                    <div class="flex items-center h-30vh relative mt-4 justify-center md:-rotate-90 md:flex md:items-center md:justify-center md:mr-16 md:h-10vh md:relative md:ml-0 arrow-animation reveal-hidden" id="chevron-1">
+                        <div class="chevron"></div>
+                        <div class="chevron"></div>
+                        <div class="chevron"></div>
+                    </div>
+                    <figure class="scale-90 md:scale-100 mt-24 md:mt-0 md:mb-0">
                         <video width="520" height="350" controls>
-                            <source src="videos/nouveau-cowebsite.mp4" type="video/mp4">
+                            <source src="videos/mockup-new cam-good.mp4" type="video/mp4">
+                        </video>
+                        <figcaption class="text-center text-color-main">Nouveau design et gestion des caméras</figcaption>
+                    </figure>
+                </div>
+                <hr class="border-t w-[50%] mt-6 background-color-section mb-16 mx-auto">
+                <div class="md:flex md:flex-row gap-24">
+                    <div class="md:block">
+                        <video class="scale-90 md:scale-100" width="520" height="350" controls>
+                            <source src="videos/Mockup Ancien Cowebsite.mp4" type="video/mp4">
+                        </video>
+                        <figcaption class="text-center text-color-main mb-12 md:mb-0">Ancien design et fonctionnement des cowebsites</figcaption>
+                    </div>
+                    <!-- Mettre animation apparition au scroll fonction déjà dans le javascript-->
+                    <div class="flex items-center h-30vh relative mt-4 justify-center md:-rotate-90 md:flex md:items-center md:justify-center md:mr-16 md:h-10vh md:relative md:ml-0 arrow-animation reveal-hidden" id="chevron-2">
+                        <div class="chevron"></div>
+                        <div class="chevron"></div>
+                        <div class="chevron"></div>
+                    </div>
+                    <figure class="scale-90 md:scale-100 mt-24 md:mt-0">
+                        <video width="520" height="350" controls>
+                            <source src="videos/mockup-new-cowebsite.mp4" type="video/mp4">
                         </video>
                         <figcaption class="text-center text-color-main">Nouveau design et fonctionnement des cowebsites</figcaption>
                     </figure>
                 </div>
-
             </div>
         </div>
 
         <div class="h-[500px] w-screen flex items-end justify-center">
             <div class="background-color-section h-[70%] w-[90%] flex flex-col items-center">
                 <p class="font-butler font-medium text-[48px] mt-24 mb-12 flex justify-center text-center text-color">Check it out !</p>
-                <button class="text-color-main background-color text-[24px] rounded-full w-[55%] h-[13%] md:w-[20%] hover:w-[25%] transition-all duration-300"><a href="https://play.staging.workadventu.re/@/tcm/workadventure/wa-village" target="_blank">WorkAdventure</a></button>
+                <button class="text-color-main background-color text-[24px] rounded-full w-[55%] h-[13%] md:w-[35%] lg:w-[20%] hover:w-[25%] transition-all duration-300"><a href="https://play.staging.workadventu.re/@/tcm/workadventure/wa-village" target="_blank">WorkAdventure</a></button>
             </div>
         </div>
     </section>
@@ -145,14 +156,14 @@
     <!-- Code pour anglais -->
     <section class="en" style="display: none;">
         <div class="w-[70%] mx-auto">
-            <p class="font-butler font-medium text-[32px] mt-12 mb-24 flex justify-center text-center text-color-main">Integration of graphic redesign. Implementation of map upload script.</p>
+            <p class="font-butler font-medium text-[32px] mt-12 mb-24 flex justify-center text-center text-color-main">Integration of the graphic redesign. Implementation of the map upload script</p>
         </div>
         <div class="container mx-auto text-color-main text-[18px] font-manrope-ultra-light font-bold">
             <div class="md:grid md:grid-cols-3 gap-8 mb-24">
                 <div class="flex flex-col items-center mb-20 md:mb-0 text-center">
                     <p>ROLE</p>
                     <hr class="border-t w-[13%] mt-2 mb-4 background-color-section">
-                    <p>Back-end and front-end development</p>
+                    <p>Back-end and Front-end Development</p>
                 </div>
                 <div class="flex flex-col items-center mb-20 md:mb-0 text-center">
                     <p>TECHNOLOGIES</p>
@@ -178,34 +189,74 @@
             </div>
         </div>
 
-
-        <div class="flex flex-col-reverse md:grid md:grid-cols-2 gap-8 items-center">
-            <div class="text-center text-color-main text-[18px] font-manrope-ultra-light font-bold ml-16 mr-12 md:ml-32 md:mr-0">
-                <div class="mb-4">
-                    <p class="text-color-main hover:text-sky-600 text-center">Find out more ...</p>
-                    <hr class="border-t w-[35%] mt-2 background-color-section mb-12 mx-auto">
-                </div>
-                <ul class="list-disc text-start">
-                    <li class="mb-2"><span class="font-manrope-medium">Integration of various projects</span> (camera management, integration of cowebsite with iframe, reactive popup...) of the graphic redesign in collaboration with the designer</li>
-                    <li class="mb-2"><span class="font-manrope-medium">Script and npm package</span> allowing partner companies to upload and host their own interactive map by entering a command in the terminal to simplify the user experience as much as possible.</li>
-                    <li class="mb-2">Creation of the <span class="font-manrope-medium">documentation for the different projects</span> (written and video in English)</li>
-                    <li class="mb-2">Creation of a <span class="font-manrope-medium">CI with GitHub workflow</span> to ensure the proper functioning of the script</li>
-                </ul>
+        <div class="text-color-main w-[80%] font-manrope-ultra-light text-[18px] mx-auto">
+            <div class="mb-4">
+                <p class="text-color-main hover:text-sky-600 text-center">Learn more ...</p>
+                <hr class="border-t w-[50%] md:w-[15%] mt-2 background-color-section mb-12 mx-auto">
             </div>
-            <div class="video-container md:mt-8 mt-[-72] flex justify-center">
-                <video class="mockup-the-surf-course" width="320" height="600" controls autoplay>
-                    <source src="videos/mockup-the-surf-course.mp4" type="video/mp4">
-                    Error Message
-                </video>
+            <ul class="list-disc text-left">
+                <li class="mb-2"><span class="font-manrope-medium">Integration of various projects</span> (camera management, cowebsite integration with iframe, reactive popups, etc.) for the graphic redesign in collaboration with the designer</li>
+                <li class="mb-2"><span class="font-manrope-medium">Script and npm package</span> allowing partner companies to upload and host their own interactive maps by entering a command in the terminal to simplify the user experience as much as possible.</li>
+                <li class="mb-2">Creation of <span class="font-manrope-medium">documentation for the various projects</span> (written and video in English)</li>
+                <li class="mb-2">Creation of a <span class="font-manrope-medium">CI with GitHub workflow</span> to verify the proper functioning of the script</li>
+            </ul>
+        </div>
+        <div class="flex flex-col-reverse items-center mt-24">
+            <div class="text-center text-color-main text-[18px] font-manrope-ultra-light font-bold ml-16 mr-12 md:ml-32 md:mr-0">
+            </div>
+            <div class="video-container md:mt-8 mt-[-72] flex flex-col items-center">
+                <div class="md:flex md:flex-row gap-24 mb-12">
+                    <div class="md:block">
+                        <video class="scale-90 md:scale-100" width="520" height="350" controls autoplay>
+                            <source src="videos/Mockup ancien cam.mp4" type="video/mp4">
+                        </video>
+                        <figcaption class="text-center mb-8 md:mb-0 text-color-main">Old design and camera management</figcaption>
+                    </div>
+                    <!-- Add scroll appearance animation function already in the JavaScript -->
+                    <div class="flex items-center h-30vh relative mt-4 justify-center md:-rotate-90 md:flex md:items-center md:justify-center md:mr-16 md:h-10vh md:relative md:ml-0">
+                        <div class="chevron"></div>
+                        <div class="chevron"></div>
+                        <div class="chevron"></div>
+                    </div>
+                    <figure class="scale-90 md:scale-100 mt-24 md:mt-0 md:mb-0">
+                        <video width="520" height="350" controls>
+                            <source src="videos/mockup-new cam-good.mp4" type="video/mp4">
+                        </video>
+                        <figcaption class="text-center text-color-main">New design and camera management</figcaption>
+                    </figure>
+                </div>
+                <hr class="border-t w-[50%] mt-6 background-color-section mb-16 mx-auto">
+                <div class="md:flex md:flex-row gap-24">
+
+                    <div class="md:block">
+                        <video class="scale-90 md:scale-100" width="520" height="350" controls>
+                            <source src="videos/Mockup Ancien Cowebsite.mp4" type="video/mp4">
+                        </video>
+                        <figcaption class="text-center text-color-main mb-12 md:mb-0">Old design and operation of cowebsites</figcaption>
+                    </div>
+                    <!-- Add scroll appearance animation function already in the JavaScript -->
+                    <div class="flex items-center h-30vh relative mt-4 justify-center md:-rotate-90 md:flex md:items-center md:justify-center md:mr-16 md:h-10vh md:relative md:ml-0">
+                        <div class="chevron"></div>
+                        <div class="chevron"></div>
+                        <div class="chevron"></div>
+                    </div>
+                    <figure class="scale-90 md:scale-100 mt-24 md:mt-0">
+                        <video width="520" height="350" controls>
+                            <source src="videos/mockup-new-cowebsite.mp4" type="video/mp4">
+                        </video>
+                        <figcaption class="text-center text-color-main">New design and operation of cowebsites</figcaption>
+                    </figure>
+                </div>
             </div>
         </div>
 
         <div class="h-[500px] w-screen flex items-end justify-center">
             <div class="background-color-section h-[70%] w-[90%] flex flex-col items-center">
-                <p class="font-butler font-medium text-[48px] mt-24 mb-12 flex justify-center text-center text-color">Check it out !</p>
-                <button class="text-color-main background-color text-[24px] rounded-full w-[55%] h-[13%] md:w-[20%] hover:w-[25%] transition-all duration-300"><a href="https://play.staging.workadventu.re/@/tcm/workadventure/wa-village" target="_blank">WorkAdventure</a></button>
+                <p class="font-butler font-medium text-[48px] mt-24 mb-12 flex justify-center text-center text-color">Check it out!</p>
+                <button class="text-color-main background-color text-[24px] rounded-full w-[55%] h-[13%] md:w-[35%] lg:w-[20%] hover:w-[25%] transition-all duration-300"><a href="https://play.staging.workadventu.re/@/tcm/workadventure/wa-village" target="_blank">WorkAdventure</a></button>
             </div>
         </div>
+
     </section>
 </body>
 
@@ -337,8 +388,8 @@
         position: absolute;
         transform-origin: bottom right;
         background: #1a1818;
-        width: 4px; /* arrow-line-width */
-        height: 50px; /* arrow-line-length */
+        width: 4px;
+        height: 50px;
         border-radius: 10px;
         transform: translate(-50%, -50%) rotateZ(-45deg);
     }
@@ -362,5 +413,73 @@
     .arrow:nth-child(3) {
         opacity: 0.9;
         top: calc(15% + (100% * 3 / 5));
+    }
+
+    /* Animation chevron */
+
+    .chevron {
+        position: absolute;
+        width: 2.1rem;
+        height: 0.48rem;
+        opacity: 0;
+        transform: scale(0.3);
+        animation: move-chevron 3s ease-out infinite;
+    }
+
+    .chevron:first-child {
+        animation-delay: 1s;
+    }
+
+    .chevron:nth-child(2) {
+        animation-delay: 2s;
+    }
+
+    .chevron:before,
+    .chevron:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        height: 100%;
+        width: 50%;
+        background: #ece7e1;
+    }
+
+    .chevron:before {
+        left: 0;
+        transform: skewY(30deg);
+    }
+
+    .chevron:after {
+        right: 0;
+        width: 50%;
+        transform: skewY(-30deg);
+    }
+
+    .reveal-visible {
+        opacity: 1;
+        transition: opacity 0.5s ease-in-out;
+    }
+
+    .reveal-hidden {
+        opacity: 0;
+        transition: opacity 0.5s ease-in-out;
+    }
+
+    @keyframes move-chevron {
+        25% {
+            opacity: 1;
+        }
+        33.3% {
+            opacity: 1;
+            transform: translateY(2.28rem);
+        }
+        66.6% {
+            opacity: 1;
+            transform: translateY(3.12rem);
+        }
+        100% {
+            opacity: 0;
+            transform: translateY(4.8rem) scale(0.5);
+        }
     }
 </style>

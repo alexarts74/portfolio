@@ -79,3 +79,72 @@ document.getElementById('burger-menu').addEventListener('click', function() {
     const menu = document.getElementById('burger-menu-content');
     menu.classList.toggle('hidden');
 });
+
+let isDesktop = window.matchMedia("only screen and (min-width: 1024px)").matches;
+let isTablet = window.matchMedia("only screen and (min-width: 761px) and (max-width: 1024px)").matches;
+let isMobile = window.matchMedia("only screen and (max-width: 760px)").matches;
+
+document.addEventListener("DOMContentLoaded", function() {
+    const section = document.getElementById("container-video");
+    const chevron1 = document.getElementById("chevron-1");
+    const chevron2 = document.getElementById("chevron-2");
+
+    window.addEventListener("scroll", function() {
+        const sectionTop = section.getBoundingClientRect().top;
+        const windowHeight = window.innerHeight;
+
+        if (isDesktop) {
+            if (sectionTop < 260) {
+                chevron1.classList.add("reveal-visible");
+                chevron1.classList.remove("reveal-hidden");
+            } else {
+                chevron1.classList.remove("reveal-visible");
+                chevron1.classList.add("reveal-hidden");
+            }
+
+            if (sectionTop < 20) {
+                chevron2.classList.add("reveal-visible");
+                chevron2.classList.remove("reveal-hidden");
+            } else {
+                chevron2.classList.remove("reveal-visible");
+                chevron2.classList.add("reveal-hidden");
+            }
+        }
+
+        if (isTablet) {
+            if (sectionTop < 780) {
+                chevron1.classList.add("reveal-visible");
+                chevron1.classList.remove("reveal-hidden");
+            } else {
+                chevron1.classList.remove("reveal-visible");
+                chevron1.classList.add("reveal-hidden");
+            }
+
+            if (sectionTop < 540) {
+                chevron2.classList.add("reveal-visible");
+                chevron2.classList.remove("reveal-hidden");
+            } else {
+                chevron2.classList.remove("reveal-visible");
+                chevron2.classList.add("reveal-hidden");
+            }
+        }
+
+        if (isMobile) {
+            if (sectionTop < 250) {
+                chevron1.classList.add("reveal-visible");
+                chevron1.classList.remove("reveal-hidden");
+            } else {
+                chevron1.classList.remove("reveal-visible");
+                chevron1.classList.add("reveal-hidden");
+            }
+
+            if (sectionTop < -550) {
+                chevron2.classList.add("reveal-visible");
+                chevron2.classList.remove("reveal-hidden");
+            } else {
+                chevron2.classList.remove("reveal-visible");
+                chevron2.classList.add("reveal-hidden");
+            }
+        }
+    });
+});
