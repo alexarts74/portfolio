@@ -88,26 +88,39 @@ document.addEventListener("DOMContentLoaded", function() {
     const section = document.getElementById("container-video");
     const chevron1 = document.getElementById("chevron-1");
     const chevron2 = document.getElementById("chevron-2");
+    const chevron3 = document.getElementById("chevron-3");
+    const chevron4 = document.getElementById("chevron-4");
+    console.log(chevron1);
+    console.log(chevron2);
+    console.log(chevron3);
+    console.log(chevron4);
 
     window.addEventListener("scroll", function() {
         const sectionTop = section.getBoundingClientRect().top;
-        const windowHeight = window.innerHeight;
 
         if (isDesktop) {
             if (sectionTop < 260) {
                 chevron1.classList.add("reveal-visible");
                 chevron1.classList.remove("reveal-hidden");
+                chevron3.classList.add("reveal-visible");
+                chevron3.classList.remove("reveal-hidden");
             } else {
                 chevron1.classList.remove("reveal-visible");
                 chevron1.classList.add("reveal-hidden");
+                chevron3.classList.remove("reveal-visible");
+                chevron3.classList.add("reveal-hidden");
             }
 
             if (sectionTop < 20) {
                 chevron2.classList.add("reveal-visible");
                 chevron2.classList.remove("reveal-hidden");
+                chevron4.classList.add("reveal-visible");
+                chevron4.classList.remove("reveal-hidden");
             } else {
                 chevron2.classList.remove("reveal-visible");
                 chevron2.classList.add("reveal-hidden");
+                chevron4.classList.remove("reveal-visible");
+                chevron4.classList.add("reveal-hidden");
             }
         }
 
@@ -115,35 +128,54 @@ document.addEventListener("DOMContentLoaded", function() {
             if (sectionTop < 780) {
                 chevron1.classList.add("reveal-visible");
                 chevron1.classList.remove("reveal-hidden");
+                chevron3.classList.add("reveal-visible");
+                chevron3.classList.remove("reveal-hidden");
             } else {
                 chevron1.classList.remove("reveal-visible");
                 chevron1.classList.add("reveal-hidden");
+                chevron3.classList.add("reveal-visible");
+                chevron3.classList.remove("reveal-hidden");
             }
 
             if (sectionTop < 540) {
                 chevron2.classList.add("reveal-visible");
                 chevron2.classList.remove("reveal-hidden");
+                chevron4.classList.add("reveal-visible");
+                chevron4.classList.remove("reveal-hidden");
             } else {
                 chevron2.classList.remove("reveal-visible");
                 chevron2.classList.add("reveal-hidden");
+                chevron4.classList.add("reveal-visible");
+                chevron4.classList.remove("reveal-hidden");
             }
         }
 
         if (isMobile) {
-            if (sectionTop < 250) {
+            console.log(sectionTop, "sectionTop")
+            if (sectionTop < 270) {
+                console.log("je suis dans le if")
                 chevron1.classList.add("reveal-visible");
                 chevron1.classList.remove("reveal-hidden");
+                chevron3.classList.add("reveal-visible");
+                chevron3.classList.remove("reveal-hidden");
+
             } else {
                 chevron1.classList.remove("reveal-visible");
                 chevron1.classList.add("reveal-hidden");
+                chevron3.classList.add("reveal-visible");
+                chevron3.classList.remove("reveal-hidden");
             }
 
             if (sectionTop < -550) {
                 chevron2.classList.add("reveal-visible");
                 chevron2.classList.remove("reveal-hidden");
+                chevron4.classList.add("reveal-visible");
+                chevron4.classList.remove("reveal-hidden");
             } else {
                 chevron2.classList.remove("reveal-visible");
                 chevron2.classList.add("reveal-hidden");
+                chevron4.classList.add("reveal-visible");
+                chevron4.classList.remove("reveal-hidden");
             }
         }
     });
