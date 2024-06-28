@@ -80,6 +80,7 @@ document.getElementById('burger-menu').addEventListener('click', function() {
     menu.classList.toggle('hidden');
 });
 
+let isBigScreen = window.matchMedia("only screen and (min-width: 1024px)").matches;
 let isDesktop = window.matchMedia("only screen and (min-width: 1024px)").matches;
 let isTablet = window.matchMedia("only screen and (min-width: 761px) and (max-width: 1024px)").matches;
 let isMobile = window.matchMedia("only screen and (max-width: 760px)").matches;
@@ -98,88 +99,115 @@ document.addEventListener("DOMContentLoaded", function() {
     window.addEventListener("scroll", function() {
         const sectionTop = section.getBoundingClientRect().top;
 
-        if (isDesktop) {
-            if (sectionTop < 260) {
-                chevron1.classList.add("reveal-visible");
-                chevron1.classList.remove("reveal-hidden");
-                chevron3.classList.add("reveal-visible");
-                chevron3.classList.remove("reveal-hidden");
-            } else {
-                chevron1.classList.remove("reveal-visible");
-                chevron1.classList.add("reveal-hidden");
-                chevron3.classList.remove("reveal-visible");
-                chevron3.classList.add("reveal-hidden");
+            if(isBigScreen) {
+                console.log(sectionTop, "sectionTop")
+
+                if (sectionTop < 620) {
+                    console.log("je suis dans le if")
+                    chevron1.classList.add("reveal-visible");
+                    chevron1.classList.remove("reveal-hidden");
+                    chevron3.classList.add("reveal-visible");
+                    chevron3.classList.remove("reveal-hidden");
+                } else {
+                    chevron1.classList.remove("reveal-visible");
+                    chevron1.classList.add("reveal-hidden");
+                    chevron3.classList.remove("reveal-visible");
+                    chevron3.classList.add("reveal-hidden");
+                }
+
+                if (sectionTop < 400) {
+                    chevron2.classList.add("reveal-visible");
+                    chevron2.classList.remove("reveal-hidden");
+                    chevron4.classList.add("reveal-visible");
+                    chevron4.classList.remove("reveal-hidden");
+                } else {
+                    chevron2.classList.remove("reveal-visible");
+                    chevron2.classList.add("reveal-hidden");
+                    chevron4.classList.remove("reveal-visible");
+                    chevron4.classList.add("reveal-hidden");
+                }
             }
 
-            if (sectionTop < 20) {
-                chevron2.classList.add("reveal-visible");
-                chevron2.classList.remove("reveal-hidden");
-                chevron4.classList.add("reveal-visible");
-                chevron4.classList.remove("reveal-hidden");
-            } else {
-                chevron2.classList.remove("reveal-visible");
-                chevron2.classList.add("reveal-hidden");
-                chevron4.classList.remove("reveal-visible");
-                chevron4.classList.add("reveal-hidden");
-            }
-        }
+            if (isDesktop) {
+                if (sectionTop < 260) {
+                    chevron1.classList.add("reveal-visible");
+                    chevron1.classList.remove("reveal-hidden");
+                    chevron3.classList.add("reveal-visible");
+                    chevron3.classList.remove("reveal-hidden");
+                } else {
+                    chevron1.classList.remove("reveal-visible");
+                    chevron1.classList.add("reveal-hidden");
+                    chevron3.classList.remove("reveal-visible");
+                    chevron3.classList.add("reveal-hidden");
+                }
 
-        if (isTablet) {
-            if (sectionTop < 780) {
-                chevron1.classList.add("reveal-visible");
-                chevron1.classList.remove("reveal-hidden");
-                chevron3.classList.add("reveal-visible");
-                chevron3.classList.remove("reveal-hidden");
-            } else {
-                chevron1.classList.remove("reveal-visible");
-                chevron1.classList.add("reveal-hidden");
-                chevron3.classList.add("reveal-visible");
-                chevron3.classList.remove("reveal-hidden");
-            }
-
-            if (sectionTop < 540) {
-                chevron2.classList.add("reveal-visible");
-                chevron2.classList.remove("reveal-hidden");
-                chevron4.classList.add("reveal-visible");
-                chevron4.classList.remove("reveal-hidden");
-            } else {
-                chevron2.classList.remove("reveal-visible");
-                chevron2.classList.add("reveal-hidden");
-                chevron4.classList.add("reveal-visible");
-                chevron4.classList.remove("reveal-hidden");
-            }
-        }
-
-        if (isMobile) {
-            console.log(sectionTop, "sectionTop")
-            if (sectionTop < 270) {
-                console.log("je suis dans le if")
-                chevron1.classList.add("reveal-visible");
-                chevron1.classList.remove("reveal-hidden");
-                chevron3.classList.add("reveal-visible");
-                chevron3.classList.remove("reveal-hidden");
-
-            } else {
-                chevron1.classList.remove("reveal-visible");
-                chevron1.classList.add("reveal-hidden");
-                chevron3.classList.add("reveal-visible");
-                chevron3.classList.remove("reveal-hidden");
+                if (sectionTop < 20) {
+                    chevron2.classList.add("reveal-visible");
+                    chevron2.classList.remove("reveal-hidden");
+                    chevron4.classList.add("reveal-visible");
+                    chevron4.classList.remove("reveal-hidden");
+                } else {
+                    chevron2.classList.remove("reveal-visible");
+                    chevron2.classList.add("reveal-hidden");
+                    chevron4.classList.remove("reveal-visible");
+                    chevron4.classList.add("reveal-hidden");
+                }
             }
 
-            if (sectionTop < -550) {
-                chevron2.classList.add("reveal-visible");
-                chevron2.classList.remove("reveal-hidden");
-                chevron4.classList.add("reveal-visible");
-                chevron4.classList.remove("reveal-hidden");
-            } else {
-                chevron2.classList.remove("reveal-visible");
-                chevron2.classList.add("reveal-hidden");
-                chevron4.classList.add("reveal-visible");
-                chevron4.classList.remove("reveal-hidden");
+            if (isTablet) {
+                if (sectionTop < 780) {
+                    chevron1.classList.add("reveal-visible");
+                    chevron1.classList.remove("reveal-hidden");
+                    chevron3.classList.add("reveal-visible");
+                    chevron3.classList.remove("reveal-hidden");
+                } else {
+                    chevron1.classList.remove("reveal-visible");
+                    chevron1.classList.add("reveal-hidden");
+                    chevron3.classList.add("reveal-visible");
+                    chevron3.classList.remove("reveal-hidden");
+                }
+
+                if (sectionTop < 540) {
+                    chevron2.classList.add("reveal-visible");
+                    chevron2.classList.remove("reveal-hidden");
+                    chevron4.classList.add("reveal-visible");
+                    chevron4.classList.remove("reveal-hidden");
+                } else {
+                    chevron2.classList.remove("reveal-visible");
+                    chevron2.classList.add("reveal-hidden");
+                    chevron4.classList.add("reveal-visible");
+                    chevron4.classList.remove("reveal-hidden");
+                }
             }
-        }
+
+            if (isMobile) {
+                if (sectionTop < 270) {
+                    chevron1.classList.add("reveal-visible");
+                    chevron1.classList.remove("reveal-hidden");
+                    chevron3.classList.add("reveal-visible");
+                    chevron3.classList.remove("reveal-hidden");
+
+                } else {
+                    chevron1.classList.remove("reveal-visible");
+                    chevron1.classList.add("reveal-hidden");
+                    chevron3.classList.add("reveal-visible");
+                    chevron3.classList.remove("reveal-hidden");
+                }
+
+                if (sectionTop < -550) {
+                    chevron2.classList.add("reveal-visible");
+                    chevron2.classList.remove("reveal-hidden");
+                    chevron4.classList.add("reveal-visible");
+                    chevron4.classList.remove("reveal-hidden");
+                } else {
+                    chevron2.classList.remove("reveal-visible");
+                    chevron2.classList.add("reveal-hidden");
+                    chevron4.classList.add("reveal-visible");
+                    chevron4.classList.remove("reveal-hidden");
+                }
+            }
+        });
     });
-});
 
 // document.addEventListener('DOMContentLoaded', function() {
 //     let menuLinks = document.getElementById('transition-link');
