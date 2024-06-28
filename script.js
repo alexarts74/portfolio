@@ -180,3 +180,35 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     });
 });
+
+// document.addEventListener('DOMContentLoaded', function() {
+//     let menuLinks = document.getElementById('transition-link');
+
+//     menuLinks.forEach(function(link) {
+//         link.addEventListener('click', function(e) {
+//             e.preventDefault(); // Empêche la navigation par défaut
+
+//             let href = this.getAttribute('href');
+//             let container = document.getElementById('transition-animation');
+
+//             // Ajoute une classe pour l'animation de transition
+//             container.classList.add('page-transition');
+
+//             // Attendez la fin de l'animation (0.5s) avant de naviguer
+//             setTimeout(function() {
+//                 window.location.href = href;
+//             }, 500);
+//         });
+//     });
+// });
+
+// window.transitionToPage = function(href) {
+//     document.querySelector('body').style.opacity = 0
+//     setTimeout(function() {
+//         window.location.href = href
+//     }, 500)
+// }
+
+// document.addEventListener('DOMContentLoaded', function(event) {
+//     document.querySelector('body').style.opacity = 1
+// })
