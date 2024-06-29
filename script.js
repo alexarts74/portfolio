@@ -1,11 +1,8 @@
 function displayDiv(id) {
-    console.log('displayDiv', id);
     if (document.getElementById(id).style.display == 'block') {
         document.getElementById(id).style.display = 'none';
     }
     else {
-        console.log('displayDiv', id, 'block')
-        console.log(document.getElementById(id));
         document.getElementById(id).classList.remove('hidden');
         document.getElementById(id).classList.add = 'visible';
         document.getElementById(id).style.display = 'block';
@@ -91,19 +88,12 @@ document.addEventListener("DOMContentLoaded", function() {
     const chevron2 = document.getElementById("chevron-2");
     const chevron3 = document.getElementById("chevron-3");
     const chevron4 = document.getElementById("chevron-4");
-    console.log(chevron1);
-    console.log(chevron2);
-    console.log(chevron3);
-    console.log(chevron4);
 
     window.addEventListener("scroll", function() {
         const sectionTop = section.getBoundingClientRect().top;
 
             if(isBigScreen) {
-                console.log(sectionTop, "sectionTop")
-
                 if (sectionTop < 620) {
-                    console.log("je suis dans le if")
                     chevron1.classList.add("reveal-visible");
                     chevron1.classList.remove("reveal-hidden");
                     chevron3.classList.add("reveal-visible");
