@@ -9,6 +9,7 @@ function displayDiv(id) {
     }
 }
 
+
 const ratio = .5;
 
 const options = {
@@ -61,6 +62,38 @@ function switchLanguage(lang) {
     }
 }
 
+document.addEventListener("DOMContentLoaded", function () {
+    console.log("DOM fully loaded and parsed");
+    const items = document.querySelectorAll(".letter-by-letter");
+    console.log(items);
+    items.forEach(item => {
+        const link = item.querySelector("a");
+        const text = link.textContent.trim();
+        const intervalDelay = 100;
+        let index = 0;
+
+        link.innerHTML = "";
+
+        function typeWriter() {
+            if (index < text.length) {
+                const char = text[index];
+                const span = document.createElement("span");
+                span.textContent = char;
+                link.appendChild(span);
+                index++;
+                setTimeout(typeWriter, intervalDelay);
+            }
+        }
+        typeWriter();
+    });
+});
+
+
+
+
+
+
+
 document.addEventListener('DOMContentLoaded', function() {
     const langLinks = document.querySelectorAll('.lang-switch a');
     langLinks.forEach(link => {
@@ -76,6 +109,8 @@ document.getElementById('burger-menu').addEventListener('click', function() {
     const menu = document.getElementById('burger-menu-content');
     menu.classList.toggle('hidden');
 });
+
+
 
 let isBigScreen = window.matchMedia("only screen and (min-width: 1024px)").matches;
 let isDesktop = window.matchMedia("only screen and (min-width: 1024px)").matches;
@@ -198,6 +233,8 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         });
     });
+
+
 
 // document.addEventListener('DOMContentLoaded', function() {
 //     let menuLinks = document.getElementById('transition-link');
