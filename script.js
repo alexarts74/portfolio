@@ -230,3 +230,71 @@ document.addEventListener("DOMContentLoaded", function() {
 // document.addEventListener('DOMContentLoaded', function(event) {
 //     document.querySelector('body').style.opacity = 1
 // })
+
+
+const canvas = document.getElementById('canvas');
+const context = canvas.getContext('2d');
+canvas.width = window.innerWidth;
+canvas.height = window.innerHeight;
+
+let particlesArray = [];
+const numberOfParticles = 200;
+const colors = ['#1A84D6', '#D62839', '#F5B700', '#00B300', '#E13C6C'];
+
+class Particle {
+  constructor(x, y, directionX, directionY, size, color) {
+    this.x = x;
+    this.y = y;
+    this.directionX = directionX;
+    this.directionY = directionY;
+    this.size = size;
+    this.color = color;
+  }
+
+  draw() {
+    context.beginPath();
+    context.arc(this.x, this.y, this.size, 0, Math.PI * 2, false);
+    context.fillStyle = this.color;
+    context.fill();
+  }
+
+  update() {
+    if (this.x + this.size > canvas.width || this.x - this.size < 0) {
+      this.directionX = -this.directionX;
+    }
+
+    if (this.y + this.size > canvas.height || this.y - this.size < 0) {
+      this.directionY = -this.directionY;
+    }
+
+    this.x += this.directionX;
+    this.y += this.directionY;
+    this.draw();
+  }
+}
+
+function init() {
+  particlesArray = [];
+  for (let i = 0; i < numberOfParticles; i++) {
+    const size = Math.random() * 5 + 1;
+    const x = Math.random() * (canvas.width - size * 2) + size;
+    const y = Math.random() * (canvas.height - size * 2) + size;
+    const directionX = (Math.random() * 0.4) - 0.2;
+    const directionY = (Math.random() * 0.4) - 0.2;
+    const color = colors[Math.floor(Math.random() * colors.length)];
+
+    particlesArray.push(new Particle(x, y, directionX, directionY, size, color));
+  }
+}
+
+function animate() {
+  requestAnimationFrame(animate);
+  context.clearRect(0, 0, canvas.width, canvas.height);
+
+  for (let i = 0; i < particlesArray.length; i++) {
+    particlesArray[i].update();
+  }
+}
+
+init();
+animate();

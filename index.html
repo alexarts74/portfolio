@@ -14,7 +14,12 @@
           <li class="lang-switch mt-8 mr-8"><a href="#" data-lang="en">Switch to English</a></li>
         </ul>
         <div class="grid grid-cols-1 mt-24 md:grid-cols-2 lg:mt-0 lg:mb-8 gap-4 h-full">
-            <div class="w-full lg:mt-[60%] md:mt-[140%] sm:mt-[60%] lg:ml-24 h-[80%]">
+            <div class="w-full lg:mt-[30%] md:mt-[140%] sm:mt-[60%] lg:ml-24 h-[80%]">
+                <div class="animation-container">
+                    <canvas id="canvas">
+                    </canvas>
+                </div>
+
                 <div class="flex ml-12 md:ml-16 lg:ml-16">
                     <h1 class="lg:text-[24px] md:text-[18px] text-black mr-2">ALEXANDRE</h1>
                     <h1 class="lg:text-[24px] md:text-[18px] text-black">ARTUS</h1>
@@ -154,4 +159,15 @@
             line-height: 1em;
         }
     }
+
+    .animation-container {
+        transform: translate(-50%, -50%);
+    }
+
+    canvas {
+        width: 20vw !important;
+        height: 20vw !important;
+        clip-path: circle(calc(50% - 1px));
+    }
+
 </style>
