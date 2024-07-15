@@ -89,11 +89,6 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-
-
-
-
-
 document.addEventListener('DOMContentLoaded', function() {
     const langLinks = document.querySelectorAll('.lang-switch a');
     langLinks.forEach(link => {
