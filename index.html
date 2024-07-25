@@ -8,9 +8,9 @@
   <title>My Portfolio</title>
 </head>
 
-<body class="overflow-x-hidden overflow-y-hidden background-body" id="transition-animation" onload="applyLanguagePreference()">
+<body class="overflow-x-hidden  background-body" id="transition-animation" onload="applyLanguagePreference()">
     <section class="fr snap-y snap-mandatory h-screen">
-        <ul class="flex justify-end space-x-4 text-black">
+        <ul class="flex justify-end space-x-4 text-color-section">
           <li class="lang-switch mt-8 mr-8"><a href="#" data-lang="en">Switch to English</a></li>
         </ul>
         <div class="grid grid-cols-1 mt-24 md:grid-cols-2 lg:mt-0 lg:mb-8 gap-4 h-full">
@@ -21,13 +21,13 @@
                 </div>
 
                 <div class="flex ml-12 md:ml-16 lg:ml-16">
-                    <h1 class="lg:text-[24px] md:text-[18px] text-black mr-2">ALEXANDRE</h1>
-                    <h1 class="lg:text-[24px] md:text-[18px] text-black">ARTUS</h1>
+                    <p class="lg:text-[24px] md:text-[18px] text-color-section mr-2">ALEXANDRE</p>
+                    <p class="lg:text-[24px] md:text-[18px] text-color-section">ARTUS</p>
                 </div>
                 <hr class="border-t background-text-color h-[2px] w-[40%] ml-12 md:ml-16 lg:ml-16 md:mt-2 lg:mt-2 mb-4">
-                <h4 class="pres text-[18px] font-manrope-ultra-light font-bold text-black pr-4 ml-12 md:pr-32 lg:mt-8 lg:ml-16 md:mt-8 md:ml-16">Developpeur web full stack<br>Design et intégration de sites internet</h4>
+                <h4 class="pres text-[18px] font-manrope-ultra-light font-bold text-color-section pr-4 ml-12 md:pr-32 lg:mt-8 lg:ml-16 md:mt-8 md:ml-16">Developpeur web full stack<br>Design et intégration de sites internet</h4>
             </div>
-            <ul class="text-black text-lg font-manrope-ultra-light flex flex-col justify-center mb-96 gap-y-4 ml-12 md:gap-y-12 lg:leading-0 lg:gap-y-12 h-[60%] md:h-[80%] md:mr-12">
+            <ul class="text-color-section text-lg font-manrope-ultra-light flex flex-col justify-center mb-96 gap-y-4 ml-12 md:gap-y-12 lg:leading-0 lg:gap-y-12 h-[60%] md:h-[80%] md:mr-12">
                 <li class="transition-transform hover:translate-x-4 letter-by-letter"><a href="workadventure.html" class="font-butler transition-transform transform hover:italic font-medium text-[38px] md:text-[54px] lg:text-[80px]" id="transition-link">Workadventure</a></li>
                 <li class="transition-transform hover:translate-x-4 letter-by-letter"><a href="surf-course.html" class="font-butler transition-transform transform hover:italic font-medium text-[38px] md:text-[54px] lg:text-[80px] line-height-responsive" id="transition-link">The Surf Course</a></li>
                 <li class="transition-transform hover:translate-x-4 letter-by-letter"><a href="tudo-bem-maman.html" class="font-butler transition-transform transform hover:italic font-medium text-[38px] md:text-[54px] lg:text-[80px] line-height-responsive" id="transition-link">Tudo Bem Maman</a></li>
@@ -37,12 +37,211 @@
                 <li class="transition-transform hover:translate-x-4 letter-by-letter"><a href="contact.html" class="font-butler transition-transform transform hover:italic font-medium text-[38px] md:text-[54px] lg:text-[80px]" id="transition-link">Contact</a></li>
             </ul>
         </div>
+
+        <!-- Schema portfolio
+            1. Menu
+            2. Présentation
+            3. Compétences
+            4. Projets
+            5. Footer avec get in touch
+        -->
+        <div class="menu-bar-when-scroll"></div>
+
+
+        <div class="presentation background-color text-color-main mt-[-128px] w-full">
+            <p class="flex justify-center font-butler font-medium text-[38px] md:text-[54px] lg:text-[80px] pt-16">Qui suis je ?</p>
+            <hr class="border-t w-[45%] md:w-[28%] mb-16 mx-auto background-color-section underline-animation">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4">
+                <div class="flex justify-center mt-8">
+                    <img src="images/profile-picture.jpg" alt="Alexandre Artus" class="w-[80%] rounded">
+                </div>
+                <div class="flex flex-col mt-8 w-[80%] mx-auto">
+                    <p class="font-butler font-medium text-[28px] md:text-[48px] lg:text-[72px] text-center mb-8">Un développeur web passionné</p>
+                    <p class="text-color-main font-manrope-ultra-light">Développeur web full stack. J'ai d'abord effectué un Master en communication pour ensuite suivre ma voix dans le développement web. <br><br>J'ai depuis travaillé sur de nombreux projets personnels mais aussi professionnels du design à l'intégration web. </p>
+                </div>
+            </div>
+            <p class="flex justify-center font-butler font-medium text-[38px] md:text-[54px] lg:text-[80px] pt-16 mt-12">Mes compétences</p>
+            <hr class="border-t w-[70%] md:w-[40%] mb-24 mx-auto background-color-section underline-animation">
+            <div class="grid grid-rows-3 gap-4 md:grid-cols-3 md:grid-rows-none w-[80%] mx-auto">
+                <div class="w-full mx-auto rounded-full background-body h-full">
+                    <div class="text-color-section flex justify-between">
+                        <div class="block">
+                            <p class="ml-8 mt-4">Frontend</p>
+                            <p class="ml-8 mb-2 text-color-sous-section">Technologies</p>
+                        </div>
+                        <div class="grid grid-cols-3 justify-center items-center mr-4 mt-4 mb-2">
+                            <div class="flex justify-center">
+                              <img src="images/Logo Svelte.png" alt="logo-svelte" width="18px" class="rounded-md">
+                            </div>
+                            <div class="flex justify-center">
+                              <img src="images/javascript.png" alt="logo-javascript" width="42px" class="rounded-md">
+                            </div>
+                            <div class="flex justify-center">
+                              <img src="images/Logo Tailwind.svg.png" alt="logo-tailwind" width="28px" class="rounded-md">
+                            </div>
+                            <div class="flex justify-center">
+                              <img src="images/logo-bootstrap.png" alt="logo-bootstrap" width="32px" class="rounded-md">
+                            </div>
+                            <div class="flex justify-center">
+                              <img src="images/logo-css.png" alt="logo-css" width="28px" class="rounded-md">
+                            </div>
+                            <div class="flex justify-center">
+                              <img src="images/html-3.png" alt="logo-html" width="24px" class="rounded-md">
+                            </div>
+                          </div>
+                    </div>
+                </div>
+                <div class="w-full mx-auto rounded-full background-body h-full">
+                    <div class="text-color-section flex justify-between">
+                        <div class="block">
+                            <p class="ml-8 mt-4">Backend</p>
+                            <p class="ml-8 mb-2 text-color-sous-section">Technologies</p>
+                        </div>
+                        <div class="grid grid-cols-2 justify-center items-center mr-8 mt-4">
+                            <div class="flex justify-center">
+                              <img src="images/logo-node-js.png" alt="logo-nodeJS" width="42px" class="rounded-md">
+                            </div>
+                            <div class="flex justify-center">
+                              <img src="images/logo-typescript.png" alt="logo-typescript" width="42px" class="rounded-md">
+                            </div>
+                            <div class="flex justify-center">
+                              <img src="images/logo-ruby.png" alt="logo-ruby" width="34px" class="rounded-md">
+                            </div>
+                            <div class="flex justify-center">
+                              <img src="images/logo-python.png" alt="logo-python" width="32px" class="rounded-md">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full mx-auto rounded-full background-body h-full">
+                    <div class="text-color-section flex justify-between">
+                        <div class="block">
+                            <p class="ml-8 mt-4">Et plus ...</p>
+                            <p class="ml-8 mb-2 text-color-sous-section">Concepts</p>
+                        </div>
+                        <div class="grid grid-cols-2 justify-center items-center mr-8 mt-4">
+                            <div class="flex justify-center">
+                              <img src="images/logo-github.png" alt="logo-nodeJS" width="26px" class="rounded-md">
+                            </div>
+                            <div class="flex justify-center">
+                              <img src="images/logo-git.png" alt="logo-typescript" width="22px" class="rounded-md">
+                            </div>
+                            <div class="flex justify-center">
+                              <img src="images/logo-github-action.png" alt="logo-ruby" width="52px" class="rounded-md">
+                            </div>
+                            <div class="flex justify-center">
+                              <img src="images/logo-docker.png" alt="logo-python" width="42px" class="rounded-md">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="flex justify-center font-butler font-medium text-[38px] md:text-[54px] lg:text-[80px] pt-16 mt-12">Mes projets</p>
+            <hr class="border-t w-[45%] md:w-[27%] mb-24 mx-auto background-color-section underline-animation">
+            <div class="grid grid-rows-3 gap-12 md:grid-cols-3 md:grid-rows-none w-4/5 mx-auto">
+                <div class="card w-full mx-auto h-[300px] relative">
+                    <div class="card-inner w-full h-full">
+                        <div class="card-front background-body flex items-center justify-center">
+                            <img src="images/wa-card.png" alt="Frontend" class="rounded-3xl w-full h-full object-cover">
+                        </div>
+                        <div class="card-back background-body flex items-center justify-center text-color-section">
+                            <div class="block">
+                                <p class="text-center">WorkAdventure</p>
+                                <p>Stage de 6 mois en entreprises</p>
+                                <a href="workadventure.html"><p>Voir les missions</p></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card w-full mx-auto h-[300px] relative">
+                    <div class="card-inner w-full h-full">
+                        <div class="card-front background-body flex items-center justify-center">
+                            <img src="images/the-surf-course.png" alt="Backend" class="rounded-3xl w-full h-full object-cover">
+                        </div>
+                        <div class="card-back background-body flex items-center justify-center text-color-section">
+                            <div class="block">
+                                <p class="text-center">The Surf Course</p>
+                                <p>Projet de recommandation de matériel sportif</p>
+                                <a href="surf-course.html"><p>Voir le projet</p></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card w-full mx-auto h-[300px] relative">
+                    <div class="card-inner w-full h-full">
+                        <div class="card-front background-body flex items-center justify-center">
+                            <img src="images/tbm-card.png" alt="Et plus ..." class="rounded-3xl w-full h-full object-cover">
+                        </div>
+                        <div class="card-back background-body flex items-center justify-center text-color-section">
+                            <div class="block">
+                                <p class="text-center">The Surf Course</p>
+                                <p>Projet de recommandation de matériel sportif</p>
+                                <a href="tudo-bem-maman.html"><p>Voir le projet</p></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card w-full mx-auto h-[300px] relative">
+                    <div class="card-inner w-full h-full">
+                        <div class="card-front background-body flex items-center justify-center">
+                            <img src="images/surfmate-card.png" alt="Frontend" class="rounded-3xl w-full h-full object-cover">
+                        </div>
+                        <div class="card-back background-body flex items-center justify-center text-color-section">
+                            <div class="block">
+                                <p class="text-center">The Surf Course</p>
+                                <p>Projet de recommandation de matériel sportif</p>
+                                <a href="surfmate.html"><p>Voir le projet</p></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card w-full mx-auto h-[300px] relative">
+                    <div class="card-inner w-full h-full">
+                        <div class="card-front background-body flex items-center justify-center">
+                            <img src="images/portfolio-card.png" alt="Backend" class="rounded-3xl w-full h-full object-cover">
+                        </div>
+                        <div class="card-back background-body flex items-center justify-center text-color-section">
+                            <div class="block">
+                                <p class="text-center">The Surf Course</p>
+                                <p>Projet de recommandation de matériel sportif</p>
+                                <a href="portfolio.html"><p>Voir le projet</p></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card w-full mx-auto h-[300px] relative mb-24">
+                    <div class="card-inner w-full h-full">
+                        <div class="card-front background-body flex items-center justify-center">
+                            <img src="images/side-project-card.png" alt="the-surf-course" class="rounded-3xl w-full h-full object-cover">
+                        </div>
+                        <div class="card-back background-body flex items-center justify-center text-color-section">
+                            <div class="block">
+                                <p class="text-center">The Surf Course</p>
+                                <p>Projet de recommandation de matériel sportif</p>
+                                <a href="others-projects.html"><p>Voir le projet</p></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <hr class="border-t w-[50%] mt-24 mb-4 mx-auto background-body"> -->
+        <div class="background-color mb-24">
+            <p class="flex justify-center font-butler font-medium text-[38px] md:text-[54px] lg:text-[80px] pt-16 mb-8 text-color-main">Get in touch</p>
+            <script type="module">
+                import Typebot from 'https://cdn.jsdelivr.net/npm/@typebot.io/js@0.3/dist/web.js';
+
+                Typebot.initStandard({ typebot: "portfolio-xv0nlfn" });
+            </script>
+            <typebot-standard style="width: 90%; height: 600px; "></typebot-standard>
+        </div>
+
     </section>
 
     <!-- Code pour section anglaise-->
 
-    <section class="fr snap-y snap-mandatory h-screen en" style="display: none;">
-        <ul class="flex justify-end space-x-4 text-black">
+    <section class="en snap-y snap-mandatory h-screen en" style="display: none;">
+        <ul class="flex justify-end space-x-4 text-color-section">
             <li class="lang-switch mt-8 mr-8 lang-switch"><a href="#" data-lang="fr">Passer au Français</a></li>
         </ul>
         <div class="grid grid-cols-1 mt-24 md:grid-cols-2 lg:mt-0 lg:mb-8 gap-4 h-full">
@@ -52,13 +251,13 @@
                     </canvas>
                 </div>
                 <div class="flex ml-12 md:ml-16 lg:ml-16">
-                    <h1 class="lg:text-[24px] md:text-[18px] text-black mr-2">ALEXANDRE</h1>
-                    <h1 class="lg:text-[24px] md:text-[18px] text-black">ARTUS</h1>
+                    <p class="lg:text-[24px] md:text-[18px] text-color-section mr-2">ALEXANDRE</p>
+                    <p class="lg:text-[24px] md:text-[18px] text-color-section">ARTUS</p>
                 </div>
                 <hr class="border-t background-text-color h-[2px] w-[40%] ml-12 md:ml-16 lg:ml-16 md:mt-2 lg:mt-2 mb-4">
-                <h4 class="pres text-[18px] font-manrope-ultra-light font-bold text-black pr-4 ml-12 md:pr-32 lg:mt-8 lg:ml-16 md:mt-8 md:ml-16">Web developer full stack<br>Website design and integration</h4>
+                <h4 class="pres text-[18px] font-manrope-ultra-light font-bold text-color-section pr-4 ml-12 md:pr-32 lg:mt-8 lg:ml-16 md:mt-8 md:ml-16">Web developer full stack<br>Website design and integration</h4>
             </div>
-            <ul class="text-black text-lg font-manrope-ultra-light flex flex-col justify-center mb-96 gap-y-4 ml-12 md:gap-y-12 lg:leading-0 lg:gap-y-12 h-[60%] md:h-[80%] md:mr-12">
+            <ul class="text-color-section text-lg font-manrope-ultra-light flex flex-col justify-center mb-96 gap-y-4 ml-12 md:gap-y-12 lg:leading-0 lg:gap-y-12 h-[60%] md:h-[80%] md:mr-12">
                 <li class="transition-transform hover:translate-x-4 letter-by-letter"><a href="workadventure.html" class="font-butler transition-transform transform hover:italic font-medium text-[38px] md:text-[54px] lg:text-[80px]">Workadventure</a></li>
                 <li class="transition-transform hover:translate-x-4 letter-by-letter"><a href="surf-course.html" class="font-butler transition-transform transform hover:italic font-medium text-[38px] md:text-[54px] lg:text-[80px] line-height-responsive">The Surf Course</a></li>
                 <li class="transition-transform hover:translate-x-4 letter-by-letter"><a href="tudo-bem-maman.html" class="font-butler transition-transform transform hover:italic font-medium text-[38px] md:text-[54px] lg:text-[80px] line-height-responsive">Tudo Bem Maman</a></li>
@@ -143,6 +342,21 @@
         background-color: #1a1818;
     }
 
+    .background-color {
+        background-color: #1a1818;
+    }
+
+    .text-color-section {
+        color: #1a1818;
+    }
+
+    .text-color-sous-section {
+        color: #747171;
+    }
+
+    .text-color-main {
+        color: #ece7e1;
+    }
 
     .transition-animation {
         animation: fade-in 0.5s ease-out;
@@ -172,6 +386,31 @@
         width: 20vw !important;
         height: 20vw !important;
         clip-path: circle(calc(50% - 1px));
+    }
+
+    .rounded {
+        border-top-left-radius: 4rem;
+        border-top-right-radius: 4rem;
+    }
+
+    .card {
+      perspective: 1000px;
+    }
+    .card-inner {
+      transition: transform 0.6s;
+      transform-style: preserve-3d;
+    }
+    .card:hover .card-inner {
+      transform: rotateY(180deg);
+    }
+    .card-front, .card-back {
+      position: absolute;
+      width: 100%;
+      backface-visibility: hidden;
+      border-radius: 1.5rem; /* Same as rounded-3xl in Tailwind */
+    }
+    .card-back {
+      transform: rotateY(180deg);
     }
 
 </style>
