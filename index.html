@@ -9,17 +9,18 @@
 </head>
 
 <body class="overflow-x-hidden" id="transition-animation" onload="applyLanguagePreference()">
-    <section class="fr snap-y snap-mandatory background-body">
-        <div class="h-full">
+    <section class="fr snap-y snap-mandatory test-background">
+        <div class="h-full animated-gradient">
             <ul class="flex justify-end space-x-4 text-color-section">
             <li class="lang-switch mt-8 mr-8"><a href="#" data-lang="en">Switch to English</a></li>
+            <!--Voir pour cette animation : https://blog.hubspot.fr/website/animation-css-->
             </ul>
             <div class="grid grid-cols-1 mt-24 md:grid-cols-2 lg:mt-0 lg:mb-8 gap-4 h-full">
                 <div class="w-full lg:mt-[30%] md:mt-[140%] sm:mt-[60%] lg:ml-24 h-[80%]">
-                    <!-- <div class="animation-container">
+                    <div class="animation-container">
                         <canvas id="canvas">
                         </canvas>
-                    </div> -->
+                    </div>
 
                     <div class="flex ml-12 md:ml-16 lg:ml-16">
                         <p class="lg:text-[24px] md:text-[18px] text-color-section mr-2">ALEXANDRE</p>
@@ -43,8 +44,8 @@
         <!--Animation d'une potentiel nav bar-->
         <!-- <div class="menu-bar-when-scroll"></div> -->
 
-        <div class="presentation background-color text-color-main mt-[-128px] w-full">
-            <p class="flex justify-center font-butler font-medium text-[38px] md:text-[54px] lg:text-[80px] pt-16">Qui suis je ?</p>
+        <div class="presentation background-color text-color-main mt-[-248px] w-full">
+            <p class="flex justify-center font-butler font-medium text-[38px] md:text-[54px] lg:text-[80px] pt-24">Qui suis je ?</p>
             <hr class="border-t w-[45%] md:w-[28%] mb-16 mx-auto background-color-section underline-animation">
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4">
                 <div class="flex justify-center mt-8">
@@ -155,9 +156,9 @@
                         </div>
                         <div class="card-back background-body flex items-center justify-center text-color-section">
                             <div class="block">
-                                <p class="text-center">The Surf Course</p>
-                                <p>Projet de recommandation de matériel sportif</p>
-                                <a href="surf-course.html"><p>Voir le projet</p></a>
+                                <p class="text-center font-manrope-ultra-light text-[28px] mb-8 mt-8">The Surf Course</p>
+                                <p class="text-justify mx-4 mb-8">Application destiné à tous les surfeurs voulant acheter leur premier matériel mais ne savent pas quoi prendreProjet de recommandation de matériel sportif</p>
+                                <a href="surf-course.html"><p class="font-manrope-ultra-light text-center mb-">Voir le projet</p></a>
                             </div>
                         </div>
                     </div>
@@ -407,5 +408,36 @@
     .card-back {
       transform: rotateY(180deg);
     }
+
+    .animated-gradient {
+    background: radial-gradient(
+        circle at 30% 30%,
+        #F4C2C2,
+        #E2B9E8 40%,
+        #B9E4C9 60%,
+        #C2F0C2
+    );
+    background-size: 400% 400%;
+    animation: gradientAnimation 10s ease-in-out infinite;
+
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 0%;
+    }
+    25% {
+        background-position: 100% 0%;
+    }
+    50% {
+        background-position: 100% 100%;
+    }
+    75% {
+        background-position: 0% 100%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
+}
 
 </style>
