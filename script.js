@@ -50,11 +50,13 @@ function switchLanguage(lang) {
     const langLinks = document.querySelectorAll('.lang-switch a');
 
     if (lang === 'en') {
+        console.log('Switching to English');
         frElements.forEach(el => el.style.display = 'none');
         enElements.forEach(el => el.style.display = 'block');
         langLinks[0].style.display = 'none';
         langLinks[1].style.display = 'block';
     } else {
+        console.log('Switching to French');
         enElements.forEach(el => el.style.display = 'none');
         frElements.forEach(el => el.style.display = 'block');
         langLinks[0].style.display = 'block';
