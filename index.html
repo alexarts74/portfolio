@@ -490,20 +490,24 @@
                         </div>
                     </div>
                 </div>
-
             </div>
         </section>
-        <div class="background-color">
+        <div class="background-color mx-auto">
             <div class=" flex justify-center pb-16">
-                <p class="text-center underline-animation font-butler text-color-main font-medium text-[38px] md:text-[54px] lg:text-[80px] pt-8 mb-8 md:mt-12">Get in touch</p>
+                <button class="text-center text-color-section font-manrope-ultra-light background-body rounded-3xl text-[24px] md:text-[32px] lg:text-[38px] mb-8 lg:mt-24 w-1/2 md:w-[275px] py-2 md:py-0 transform transition duration-300 hover:scale-110"><a href="contact.html#chat">Get in touch</a></button>
             </div>
             <!-- <p class="flex justify-center font-butler font-medium text-[38px] md:text-[54px] lg:text-[80px] pt-16 mb-8 text-color-main">Get in touch</p> -->
             <script type="module">
-                import Typebot from 'https://cdn.jsdelivr.net/npm/@typebot.io/js@0.3/dist/web.js';
+                import Typebot from 'https://cdn.jsdelivr.net/npm/@typebot.io/js@0.3/dist/web.js'
 
-                Typebot.initStandard({ typebot: "portfolio-xv0nlfn" });
-            </script>
-            <typebot-standard style="width: 90%; height: 600px; "></typebot-standard>
+                Typebot.initBubble({
+                  typebot: "portfolio-xv0nlfn",
+                  theme: {
+                    button: { backgroundColor: "#0042DA" },
+                    chatWindow: { backgroundColor: "#1a1818" },
+                  },
+                });
+              </script>
         </div>
 
 </body>
