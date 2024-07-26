@@ -11,7 +11,7 @@
 
 <body class="background-color overflow-x-hidden" onload="applyLanguagePreference()">
     <div class="h-screen w-screen flex items-start justify-center">
-        <div class="background-color-section h-[90%] w-[90%] flex flex-col items-center overflow-y-hidden">
+        <div class="background-color-section h-[90%] w-[90%] flex flex-col items-center overflow-y-hidden animated-gradient">
             <div class="flex justify-end md:hidden p-4">
                 <button id="burger-menu" class="text-black">
                   <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -339,5 +339,35 @@
     .arrow:nth-child(3) {
         opacity: 0.9;
         top: calc(15% + (100% * 3 / 5));
+    }
+
+    .animated-gradient {
+        background: radial-gradient(
+            circle at 30% 30%,
+            #F4C2C2,
+            #E2B9E8 40%,
+            #B9E4C9 60%,
+            #C2F0C2
+        );
+        background-size: 400% 400%;
+        animation: gradientAnimation 10s ease-in-out infinite;
+    }
+
+    @keyframes gradientAnimation {
+        0% {
+            background-position: 0% 0%;
+        }
+        25% {
+            background-position: 100% 0%;
+        }
+        50% {
+            background-position: 100% 100%;
+        }
+        75% {
+            background-position: 0% 100%;
+        }
+        100% {
+            background-position: 0% 0%;
+        }
     }
 </style>

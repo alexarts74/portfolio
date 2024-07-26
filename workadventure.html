@@ -497,32 +497,32 @@
     }
 
     .animated-gradient {
-    background: radial-gradient(
-        circle at 30% 30%,
-        #F4C2C2,
-        #E2B9E8 40%,
-        #B9E4C9 60%,
-        #C2F0C2
-    );
-    background-size: 400% 400%;
-    animation: gradientAnimation 10s ease-in-out infinite;
-}
+        background: radial-gradient(
+            circle at 30% 30%,
+            #F4C2C2,
+            #E2B9E8 40%,
+            #B9E4C9 60%,
+            #C2F0C2
+        );
+        background-size: 400% 400%;
+        animation: gradientAnimation 10s ease-in-out infinite;
+    }
 
-@keyframes gradientAnimation {
-    0% {
-        background-position: 0% 0%;
+    @keyframes gradientAnimation {
+        0% {
+            background-position: 0% 0%;
+        }
+        25% {
+            background-position: 100% 0%;
+        }
+        50% {
+            background-position: 100% 100%;
+        }
+        75% {
+            background-position: 0% 100%;
+        }
+        100% {
+            background-position: 0% 0%;
+        }
     }
-    25% {
-        background-position: 100% 0%;
-    }
-    50% {
-        background-position: 100% 100%;
-    }
-    75% {
-        background-position: 0% 100%;
-    }
-    100% {
-        background-position: 0% 0%;
-    }
-}
 </style>
