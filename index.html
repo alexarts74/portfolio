@@ -64,35 +64,39 @@
                 <p class="text-center underline-animation font-butler font-medium text-[38px] md:text-[54px] lg:text-[80px] pt-16 mt-12 lg:mt-24">Mes compétences</p>
             </div>
             <div class="grid grid-rows-3 gap-4 md:grid-cols-3 md:grid-rows-none w-[80%] mx-auto">
-                <div class="w-full mx-auto rounded-full background-body h-full">
+
+
+                <div class="w-full mx-auto rounded-full background-body h-full card">
                     <div class="text-color-section flex justify-between">
-                        <div class="block">
-                            <p class="ml-8 mt-4">Frontend</p>
-                            <p class="ml-8 mb-2 text-color-sous-section">Technologies</p>
+                      <div class="block">
+                        <p class="ml-8 mt-4">Frontend</p>
+                        <p class="ml-8 mb-2 text-color-sous-section">Technologies</p>
+                      </div>
+                      <div class="grid grid-cols-3 justify-center items-center mr-4 mt-4 mb-2">
+                        <div class="flex justify-center">
+                          <img src="images/Logo Svelte.png" alt="logo-svelte" width="18px" class="rounded-md">
                         </div>
-                        <div class="grid grid-cols-3 justify-center items-center mr-4 mt-4 mb-2">
-                            <div class="flex justify-center">
-                              <img src="images/Logo Svelte.png" alt="logo-svelte" width="18px" class="rounded-md">
-                            </div>
-                            <div class="flex justify-center">
-                              <img src="images/javascript.png" alt="logo-javascript" width="42px" class="rounded-md">
-                            </div>
-                            <div class="flex justify-center">
-                              <img src="images/Logo Tailwind.svg.png" alt="logo-tailwind" width="28px" class="rounded-md">
-                            </div>
-                            <div class="flex justify-center">
-                              <img src="images/logo-bootstrap.png" alt="logo-bootstrap" width="32px" class="rounded-md">
-                            </div>
-                            <div class="flex justify-center">
-                              <img src="images/logo-css.png" alt="logo-css" width="28px" class="rounded-md">
-                            </div>
-                            <div class="flex justify-center">
-                              <img src="images/html-3.png" alt="logo-html" width="24px" class="rounded-md">
-                            </div>
-                          </div>
+                        <div class="flex justify-center">
+                          <img src="images/javascript.png" alt="logo-javascript" width="42px" class="rounded-md">
+                        </div>
+                        <div class="flex justify-center">
+                          <img src="images/Logo Tailwind.svg.png" alt="logo-tailwind" width="28px" class="rounded-md">
+                        </div>
+                        <div class="flex justify-center">
+                          <img src="images/logo-bootstrap.png" alt="logo-bootstrap" width="32px" class="rounded-md">
+                        </div>
+                        <div class="flex justify-center">
+                          <img src="images/logo-css.png" alt="logo-css" width="28px" class="rounded-md">
+                        </div>
+                        <div class="flex justify-center">
+                          <img src="images/html-3.png" alt="logo-html" width="24px" class="rounded-md">
+                        </div>
+                      </div>
                     </div>
-                </div>
-                <div class="w-full mx-auto rounded-full background-body h-full">
+                  </div>
+
+
+                <div class="w-full mx-auto rounded-full background-body h-full card">
                     <div class="text-color-section flex justify-between">
                         <div class="block">
                             <p class="ml-8 mt-4">Backend</p>
@@ -114,7 +118,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="w-full mx-auto rounded-full background-body h-full">
+
+
+                <div class="w-full mx-auto rounded-full background-body h-full card">
                     <div class="text-color-section flex justify-between">
                         <div class="block">
                             <p class="ml-8 mt-4">Et plus ...</p>
@@ -136,6 +142,8 @@
                         </div>
                     </div>
                 </div>
+
+
             </div>
             <div class=" flex justify-center pb-16">
                 <p class="text-center underline-animation font-butler font-medium text-[38px] md:text-[54px] lg:text-[80px] pt-16 mt-12 lg:mt-24">Mes projets</p>
@@ -513,7 +521,7 @@
         </div>
 
 </body>
-<script type="module" src="gradient.ts"></script>
+<!-- <script type="module" src="gradient.ts"></script> -->
 <script src="script.js" defer></script>
 </html>
 
@@ -713,5 +721,18 @@
         transform: scaleX(1);
         transform-origin: bottom left;
     }
+
+    .card {
+      perspective: 1000px;
+      transform-style: preserve-3d;
+      transition: transform 0.1s;
+    }
+
+    .text-color-section {
+      transform-style: preserve-3d;
+      transition: transform 0.1s;
+    }
+
+
 
 </style>
