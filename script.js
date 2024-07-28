@@ -1,10 +1,9 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const cards = document.getElementsByClassName('card');
+    const cards = document.getElementsByClassName('card-comp');
     console.log(cards);
 
     Array.from(cards).forEach(card => {
       card.addEventListener('mousemove', (e) => {
-        console.log("je suis dans la fonction");
         const rect = card.getBoundingClientRect();
         const x = e.clientX - rect.left;
         const y = e.clientY - rect.top;
@@ -13,8 +12,8 @@ document.addEventListener('DOMContentLoaded', () => {
         const deltaX = (x - centerX) / centerX;
         const deltaY = (y - centerY) / centerY;
 
-        const rotateX = deltaY * 15; // Adjust the rotation intensity
-        const rotateY = deltaX * -15; // Adjust the rotation intensity
+        const rotateX = deltaY * 20; // Adjust the rotation intensity
+        const rotateY = deltaX * -20; // Adjust the rotation intensity
 
         card.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
       });
