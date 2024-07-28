@@ -1,15 +1,3 @@
-function displayDiv(id) {
-    if (document.getElementById(id).style.display == 'block') {
-        document.getElementById(id).style.display = 'none';
-    }
-    else {
-        document.getElementById(id).classList.remove('hidden');
-        document.getElementById(id).classList.add = 'visible';
-        document.getElementById(id).style.display = 'block';
-    }
-}
-
-
 const ratio = .5;
 
 const options = {
