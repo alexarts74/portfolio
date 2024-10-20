@@ -248,12 +248,14 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 
     document.addEventListener('DOMContentLoaded', function () {
+        console.log("DOM fully loaded and parsed");
         const progressText = document.getElementById('progress-text');
-
+        console.log(progressText);
         function startAnimation() {
           progressText.style.color = '#ece7e1';
 
           setTimeout(() => {
+            console.log('Changing color');
             progressText.style.color = '#1a1818';
           }, 500);
         }
@@ -261,6 +263,7 @@ document.addEventListener("DOMContentLoaded", function() {
         startAnimation();
 
         setInterval(() => {
+          console.log('Restarting animation');
           startAnimation();
         }, 2000);
     });
