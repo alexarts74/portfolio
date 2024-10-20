@@ -52,7 +52,15 @@
         </div>
     </div>
 
-    <section class="fr" id="section-fr">
+    <section class="h-screen flex justify-center items-center">
+      <div class="w-[600px] h-[100px] rounded-[20px] text-[#ff0000] border-2 border-current relative loader">
+        <p id="progress-text" class="z-10 text-center my-auto md:text-[24px] lg:text-[38px] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+          In Progress
+        </p>
+      </div>
+    </section>
+
+    <!-- <section class="fr" id="section-fr">
         <div class="w-[70%] mx-auto">
             <p class="font-butler font-medium text-[32px] mt-12 mb-24 flex justify-center text-center text-color-main">Mise en place d'un outil renseignant sur l'état de santé d'une batterie </p>
         </div>
@@ -123,7 +131,6 @@
                         </video>
                         <figcaption class="text-center mb-8 md:mb-0 text-color-main">Ancien design et gestion des caméras</figcaption>
                     </div>
-                    <!-- Mettre animation apparition au scroll fonction déjà dans le javascript-->
                     <div class="flex items-center h-30vh relative mt-4 justify-center md:-rotate-90 md:flex md:items-center md:justify-center md:mr-16 md:h-10vh md:relative md:ml-0 arrow-animation reveal-hidden" id="chevron-1">
                         <div class="chevron"></div>
                         <div class="chevron"></div>
@@ -144,7 +151,6 @@
                         </video>
                         <figcaption class="text-center text-color-main mb-12 md:mb-0">Ancien design et fonctionnement des cowebsites</figcaption>
                     </div>
-                    <!-- Mettre animation apparition au scroll fonction déjà dans le javascript-->
                     <div class="flex items-center h-30vh relative mt-4 justify-center md:-rotate-90 md:flex md:items-center md:justify-center md:mr-16 md:h-10vh md:relative md:ml-0 arrow-animation reveal-hidden" id="chevron-2">
                         <div class="chevron"></div>
                         <div class="chevron"></div>
@@ -168,7 +174,6 @@
         </div>
     </section>
 
-    <!-- Code pour anglais -->
     <section class="en" style="display: none;">
         <div class="w-[70%] mx-auto">
             <p class="font-butler font-medium text-[32px] mt-12 mb-24 flex justify-center text-center text-color-main">Integration of the graphic redesign. Implementation of the map upload script</p>
@@ -240,7 +245,6 @@
                         </video>
                         <figcaption class="text-center mb-8 md:mb-0 text-color-main">Old design and camera management</figcaption>
                     </div>
-                    <!-- Add scroll appearance animation function already in the JavaScript -->
                     <div class="flex items-center h-30vh relative mt-4 justify-center md:-rotate-90 md:flex md:items-center md:justify-center md:mr-16 md:h-10vh md:relative md:ml-0 arrow-animation reveal-hidden" id="chevron-3">
                         <div class="chevron"></div>
                         <div class="chevron"></div>
@@ -262,7 +266,6 @@
                         </video>
                         <figcaption class="text-center text-color-main mb-12 md:mb-0">Old design and operation of cowebsites</figcaption>
                     </div>
-                    <!-- Add scroll appearance animation function already in the JavaScript -->
                     <div class="flex items-center h-30vh relative mt-4 justify-center md:-rotate-90 md:flex md:items-center md:justify-center md:mr-16 md:h-10vh md:relative md:ml-0 arrow-animation reveal-hidden" id="chevron-4">
                         <div class="chevron"></div>
                         <div class="chevron"></div>
@@ -288,8 +291,8 @@
     </section>
 </body>
 
+</html> -->
 <script src="script.js" defer></script>
-</html>
 
 <style>
     @font-face {
@@ -540,4 +543,30 @@
             background-position: 0% 0%;
         }
     }
+
+
+  .loader {
+    position: relative;
+    width: 600px;
+    height: 100px;
+    border-radius: 20px;
+    color: #ece7e1;
+    border: 2px solid currentColor;
+  }
+
+  .loader::before {
+    content: "";
+    position: absolute;
+    margin: 1px;
+    inset: 0 100% 0 0;
+    border-radius: inherit;
+    background: currentColor;
+    animation: l6 2s infinite;
+  }
+
+  @keyframes l6 {
+    100% {
+      inset: 0;
+    }
+  }
 </style>

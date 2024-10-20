@@ -248,7 +248,30 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 
 
+    document.addEventListener('DOMContentLoaded', function () {
+        const loader = document.querySelector('.loader');
+        const progressText = document.getElementById('progress-text');
 
+        function checkOverlap() {
+          const progressBarWidth = loader.getBoundingClientRect().width * (3 - parseFloat(getComputedStyle(loader, '::before').getPropertyValue('inset-inline-end')) / 100);
+          const loaderRect = loader.getBoundingClientRect();
+          const textRect = progressText.getBoundingClientRect();
+          const threshold = 30;
+
+          if (progressBarWidth >= (textRect.left - loaderRect.left - threshold)) {
+            progressText.style.color = '#1a1818';
+          } else {
+            progressText.style.color = '#ece7e1';
+          }
+        }
+
+        function animate() {
+          checkOverlap();
+          requestAnimationFrame(animate);
+        }
+
+        animate();
+    });
 
 
 
