@@ -3,9 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="images/favicon.png" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <title>The Surf Course</title>
+    <link rel="icon" href="images/favicon.png" />
+    <title>RunMate</title>
   </head>
 
   <body
@@ -53,9 +53,9 @@
             </li>
             <li class="underline-animation">
               <a
-                href="workadventure.html"
+                href="surf-course.html"
                 class="font-butler font-medium md:text-[18px] lg:text-[24px]"
-                >WorkAdventure</a
+                >The Surf Course</a
               >
             </li>
             <li class="underline-animation">
@@ -74,9 +74,9 @@
             </li>
             <li class="underline-animation">
               <a
-                href="runmate.html"
+                href="workadventure.html"
                 class="font-butler font-medium md:text-[18px] lg:text-[24px]"
-                >RunMate</a
+                >WorkAdventure</a
               >
             </li>
             <li class="underline-animation">
@@ -113,9 +113,9 @@
             </li>
             <li class="underline-animation">
               <a
-                href="workadventure.html"
+                href="surf-course.html"
                 class="block p-2 font-butler font-medium"
-                >WorkAdventure</a
+                >The Surf Course</a
               >
             </li>
             <li class="underline-animation">
@@ -131,8 +131,10 @@
               >
             </li>
             <li class="underline-animation">
-              <a href="runmate.html" class="block p-2 font-butler font-medium"
-                >RunMate</a
+              <a
+                href="workadventure.html"
+                class="block p-2 font-butler font-medium"
+                >WorkAdventure</a
               >
             </li>
             <li class="underline-animation">
@@ -155,7 +157,7 @@
           <h1
             class="font-butler font-medium text-[48px] md:text-[80px] lg:text-[80px] text-center text-color"
           >
-            The Surf Course
+            RunMate
           </h1>
         </div>
         <a
@@ -174,8 +176,8 @@
         <p
           class="font-butler font-medium text-[32px] mt-12 mb-24 flex justify-center text-center text-color-main"
         >
-          The Surf Course est destiné aux débutants adeptes du surf qui ont
-          envie d'acheter leur matériel mais qui ne savent pas par où commencer.
+          Application mobile en cours de réalisation mettant en relation des
+          personnes passionnées de course à pied.
         </p>
       </div>
       <div
@@ -200,7 +202,7 @@
               />
             </div>
             <div class="javascript flex items-center gap-2">
-              <p>Javascript</p>
+              <p>React Native</p>
               <img
                 src="images/Logo Svelte.png"
                 alt="logo-javascript"
@@ -209,7 +211,7 @@
               />
             </div>
             <div class="sql flex items-center gap-2">
-              <p>SQL</p>
+              <p>PostgreSQL</p>
               <img
                 src="images/Logo Tailwind.svg.png"
                 alt="logo-sql"
@@ -219,14 +221,9 @@
             </div>
           </div>
           <div class="flex flex-col items-center text-center">
-            <p>GET YOUR BOARD</p>
+            <p>FIND YOUR RUNMATE</p>
             <hr class="border-t w-[42%] mt-2 mb-4 background-color-section" />
-            <a
-              href="https://the-surf-course.one/"
-              target="_blank"
-              class="hover:text-sky-600"
-              >the-surf-course.one</a
-            >
+            <p>runmate.com</p>
           </div>
         </div>
       </div>
@@ -246,56 +243,29 @@
             />
           </div>
           <ul class="list-disc text-start">
-            <li class="mb-2 text-[16px]">
-              Ce projet est basé sur un
-              <span class="font-manrope-medium"
-                >algorithme de recommandation de combinaisons et planches de
-                surf en fonction du choix de l'utilisateur.</span
-              >
+            <li class="mb-2">
+              Un coureur pourra rencontrer d'autres coureurs en fonction de ses
+              objectifs, localisation, distance frequente, disponibilité, ...
+              tout cela grace a un algorithme de matching.
             </li>
-            <li class="mb-2 text-[16px]">
-              Avec une base de données remplie de différents produits pour le
-              surf, les résultats varient et permettent
-              <span class="font-manrope-medium"
-                >d'apporter les meilleures solutions.</span
-              >
+            <li class="mb-2">
+              Possibilité de contacter un coureur en lui envoyant un message
+              directement depuis l'application
             </li>
-            <li class="mb-2 text-[16px]">
-              Projet réalisé à deux en deux semaines lors de la formation du
-              Wagon. Cela nous a permis de<span class="font-manrope-medium">
-                travailler notre communication </span
-              >mais aussi des outils tels que
-              <span class="font-manrope-medium">git / github / figma</span>
-            </li>
-            <li class="mb-2 text-[16px]">
-              Cette version est adaptée en version mobile uniquement (pour
-              l'instant...)
-            </li>
-            <li class="mb-2 text-[16px]">
-              Présentation de notre application avec démonstration en live
-              sur<br /><a
-                href="https://www.youtube.com/watch?v=UvmRwri0vws"
-                target="_blank"
-                class="underline-animation"
-                >👉 Youtube</a
-              >
+            <li class="mb-2">
+              Bientot ... possibilité de créer des sessions de running en groupe
+              et voir les courses disponibles autour de chez soi
             </li>
           </ul>
         </div>
-        <div class="video-container md:mt-8 mt-[-72] flex justify-center">
-          <video
-            class="mockup-the-surf-course"
-            width="320"
-            height="600"
-            controls
-            autoplay
-          >
-            <source
-              src="videos/surf-mock-up-background-good.mp4"
-              type="video/mp4"
-            />
-            Error Message
-          </video>
+        <div class="left-col-2 col-loader">
+          <div class="reveal-test reveal-visible-test">
+            <div class="loader mt-20 mb-32 md:mb-0 md:mt-0 loader-surfmate">
+              <span class="loader__element"></span>
+              <span class="loader__element"></span>
+              <span class="loader__element"></span>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -306,27 +276,24 @@
           <p
             class="font-butler font-medium text-[48px] mt-24 mb-12 flex justify-center text-center text-color"
           >
-            Check it out !
+            Check it out!
           </p>
           <button
-            class="text-color-main background-color text-[24px] rounded-full w-[55%] h-[13%] md:w-[20%] hover:w-[25%] transition-all duration-300"
+            class="text-color-main background-color text-[24px] rounded-full h-[13%] w-[55%] md:w-[20%] hover-disabled transition-all duration-300"
           >
-            <a href="https://the-surf-course.one/" target="_blank"
-              >The Surf Course</a
-            >
+            <p>RunMate</p>
           </button>
         </div>
       </div>
     </section>
 
     <!-- Code pour anglais -->
-    <section class="en" style="display: none">
+    <section class="en" style="display: none" id="section-en">
       <div class="w-[70%] mx-auto">
         <p
           class="font-butler font-medium text-[32px] mt-12 mb-24 flex justify-center text-center text-color-main"
         >
-          The Surf Course is intended for beginner surf enthusiasts who want to
-          buy their equipment but don't know where to start.
+          Mobile application in development connecting running enthusiasts.
         </p>
       </div>
       <div
@@ -351,7 +318,7 @@
               />
             </div>
             <div class="javascript flex items-center gap-2">
-              <p>Javascript</p>
+              <p>React Native</p>
               <img
                 src="images/Logo Svelte.png"
                 alt="logo-javascript"
@@ -360,7 +327,7 @@
               />
             </div>
             <div class="sql flex items-center gap-2">
-              <p>SQL</p>
+              <p>PostgreSQL</p>
               <img
                 src="images/Logo Tailwind.svg.png"
                 alt="logo-sql"
@@ -370,14 +337,9 @@
             </div>
           </div>
           <div class="flex flex-col items-center text-center">
-            <p>GET YOUR BOARD</p>
+            <p>FIND YOUR RUNMATE</p>
             <hr class="border-t w-[42%] mt-2 mb-4 background-color-section" />
-            <a
-              href="https://the-surf-course.one/"
-              target="_blank"
-              class="hover:text-sky-600"
-              >the-surf-course.one</a
-            >
+            <p>runmate.com</p>
           </div>
         </div>
       </div>
@@ -390,61 +352,36 @@
         >
           <div class="mb-4">
             <p class="text-color-main hover:text-sky-600 text-center">
-              En savoir plus ...
+              Learn more ...
             </p>
             <hr
               class="border-t w-[35%] mt-2 background-color-section mb-12 mx-auto"
             />
           </div>
           <ul class="list-disc text-start">
-            <li class="mb-2 text-[16px]">
-              This project is based on a
-              <span class="font-manrope-medium"
-                >recommendation algorithm for surfboard and wetsuit combinations
-                based on the user's choice.</span
-              >
+            <li class="mb-2">
+              A runner can meet other runners in function of his objectives,
+              location, distance frequency, availability, ... all this thanks to
+              a matching algorithm.
             </li>
-            <li class="mb-2 text-[16px]">
-              With a database filled with various surf products, the results
-              vary and
-              <span class="font-manrope-medium"
-                >provide the best solutions.</span
-              >
+            <li class="mb-2">
+              Possibility to contact a runner by sending him a direct message
+              from the application
             </li>
-            <li class="mb-2 text-[16px]">
-              Project completed by two people in two weeks during the Le Wagon
-              training. This allowed us to<span class="font-manrope-medium">
-                improve our communication </span
-              >as well as tools like
-              <span class="font-manrope-medium">git / github / figma</span>
-            </li>
-            <li class="mb-2 text-[16px]">
-              This version is adapted for mobile only (for now...)
-            </li>
-            <li class="mb-2 text-[16px]">
-              Presentation of our application with a live demonstration on<br /><a
-                href="https://www.youtube.com/watch?v=UvmRwri0vws"
-                target="_blank"
-                class="underline-animation"
-                >👉 YouTube</a
-              >
+            <li class="mb-2">
+              Soon ... possibility to create running sessions in group and see
+              the available courses near you
             </li>
           </ul>
         </div>
-        <div class="video-container md:mt-8 mt-[-72] flex justify-center">
-          <video
-            class="mockup-the-surf-course"
-            width="320"
-            height="600"
-            controls
-            autoplay
-          >
-            <source
-              src="videos/surf-mock-up-background-good.mp4"
-              type="video/mp4"
-            />
-            Error Message
-          </video>
+        <div class="left-col-2 col-loader">
+          <div class="reveal-test reveal-visible-test">
+            <div class="loader mt-20 mb-32 md:mb-0 md:mt-0 loader-surfmate">
+              <span class="loader__element"></span>
+              <span class="loader__element"></span>
+              <span class="loader__element"></span>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -455,14 +392,12 @@
           <p
             class="font-butler font-medium text-[48px] mt-24 mb-12 flex justify-center text-center text-color"
           >
-            Check it out !
+            Check it out!
           </p>
           <button
-            class="text-color-main background-color text-[24px] rounded-full w-[55%] h-[13%] md:w-[20%] hover:w-[25%] transition-all duration-300"
+            class="text-color-main background-color text-[24px] rounded-full h-[13%] w-[55%] md:w-[20%] hover-disabled transition-all duration-300"
           >
-            <a href="https://the-surf-course.one/" target="_blank"
-              >The Surf Course</a
-            >
+            <p>RunMate</p>
           </button>
         </div>
       </div>
@@ -565,8 +500,37 @@
     transform-origin: bottom left;
   }
 
-  .block {
-    display: block;
+  .loader {
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+  }
+
+  .loader__element {
+    border-radius: 50%;
+    border: 5px solid white;
+  }
+
+  .loader__element:nth-child(1) {
+    animation: preloader 0.6s ease-in-out alternate infinite;
+  }
+  .loader__element:nth-child(2) {
+    animation: preloader 0.6s ease-in-out alternate 0.2s infinite;
+  }
+
+  .loader__element:nth-child(3) {
+    animation: preloader 0.6s ease-in-out alternate 0.4s infinite;
+  }
+
+  @keyframes preloader {
+    100% {
+      transform: scale(2);
+    }
+  }
+
+  .hover-disabled:hover {
+    background-color: #4b4b4b;
+    cursor: not-allowed;
   }
 
   .arrow-container {

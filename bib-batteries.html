@@ -1,60 +1,180 @@
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="images/favicon.png">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="images/favicon.png" />
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Bib Batteries</title>
-</head>
+  </head>
 
-<body class="background-color overflow-x-hidden" onload="applyLanguagePreference()">
+  <body
+    class="background-color overflow-x-hidden"
+    onload="applyLanguagePreference()"
+  >
     <div class="h-screen w-screen flex items-start justify-center">
-        <div class="h-[90%] w-[90%] flex flex-col items-center overflow-y-hidden animated-gradient">
-            <div class="flex justify-end md:hidden p-4">
-                <button id="burger-menu" class="text-black">
-                  <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
-                  </svg>
-                </button>
-              </div>
-              <nav class="w-full flex justify-center overflow-y-hidden">
-                <ul class="hidden md:flex justify-between w-[90%] mt-4">
-                  <li class="underline-animation"><a href="index.html" class="font-butler font-medium md:text-[18px] lg:text-[24px]">Home</a></li>
-                  <li class="underline-animation"><a href="workadventure.html" class="font-butler font-medium md:text-[18px] lg:text-[24px]">WorkAdventure</a></li>
-                  <li class="underline-animation"><a href="surf-course.html" class="font-butler font-medium md:text-[18px] lg:text-[24px]">The Surf Course</a></li>
-                  <li class="underline-animation"><a href="tudo-bem-maman.html" class="font-butler font-medium md:text-[18px] lg:text-[24px]">Tudo Bem Maman</a></li>
-                  <li class="underline-animation"><a href="portfolio.html" class="font-butler font-medium md:text-[18px] lg:text-[24px]">Portfolio</a></li>
-                  <li class="underline-animation"><a href="surfmate.html" class="font-butler font-medium md:text-[18px] lg:text-[24px]">SurfMate</a></li>
-                  <li class="underline-animation"><a href="others-projects.html" class="font-butler font-medium md:text-[18px] lg:text-[24px]">Others Projects</a></li>
-                  <li class="underline-animation"><a href="contact.html" class="font-butler font-medium md:text-[18px] lg:text-[24px]">Contact</a></li>
-                </ul>
-                <ul id="burger-menu-content" class="absolute top-[5%] left-[5%] right-[5%] flex-col hidden md:hidden mt-8 px-2 py-1 rounded-md text-center">
-                  <li class="underline-animation"><a href="index.html" class="block p-2 font-butler font-medium">Home</a></li>
-                  <li class="underline-animation"><a href="workadventure.html" class="font-butler font-medium md:text-[18px] lg:text-[24px]">WorkAdventure</a></li>
-                  <li class="underline-animation"><a href="surf-course.html" class="block p-2 font-butler font-medium">The Surf Course</a></li>
-                  <li class="underline-animation"><a href="tudo-bem-maman.html" class="block p-2 font-butler font-medium">Tudo Bem Maman</a></li>
-                  <li class="underline-animation"><a href="portfolio.html" class="block p-2 font-butler font-medium">Portfolio</a></li>
-                  <li class="underline-animation"><a href="surfmate.html" class="block p-2 font-butler font-medium">SurfMate</a></li>
-                  <li class="underline-animation"><a href="others-projects.html" class="block p-2 font-butler font-medium">Others Projects</a></li>
-                  <li class="underline-animation"><a href="contact.html" class="block p-2 font-butler font-medium">Contact</a></li>
-                </ul>
-              </nav>
-            <div class="flex flex-grow items-center justify-center mb-[75px] md:mb-0 lg:mb-0 w-full">
-                <h1 class="font-butler font-medium text-[48px] md:text-[80px] lg:text-[80px] text-center text-color">Bib Batteries</h1>
-            </div>
-            <a href="#section-fr" class="arrow-container hover:cursor-pointer flex justify-center">
-                <div class="arrow cursor-default"></div>
-                <div class="arrow cursor-default"></div>
-                <div class="arrow cursor-default"></div>
-            </a>
+      <div
+        class="h-[90%] w-[90%] flex flex-col items-center overflow-y-hidden animated-gradient"
+      >
+        <div class="flex justify-end md:hidden p-4">
+          <button id="burger-menu" class="text-black">
+            <svg
+              class="w-8 h-8"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16m-7 6h7"
+              ></path>
+            </svg>
+          </button>
         </div>
+        <nav class="w-full flex justify-center overflow-y-hidden">
+          <ul class="hidden md:flex justify-between w-[90%] mt-4">
+            <li class="underline-animation">
+              <a
+                href="index.html"
+                class="font-butler font-medium md:text-[18px] lg:text-[24px]"
+                >Home</a
+              >
+            </li>
+            <li class="underline-animation">
+              <a
+                href="workadventure.html"
+                class="font-butler font-medium md:text-[18px] lg:text-[24px]"
+                >WorkAdventure</a
+              >
+            </li>
+            <li class="underline-animation">
+              <a
+                href="surf-course.html"
+                class="font-butler font-medium md:text-[18px] lg:text-[24px]"
+                >The Surf Course</a
+              >
+            </li>
+            <li class="underline-animation">
+              <a
+                href="tudo-bem-maman.html"
+                class="font-butler font-medium md:text-[18px] lg:text-[24px]"
+                >Tudo Bem Maman</a
+              >
+            </li>
+            <li class="underline-animation">
+              <a
+                href="portfolio.html"
+                class="font-butler font-medium md:text-[18px] lg:text-[24px]"
+                >Portfolio</a
+              >
+            </li>
+            <li class="underline-animation">
+              <a
+                href="runmate.html"
+                class="font-butler font-medium md:text-[18px] lg:text-[24px]"
+                >RunMate</a
+              >
+            </li>
+            <li class="underline-animation">
+              <a
+                href="others-projects.html"
+                class="font-butler font-medium md:text-[18px] lg:text-[24px]"
+                >Others Projects</a
+              >
+            </li>
+            <li class="underline-animation">
+              <a
+                href="contact.html"
+                class="font-butler font-medium md:text-[18px] lg:text-[24px]"
+                >Contact</a
+              >
+            </li>
+          </ul>
+          <ul
+            id="burger-menu-content"
+            class="absolute top-[5%] left-[5%] right-[5%] flex-col hidden md:hidden mt-8 px-2 py-1 rounded-md text-center"
+          >
+            <li class="underline-animation">
+              <a href="index.html" class="block p-2 font-butler font-medium"
+                >Home</a
+              >
+            </li>
+            <li class="underline-animation">
+              <a
+                href="workadventure.html"
+                class="font-butler font-medium md:text-[18px] lg:text-[24px]"
+                >WorkAdventure</a
+              >
+            </li>
+            <li class="underline-animation">
+              <a
+                href="surf-course.html"
+                class="block p-2 font-butler font-medium"
+                >The Surf Course</a
+              >
+            </li>
+            <li class="underline-animation">
+              <a
+                href="tudo-bem-maman.html"
+                class="block p-2 font-butler font-medium"
+                >Tudo Bem Maman</a
+              >
+            </li>
+            <li class="underline-animation">
+              <a href="portfolio.html" class="block p-2 font-butler font-medium"
+                >Portfolio</a
+              >
+            </li>
+            <li class="underline-animation">
+              <a href="runmate.html" class="block p-2 font-butler font-medium"
+                >RunMate</a
+              >
+            </li>
+            <li class="underline-animation">
+              <a
+                href="others-projects.html"
+                class="block p-2 font-butler font-medium"
+                >Others Projects</a
+              >
+            </li>
+            <li class="underline-animation">
+              <a href="contact.html" class="block p-2 font-butler font-medium"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <div
+          class="flex flex-grow items-center justify-center mb-[75px] md:mb-0 lg:mb-0 w-full"
+        >
+          <h1
+            class="font-butler font-medium text-[48px] md:text-[80px] lg:text-[80px] text-center text-color"
+          >
+            Bib Batteries
+          </h1>
+        </div>
+        <a
+          href="#section-fr"
+          class="arrow-container hover:cursor-pointer flex justify-center"
+        >
+          <div class="arrow cursor-default"></div>
+          <div class="arrow cursor-default"></div>
+          <div class="arrow cursor-default"></div>
+        </a>
+      </div>
     </div>
 
     <section class="h-screen flex justify-center items-center">
-      <div class="w-[600px] h-[100px] rounded-[20px] text-[#ff0000] border-2 border-current relative loader">
-        <p id="progress-text" class="z-10 text-center my-auto md:text-[24px] lg:text-[38px] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+      <div
+        class="w-[600px] h-[100px] rounded-[20px] text-[#ff0000] border-2 border-current relative loader"
+      >
+        <p
+          id="progress-text"
+          class="z-10 text-center my-auto md:text-[24px] lg:text-[38px] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+        >
           In Progress
         </p>
       </div>
@@ -292,84 +412,91 @@
 </body>
 
 </html> -->
-<script src="script.js" defer></script>
+    <script src="script.js" defer></script>
 
-<style>
-    @font-face {
-      font-family: 'manrope-light';
-      src: url('fonts/manrope-light/Manrope-Bold.ttf') format('truetype'),
-           url('fonts/manrope-light/Manrope-ExtraBold.ttf') format('truetype'),
-           url('fonts/manrope-light/Manrope-ExtraLight.ttf') format('truetype'),
-           url('fonts/manrope-light/Manrope-Light.ttf') format('truetype'),
-           url('fonts/manrope-light/Manrope-Medium.ttf') format('truetype'),
-           url('fonts/manrope-light/Manrope-Regular.ttf') format('truetype'),
-           url('fonts/manrope-light/Manrope-SemiBold.ttf') format('truetype');
-    }
-    @font-face {
-      font-family: 'butler-stencil';
-      src :url('fonts/butler-stencil/Butler_Ultra_Light_Stencil.otf') format('opentype'),
-           url('fonts/butler-stencil/Butler_Black_Stencil.otf') format('opentype'),
-           url('fonts/butler-stencil/Butler_Bold_Stencil.otf') format('opentype'),
-           url('fonts/butler-stencil/Butler_ExtraBold_Stencil.otf') format('opentype'),
-           url('fonts/butler-stencil/Butler_Light_Stencil.otf') format('opentype'),
-           url('fonts/butler-stencil/Butler_Medium_Stencil.otf') format('opentype'),
-           url('fonts/butler-stencil/Butler_Regular_Stencil.otf') format('opentype');
-    }
-    @font-face {
-      font-family: 'butler';
-      src :url('fonts/butler/Butler_Ultra_Light.otf') format('opentype');
-    }
-    @font-face {
-      font-family: 'manrope';
-      src: url('fonts/manrope-light/Manrope-Light.ttf') format('truetype');
-    }
-    @font-face {
-      font-family: 'manrope-ultra-light';
-      src: url('fonts/manrope-light/Manrope-ExtraLight.ttf') format('truetype');
-    }
-    @font-face {
-      font-family: 'manrope-medium';
-      src: url('fonts/manrope-light/Manrope-Medium.ttf') format('truetype');
-    }
-    /* custom styles for specific fonts */
-    .font-butler {
-      font-family: 'butler', sans-serif;
-    }
-    .font-manrope-medium {
-        font-family: 'manrope-medium', sans-serif;
-    }
-    .font-manrope-light {
-      font-family: 'manrope-light', sans-serif;
-    }
-    .font-manrope-ultra-light {
-      font-family: 'manrope-ultra-light', sans-serif;
-    }
-    .font-butler-stencil {
-      font-family: 'butler-stencil', sans-serif;
-    }
-    .background-color {
+    <style>
+      @font-face {
+        font-family: "manrope-light";
+        src: url("fonts/manrope-light/Manrope-Bold.ttf") format("truetype"),
+          url("fonts/manrope-light/Manrope-ExtraBold.ttf") format("truetype"),
+          url("fonts/manrope-light/Manrope-ExtraLight.ttf") format("truetype"),
+          url("fonts/manrope-light/Manrope-Light.ttf") format("truetype"),
+          url("fonts/manrope-light/Manrope-Medium.ttf") format("truetype"),
+          url("fonts/manrope-light/Manrope-Regular.ttf") format("truetype"),
+          url("fonts/manrope-light/Manrope-SemiBold.ttf") format("truetype");
+      }
+      @font-face {
+        font-family: "butler-stencil";
+        src: url("fonts/butler-stencil/Butler_Ultra_Light_Stencil.otf")
+            format("opentype"),
+          url("fonts/butler-stencil/Butler_Black_Stencil.otf")
+            format("opentype"),
+          url("fonts/butler-stencil/Butler_Bold_Stencil.otf") format("opentype"),
+          url("fonts/butler-stencil/Butler_ExtraBold_Stencil.otf")
+            format("opentype"),
+          url("fonts/butler-stencil/Butler_Light_Stencil.otf")
+            format("opentype"),
+          url("fonts/butler-stencil/Butler_Medium_Stencil.otf")
+            format("opentype"),
+          url("fonts/butler-stencil/Butler_Regular_Stencil.otf")
+            format("opentype");
+      }
+      @font-face {
+        font-family: "butler";
+        src: url("fonts/butler/Butler_Ultra_Light.otf") format("opentype");
+      }
+      @font-face {
+        font-family: "manrope";
+        src: url("fonts/manrope-light/Manrope-Light.ttf") format("truetype");
+      }
+      @font-face {
+        font-family: "manrope-ultra-light";
+        src: url("fonts/manrope-light/Manrope-ExtraLight.ttf")
+          format("truetype");
+      }
+      @font-face {
+        font-family: "manrope-medium";
+        src: url("fonts/manrope-light/Manrope-Medium.ttf") format("truetype");
+      }
+      /* custom styles for specific fonts */
+      .font-butler {
+        font-family: "butler", sans-serif;
+      }
+      .font-manrope-medium {
+        font-family: "manrope-medium", sans-serif;
+      }
+      .font-manrope-light {
+        font-family: "manrope-light", sans-serif;
+      }
+      .font-manrope-ultra-light {
+        font-family: "manrope-ultra-light", sans-serif;
+      }
+      .font-butler-stencil {
+        font-family: "butler-stencil", sans-serif;
+      }
+      .background-color {
         background-color: #1a1818;
-    }
+      }
 
-    .background-color-section  {
+      .background-color-section {
         background-color: #ece7e1;
-    }
+      }
 
-    .text-color {
+      .text-color {
         color: #1a1818;
-    }
+      }
 
-    .text-color-main {
+      .text-color-main {
         color: #ece7e1;
-    }
+      }
 
-    .underline-animation {
+      .underline-animation {
         position: relative;
         display: inline-block;
         overflow: hidden;
-    }
-    .underline-animation::before {
-        content: '';
+      }
+      .underline-animation::before {
+        content: "";
         position: absolute;
         width: 100%;
         height: 2px;
@@ -379,42 +506,42 @@
         transform: scaleX(0);
         transform-origin: bottom right;
         transition: transform 0.3s ease-out;
-    }
-    .underline-animation:hover::before {
+      }
+      .underline-animation:hover::before {
         transform: scaleX(1);
         transform-origin: bottom left;
-    }
+      }
 
-    .arrow-container {
+      .arrow-container {
         position: absolute;
         top: 75%;
         left: 50%;
         width: 100px;
         height: 100px;
         transform: translate(-50%, -50%) rotateZ(0deg);
-    }
+      }
 
-    .arrow-container:hover .arrow {
+      .arrow-container:hover .arrow {
         top: 50%;
-    }
+      }
 
-    .arrow-container:hover .arrow:before {
+      .arrow-container:hover .arrow:before {
         transform: translate(-50%, -50%) rotateZ(-30deg);
-    }
+      }
 
-    .arrow-container:hover .arrow:after {
+      .arrow-container:hover .arrow:after {
         transform: translate(-50%, -50%) rotateZ(30deg);
-    }
+      }
 
-    .arrow {
+      .arrow {
         position: relative;
         transition: all 0.4s ease;
-    }
+      }
 
-    .arrow:before,
-    .arrow:after {
+      .arrow:before,
+      .arrow:after {
         transition: all 0.4s ease;
-        content: '';
+        content: "";
         display: block;
         position: absolute;
         transform-origin: bottom right;
@@ -423,150 +550,151 @@
         height: 50px;
         border-radius: 10px;
         transform: translate(-50%, -50%) rotateZ(-45deg);
-    }
+      }
 
-    .arrow:after {
+      .arrow:after {
         transform-origin: bottom left;
         transform: translate(-50%, -50%) rotateZ(45deg);
-    }
+      }
 
-    /* Arrow opacity and positioning */
-    .arrow:nth-child(1) {
+      /* Arrow opacity and positioning */
+      .arrow:nth-child(1) {
         opacity: 0.3;
         top: calc(15% + (100% / 5));
-    }
+      }
 
-    .arrow:nth-child(2) {
+      .arrow:nth-child(2) {
         opacity: 0.6;
         top: calc(15% + (100% * 2 / 5));
-    }
+      }
 
-    .arrow:nth-child(3) {
+      .arrow:nth-child(3) {
         opacity: 0.9;
         top: calc(15% + (100% * 3 / 5));
-    }
+      }
 
-    /* Animation chevron */
+      /* Animation chevron */
 
-    .chevron {
+      .chevron {
         position: absolute;
         width: 2.1rem;
         height: 0.48rem;
         opacity: 0;
         transform: scale(0.3);
         animation: move-chevron 3s ease-out infinite;
-    }
+      }
 
-    .chevron:first-child {
+      .chevron:first-child {
         animation-delay: 1s;
-    }
+      }
 
-    .chevron:nth-child(2) {
+      .chevron:nth-child(2) {
         animation-delay: 2s;
-    }
+      }
 
-    .chevron:before,
-    .chevron:after {
-        content: '';
+      .chevron:before,
+      .chevron:after {
+        content: "";
         position: absolute;
         top: 0;
         height: 100%;
         width: 50%;
         background: #ece7e1;
-    }
+      }
 
-    .chevron:before {
+      .chevron:before {
         left: 0;
         transform: skewY(30deg);
-    }
+      }
 
-    .chevron:after {
+      .chevron:after {
         right: 0;
         width: 50%;
         transform: skewY(-30deg);
-    }
+      }
 
-    .reveal-visible {
+      .reveal-visible {
         opacity: 1;
         transition: opacity 0.5s ease-in-out;
-    }
+      }
 
-    .reveal-hidden {
+      .reveal-hidden {
         opacity: 0;
         transition: opacity 0.5s ease-in-out;
-    }
+      }
 
-    @keyframes move-chevron {
+      @keyframes move-chevron {
         25% {
-            opacity: 1;
+          opacity: 1;
         }
         33.3% {
-            opacity: 1;
-            transform: translateY(2.28rem);
+          opacity: 1;
+          transform: translateY(2.28rem);
         }
         66.6% {
-            opacity: 1;
-            transform: translateY(3.12rem);
+          opacity: 1;
+          transform: translateY(3.12rem);
         }
         100% {
-            opacity: 0;
-            transform: translateY(4.8rem) scale(0.5);
+          opacity: 0;
+          transform: translateY(4.8rem) scale(0.5);
         }
-    }
+      }
 
-    .animated-gradient {
+      .animated-gradient {
         background: radial-gradient(
-            circle at 30% 30%,
-            #F4C2C2,
-            #E2B9E8 40%,
-            #B9E4C9 60%,
-            #C2F0C2
+          circle at 30% 30%,
+          #f4c2c2,
+          #e2b9e8 40%,
+          #b9e4c9 60%,
+          #c2f0c2
         );
         background-size: 400% 400%;
         animation: gradientAnimation 10s ease-in-out infinite;
-    }
+      }
 
-    @keyframes gradientAnimation {
+      @keyframes gradientAnimation {
         0% {
-            background-position: 0% 0%;
+          background-position: 0% 0%;
         }
         25% {
-            background-position: 100% 0%;
+          background-position: 100% 0%;
         }
         50% {
-            background-position: 100% 100%;
+          background-position: 100% 100%;
         }
         75% {
-            background-position: 0% 100%;
+          background-position: 0% 100%;
         }
         100% {
-            background-position: 0% 0%;
+          background-position: 0% 0%;
         }
-    }
+      }
 
+      .loader {
+        position: relative;
+        width: 600px;
+        height: 100px;
+        border-radius: 20px;
+        color: #ece7e1;
+        border: 2px solid currentColor;
+      }
 
-  .loader {
-    position: relative;
-    width: 600px;
-    height: 100px;
-    border-radius: 20px;
-    color: #ece7e1;
-    border: 2px solid currentColor;
-  }
+      .loader::before {
+        content: "";
+        position: absolute;
+        margin: 1px;
+        inset: 0 100% 0 0;
+        border-radius: inherit;
+        background: currentColor;
+        animation: l6 2s infinite;
+      }
 
-  .loader::before {
-    content: "";
-    position: absolute;
-    margin: 1px;
-    inset: 0 100% 0 0;
-    border-radius: inherit;
-    background: currentColor;
-    animation: l6 2s infinite;
-  }
-
-  @keyframes l6 {
-    100% {
-      inset: 0;
-    }
-  }
-</style>
+      @keyframes l6 {
+        100% {
+          inset: 0;
+        }
+      }
+    </style>
+  </body>
+</html>

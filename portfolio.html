@@ -1,370 +1,609 @@
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="icon" href="images/favicon.png">
-  <title>Portfolio</title>
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" href="images/favicon.png" />
+    <title>Portfolio</title>
+  </head>
 
-<body class="background-color overflow-x-hidden" onload="applyLanguagePreference()">
+  <body
+    class="background-color overflow-x-hidden"
+    onload="applyLanguagePreference()"
+  >
     <div class="h-screen w-screen flex items-start justify-center">
-        <div class="background-color-section h-[90%] w-[90%] flex flex-col items-center overflow-y-hidden animated-gradient">
-            <div class="flex justify-end md:hidden p-4">
-                <button id="burger-menu" class="text-black">
-                  <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
-                  </svg>
-                </button>
-              </div>
-              <!-- Navigation Menu -->
-              <nav class="w-full flex justify-center overflow-y-hidden">
-                <ul class="hidden md:flex justify-between w-[90%] mt-4">
-                  <li class="underline-animation"><a href="index.html" class="font-butler font-medium md:text-[18px] lg:text-[24px]">Home</a></li>
-                  <li class="underline-animation"><a href="bib-batteries.html" class="font-butler font-medium md:text-[18px] lg:text-[24px]">Bib Batteries</a></li>
-                  <li class="underline-animation"><a href="workadventure.html" class="font-butler font-medium md:text-[18px] lg:text-[24px]">WorkAdventure</a></li>
-                  <li class="underline-animation"><a href="surf-course.html" class="font-butler font-medium md:text-[18px] lg:text-[24px]">The Surf Course</a></li>
-                  <li class="underline-animation"><a href="tudo-bem-maman.html" class="font-butler font-medium md:text-[18px] lg:text-[24px]">Tudo Bem Maman</a></li>
-                  <li class="underline-animation"><a href="surfmate.html" class="font-butler font-medium md:text-[18px] lg:text-[24px]">SurfMate</a></li>
-                  <li class="underline-animation"><a href="others-projects.html" class="font-butler font-medium md:text-[18px] lg:text-[24px]">Others Projects</a></li>
-                  <li class="underline-animation"><a href="contact.html" class="font-butler font-medium md:text-[18px] lg:text-[24px]">Contact</a></li>
-                </ul>
-                <!-- Burger Menu Content -->
-                <ul id="burger-menu-content" class="absolute top-[5%] left-[5%] right-[5%] flex-col hidden md:hidden mt-8 px-2 py-1 rounded-md text-center">
-                  <li class="underline-animation"><a href="index.html" class="block p-2 font-butler font-medium">Home</a></li>
-                  <li class="underline-animation"><a href="bib-batteries.html" class="font-butler font-medium md:text-[18px] lg:text-[24px]">Bib Batteries</a></li>
-                  <li class="underline-animation"><a href="workadventure.html" class="block p-2 font-butler font-medium">WorkAdventure</a></li>
-                  <li class="underline-animation"><a href="surf-course.html" class="block p-2 font-butler font-medium">The Surf Course</a></li>
-                  <li class="underline-animation"><a href="tudo-bem-maman.html" class="block p-2 font-butler font-medium">Tudo Bem Maman</a></li>
-                  <li class="underline-animation"><a href="surfmate.html" class="block p-2 font-butler font-medium">SurfMate</a></li>
-                  <li class="underline-animation"><a href="others-projects.html" class="block p-2 font-butler font-medium">Others Projects</a></li>
-                  <li class="underline-animation"><a href="contact.html" class="block p-2 font-butler font-medium">Contact</a></li>
-                </ul>
-              </nav>
-            <div class="flex flex-grow items-center justify-center mb-[75px] md:mb-0 lg:mb-0 w-full">
-                <h1 class="font-butler font-medium text-[48px] md:text-[80px] lg:text-[80px] text-center text-color">My Portfolio</h1>
-            </div>
-            <a href="#section-fr" class="arrow-container hover:cursor-pointer flex justify-center">
-                <div class="arrow cursor-default"></div>
-                <div class="arrow cursor-default"></div>
-                <div class="arrow cursor-default"></div>
-            </a>
+      <div
+        class="background-color-section h-[90%] w-[90%] flex flex-col items-center overflow-y-hidden animated-gradient"
+      >
+        <div class="flex justify-end md:hidden p-4">
+          <button id="burger-menu" class="text-black">
+            <svg
+              class="w-8 h-8"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16m-7 6h7"
+              ></path>
+            </svg>
+          </button>
         </div>
+        <!-- Navigation Menu -->
+        <nav class="w-full flex justify-center overflow-y-hidden">
+          <ul class="hidden md:flex justify-between w-[90%] mt-4">
+            <li class="underline-animation">
+              <a
+                href="index.html"
+                class="font-butler font-medium md:text-[18px] lg:text-[24px]"
+                >Home</a
+              >
+            </li>
+            <li class="underline-animation">
+              <a
+                href="bib-batteries.html"
+                class="font-butler font-medium md:text-[18px] lg:text-[24px]"
+                >Bib Batteries</a
+              >
+            </li>
+            <li class="underline-animation">
+              <a
+                href="workadventure.html"
+                class="font-butler font-medium md:text-[18px] lg:text-[24px]"
+                >WorkAdventure</a
+              >
+            </li>
+            <li class="underline-animation">
+              <a
+                href="surf-course.html"
+                class="font-butler font-medium md:text-[18px] lg:text-[24px]"
+                >The Surf Course</a
+              >
+            </li>
+            <li class="underline-animation">
+              <a
+                href="tudo-bem-maman.html"
+                class="font-butler font-medium md:text-[18px] lg:text-[24px]"
+                >Tudo Bem Maman</a
+              >
+            </li>
+            <li class="underline-animation">
+              <a
+                href="runmate.html"
+                class="font-butler font-medium md:text-[18px] lg:text-[24px]"
+                >RunMate</a
+              >
+            </li>
+            <li class="underline-animation">
+              <a
+                href="others-projects.html"
+                class="font-butler font-medium md:text-[18px] lg:text-[24px]"
+                >Others Projects</a
+              >
+            </li>
+            <li class="underline-animation">
+              <a
+                href="contact.html"
+                class="font-butler font-medium md:text-[18px] lg:text-[24px]"
+                >Contact</a
+              >
+            </li>
+          </ul>
+          <!-- Burger Menu Content -->
+          <ul
+            id="burger-menu-content"
+            class="absolute top-[5%] left-[5%] right-[5%] flex-col hidden md:hidden mt-8 px-2 py-1 rounded-md text-center"
+          >
+            <li class="underline-animation">
+              <a href="index.html" class="block p-2 font-butler font-medium"
+                >Home</a
+              >
+            </li>
+            <li class="underline-animation">
+              <a
+                href="bib-batteries.html"
+                class="font-butler font-medium md:text-[18px] lg:text-[24px]"
+                >Bib Batteries</a
+              >
+            </li>
+            <li class="underline-animation">
+              <a
+                href="workadventure.html"
+                class="block p-2 font-butler font-medium"
+                >WorkAdventure</a
+              >
+            </li>
+            <li class="underline-animation">
+              <a
+                href="surf-course.html"
+                class="block p-2 font-butler font-medium"
+                >The Surf Course</a
+              >
+            </li>
+            <li class="underline-animation">
+              <a
+                href="tudo-bem-maman.html"
+                class="block p-2 font-butler font-medium"
+                >Tudo Bem Maman</a
+              >
+            </li>
+            <li class="underline-animation">
+              <a href="runmate.html" class="block p-2 font-butler font-medium"
+                >RunMate</a
+              >
+            </li>
+            <li class="underline-animation">
+              <a
+                href="others-projects.html"
+                class="block p-2 font-butler font-medium"
+                >Others Projects</a
+              >
+            </li>
+            <li class="underline-animation">
+              <a href="contact.html" class="block p-2 font-butler font-medium"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <div
+          class="flex flex-grow items-center justify-center mb-[75px] md:mb-0 lg:mb-0 w-full"
+        >
+          <h1
+            class="font-butler font-medium text-[48px] md:text-[80px] lg:text-[80px] text-center text-color"
+          >
+            My Portfolio
+          </h1>
+        </div>
+        <a
+          href="#section-fr"
+          class="arrow-container hover:cursor-pointer flex justify-center"
+        >
+          <div class="arrow cursor-default"></div>
+          <div class="arrow cursor-default"></div>
+          <div class="arrow cursor-default"></div>
+        </a>
+      </div>
     </div>
 
     <section class="fr" id="section-fr">
-        <div class="w-[70%] mx-auto">
-            <p class="font-butler font-medium text-[32px] mt-12 mb-24 flex justify-center text-center text-color-main">Projet personnel qui me permet de mettre en avant mes projets et compétences.</p>
-        </div>
-        <div class="container mx-auto text-color-main text-[18px] font-manrope-ultra-light font-bold">
-            <div class="md:grid md:grid-cols-3 gap-8 mb-24">
-                <div class="flex flex-col items-center mb-20 md:mb-0 text-center">
-                    <p>ROLE</p>
-                    <hr class="border-t w-[13%] mt-2 mb-4 background-color-section">
-                    <p>Développement front-end</p>
-                </div>
-                <div class="flex flex-col items-center mb-20 md:mb-0 text-center">
-                    <p>TECHNOLOGIES</p>
-                    <hr class="border-t w-[35%] mt-2 mb-4 background-color-section">
-                    <div class="ruby flex items-center gap-2">
-                        <p>HTML</p>
-                        <img src="images/html-3.png" alt="logo-ruby" height="24px" width="24px">
-                    </div>
-                    <div class="javascript flex items-center gap-2">
-                        <p>Tailwind</p>
-                        <img src="images/Logo Tailwind.svg.png" alt="logo-javascript" height="12px" width="24px">
-                    </div>
-                    <div class="sql flex items-center gap-2">
-                        <p>Javascript</p>
-                        <img src="images/javascript.png" alt="logo-sql" height="18px" width="42px">
-                    </div>
-                </div>
-                <div class="flex flex-col items-center text-center">
-                    <p>SEE ON GITHUB</p>
-                    <hr class="border-t w-[42%] mt-2 mb-4 background-color-section">
-                    <a href="https://github.com/alexarts74/portfolio" target="_blank" class="hover:text-sky-600">github-portfolio.com</a>
-                </div>
+      <div class="w-[70%] mx-auto">
+        <p
+          class="font-butler font-medium text-[32px] mt-12 mb-24 flex justify-center text-center text-color-main"
+        >
+          Projet personnel qui me permet de mettre en avant mes projets et
+          compétences.
+        </p>
+      </div>
+      <div
+        class="container mx-auto text-color-main text-[18px] font-manrope-ultra-light font-bold"
+      >
+        <div class="md:grid md:grid-cols-3 gap-8 mb-24">
+          <div class="flex flex-col items-center mb-20 md:mb-0 text-center">
+            <p>ROLE</p>
+            <hr class="border-t w-[13%] mt-2 mb-4 background-color-section" />
+            <p>Développement front-end</p>
+          </div>
+          <div class="flex flex-col items-center mb-20 md:mb-0 text-center">
+            <p>TECHNOLOGIES</p>
+            <hr class="border-t w-[35%] mt-2 mb-4 background-color-section" />
+            <div class="ruby flex items-center gap-2">
+              <p>HTML</p>
+              <img
+                src="images/html-3.png"
+                alt="logo-ruby"
+                height="24px"
+                width="24px"
+              />
             </div>
+            <div class="javascript flex items-center gap-2">
+              <p>Tailwind</p>
+              <img
+                src="images/Logo Tailwind.svg.png"
+                alt="logo-javascript"
+                height="12px"
+                width="24px"
+              />
+            </div>
+            <div class="sql flex items-center gap-2">
+              <p>Javascript</p>
+              <img
+                src="images/javascript.png"
+                alt="logo-sql"
+                height="18px"
+                width="42px"
+              />
+            </div>
+          </div>
+          <div class="flex flex-col items-center text-center">
+            <p>SEE ON GITHUB</p>
+            <hr class="border-t w-[42%] mt-2 mb-4 background-color-section" />
+            <a
+              href="https://github.com/alexarts74/portfolio"
+              target="_blank"
+              class="hover:text-sky-600"
+              >github-portfolio.com</a
+            >
+          </div>
         </div>
+      </div>
 
-
-        <div class="flex flex-col-reverse md:grid md:grid-cols-2 gap-8 items-center">
-            <div class="text-center text-color-main text-[18px] font-manrope-ultra-light font-bold ml-16 mr-12 md:ml-32 md:mr-0">
-                <div class="mb-4">
-                    <p class="text-color-main hover:text-sky-600 text-center">En savoir plus ...</p>
-                    <hr class="border-t w-[35%] mt-2 background-color-section mb-12 mx-auto">
-                </div>
-                <ul class="list-disc text-start">
-                    <li class="mb-2 text-[16px]">Une nouvelle version est en cours de réalisation ... ce portfolio me permet d'essayer différentes technologies la prochaine version sera en Svelte ou React ?</li>
-                    <li class="mb-2 text-[16px]">Une page d'accueil</li>
-                    <li class="mb-2 text-[16px]">Une page de présentation pour chaque projet</li>
-                    <li class="mb-2 text-[16px]">Une page de contact avec un chatbot</li>
-                </ul>
-            </div>
-            <div class="video-container md:mt-8 mt-[-72] flex justify-center">
-                <div class="video-container mb-20 md:mb-0 md:mt-8 flex justify-center">
-                    <img src="images/portfolio.png" alt="portfolio-code" width="520" height="400" class="portfolio">
-                </div>
-            </div>
+      <div
+        class="flex flex-col-reverse md:grid md:grid-cols-2 gap-8 items-center"
+      >
+        <div
+          class="text-center text-color-main text-[18px] font-manrope-ultra-light font-bold ml-16 mr-12 md:ml-32 md:mr-0"
+        >
+          <div class="mb-4">
+            <p class="text-color-main hover:text-sky-600 text-center">
+              En savoir plus ...
+            </p>
+            <hr
+              class="border-t w-[35%] mt-2 background-color-section mb-12 mx-auto"
+            />
+          </div>
+          <ul class="list-disc text-start">
+            <li class="mb-2 text-[16px]">
+              Une nouvelle version est en cours de réalisation ... ce portfolio
+              me permet d'essayer différentes technologies la prochaine version
+              sera en Svelte ou React ?
+            </li>
+            <li class="mb-2 text-[16px]">Une page d'accueil</li>
+            <li class="mb-2 text-[16px]">
+              Une page de présentation pour chaque projet
+            </li>
+            <li class="mb-2 text-[16px]">
+              Une page de contact avec un chatbot
+            </li>
+          </ul>
         </div>
-
-        <div class="h-[500px] w-screen flex items-end justify-center">
-            <div class="background-color-section h-[70%] w-[90%] flex flex-col items-center">
-                <p class="font-butler font-medium text-[48px] mt-24 mb-12 flex justify-center text-center text-color">Check it out !</p>
-                <button class="text-color-main background-color text-[24px] rounded-full w-[60%] h-[13%] md:w-[20%] hover:w-[25%] transition-all duration-300"><a href="https://github.com/alexarts74/portfolio" target="_blank">My Portfolio</a></button>
-            </div>
+        <div class="video-container md:mt-8 mt-[-72] flex justify-center">
+          <div
+            class="video-container mb-20 md:mb-0 md:mt-8 flex justify-center"
+          >
+            <img
+              src="images/portfolio.png"
+              alt="portfolio-code"
+              width="520"
+              height="400"
+              class="portfolio"
+            />
+          </div>
         </div>
+      </div>
+
+      <div class="h-[500px] w-screen flex items-end justify-center">
+        <div
+          class="background-color-section h-[70%] w-[90%] flex flex-col items-center"
+        >
+          <p
+            class="font-butler font-medium text-[48px] mt-24 mb-12 flex justify-center text-center text-color"
+          >
+            Check it out !
+          </p>
+          <button
+            class="text-color-main background-color text-[24px] rounded-full w-[60%] h-[13%] md:w-[20%] hover:w-[25%] transition-all duration-300"
+          >
+            <a href="https://github.com/alexarts74/portfolio" target="_blank"
+              >My Portfolio</a
+            >
+          </button>
+        </div>
+      </div>
     </section>
 
-    <section class="en" style="display: none;">
-        <div class="w-[70%] mx-auto">
-            <p class="font-butler font-medium text-[32px] mt-12 mb-24 flex justify-center text-center text-color-main">Personal project that allows me to showcase my projects and skills.</p>
-        </div>
-        <div class="container mx-auto text-color-main text-[18px] font-manrope-ultra-light font-bold">
-            <div class="md:grid md:grid-cols-3 gap-8 mb-24">
-                <div class="flex flex-col items-center mb-20 md:mb-0 text-center">
-                    <p>ROLE</p>
-                    <hr class="border-t w-[13%] mt-2 mb-4 background-color-section">
-                    <p>Front-end development</p>
-                </div>
-                <div class="flex flex-col items-center mb-20 md:mb-0 text-center">
-                    <p>TECHNOLOGIES</p>
-                    <hr class="border-t w-[35%] mt-2 mb-4 background-color-section">
-                    <div class="ruby flex items-center gap-2">
-                        <p>HTML</p>
-                        <img src="images/html-3.png" alt="logo-html" height="24px" width="24px">
-                    </div>
-                    <div class="javascript flex items-center gap-2">
-                        <p>Tailwind</p>
-                        <img src="images/Logo Tailwind.svg.png" alt="logo-tailwind" height="12px" width="24px">
-                    </div>
-                    <div class="sql flex items-center gap-2">
-                        <p>JavaScript</p>
-                        <img src="images/javascript.png" alt="logo-javascript" height="18px" width="42px">
-                    </div>
-                </div>
-                <div class="flex flex-col items-center text-center">
-                    <p>SEE ON GITHUB</p>
-                    <hr class="border-t w-[42%] mt-2 mb-4 background-color-section">
-                    <a href="https://github.com/alexarts74/portfolio" target="_blank" class="hover:text-sky-600">github-portfolio.com</a>
-                </div>
+    <section class="en" style="display: none">
+      <div class="w-[70%] mx-auto">
+        <p
+          class="font-butler font-medium text-[32px] mt-12 mb-24 flex justify-center text-center text-color-main"
+        >
+          Personal project that allows me to showcase my projects and skills.
+        </p>
+      </div>
+      <div
+        class="container mx-auto text-color-main text-[18px] font-manrope-ultra-light font-bold"
+      >
+        <div class="md:grid md:grid-cols-3 gap-8 mb-24">
+          <div class="flex flex-col items-center mb-20 md:mb-0 text-center">
+            <p>ROLE</p>
+            <hr class="border-t w-[13%] mt-2 mb-4 background-color-section" />
+            <p>Front-end development</p>
+          </div>
+          <div class="flex flex-col items-center mb-20 md:mb-0 text-center">
+            <p>TECHNOLOGIES</p>
+            <hr class="border-t w-[35%] mt-2 mb-4 background-color-section" />
+            <div class="ruby flex items-center gap-2">
+              <p>HTML</p>
+              <img
+                src="images/html-3.png"
+                alt="logo-html"
+                height="24px"
+                width="24px"
+              />
             </div>
+            <div class="javascript flex items-center gap-2">
+              <p>Tailwind</p>
+              <img
+                src="images/Logo Tailwind.svg.png"
+                alt="logo-tailwind"
+                height="12px"
+                width="24px"
+              />
+            </div>
+            <div class="sql flex items-center gap-2">
+              <p>JavaScript</p>
+              <img
+                src="images/javascript.png"
+                alt="logo-javascript"
+                height="18px"
+                width="42px"
+              />
+            </div>
+          </div>
+          <div class="flex flex-col items-center text-center">
+            <p>SEE ON GITHUB</p>
+            <hr class="border-t w-[42%] mt-2 mb-4 background-color-section" />
+            <a
+              href="https://github.com/alexarts74/portfolio"
+              target="_blank"
+              class="hover:text-sky-600"
+              >github-portfolio.com</a
+            >
+          </div>
         </div>
+      </div>
 
-        <div class="flex flex-col-reverse md:grid md:grid-cols-2 gap-8 items-center">
-            <div class="text-center text-color-main text-[18px] font-manrope-ultra-light font-bold ml-16 mr-12 md:ml-32 md:mr-0">
-                <div class="mb-4">
-                    <p class="text-color-main hover:text-sky-600 text-center">Learn more ...</p>
-                    <hr class="border-t w-[35%] mt-2 background-color-section mb-12 mx-auto">
-                </div>
-                <ul class="list-disc text-start">
-                    <li class="mb-2 text-[16px]">A new version is in progress ... this portfolio allows me to try different technologies. Will the next version be in Svelte or React?</li>
-                    <li class="mb-2 text-[16px]">A homepage</li>
-                    <li class="mb-2 text-[16px]">A presentation page for each project</li>
-                    <li class="mb-2 text-[16px]">A contact page with a chatbot</li>
-                </ul>
-            </div>
-            <div class="video-container md:mt-8 mt-[-72] flex justify-center">
-                <div class="video-container mb-20 md:mb-0 md:mt-8 flex justify-center">
-                    <img src="images/portfolio.png" alt="portfolio-code" width="520" height="400" class="portfolio">
-                </div>
-            </div>
+      <div
+        class="flex flex-col-reverse md:grid md:grid-cols-2 gap-8 items-center"
+      >
+        <div
+          class="text-center text-color-main text-[18px] font-manrope-ultra-light font-bold ml-16 mr-12 md:ml-32 md:mr-0"
+        >
+          <div class="mb-4">
+            <p class="text-color-main hover:text-sky-600 text-center">
+              Learn more ...
+            </p>
+            <hr
+              class="border-t w-[35%] mt-2 background-color-section mb-12 mx-auto"
+            />
+          </div>
+          <ul class="list-disc text-start">
+            <li class="mb-2 text-[16px]">
+              A new version is in progress ... this portfolio allows me to try
+              different technologies. Will the next version be in Svelte or
+              React?
+            </li>
+            <li class="mb-2 text-[16px]">A homepage</li>
+            <li class="mb-2 text-[16px]">
+              A presentation page for each project
+            </li>
+            <li class="mb-2 text-[16px]">A contact page with a chatbot</li>
+          </ul>
         </div>
+        <div class="video-container md:mt-8 mt-[-72] flex justify-center">
+          <div
+            class="video-container mb-20 md:mb-0 md:mt-8 flex justify-center"
+          >
+            <img
+              src="images/portfolio.png"
+              alt="portfolio-code"
+              width="520"
+              height="400"
+              class="portfolio"
+            />
+          </div>
+        </div>
+      </div>
 
-        <div class="h-[500px] w-screen flex items-end justify-center">
-            <div class="background-color-section h-[70%] w-[90%] flex flex-col items-center">
-                <p class="font-butler font-medium text-[48px] mt-24 mb-12 flex justify-center text-center text-color">Check it out!</p>
-                <button class="text-color-main background-color text-[24px] rounded-full w-[60%] h-[13%] md:w-[20%] hover:w-[25%] transition-all duration-300">
-                    <a href="https://github.com/alexarts74/portfolio" target="_blank">My Portfolio</a>
-                </button>
-            </div>
+      <div class="h-[500px] w-screen flex items-end justify-center">
+        <div
+          class="background-color-section h-[70%] w-[90%] flex flex-col items-center"
+        >
+          <p
+            class="font-butler font-medium text-[48px] mt-24 mb-12 flex justify-center text-center text-color"
+          >
+            Check it out!
+          </p>
+          <button
+            class="text-color-main background-color text-[24px] rounded-full w-[60%] h-[13%] md:w-[20%] hover:w-[25%] transition-all duration-300"
+          >
+            <a href="https://github.com/alexarts74/portfolio" target="_blank"
+              >My Portfolio</a
+            >
+          </button>
         </div>
+      </div>
     </section>
-</body>
+  </body>
 
-<script src="script.js" defer></script>
+  <script src="script.js" defer></script>
 </html>
 
 <style>
-    @font-face {
-      font-family: 'manrope-light';
-      src: url('fonts/manrope-light/Manrope-Bold.ttf') format('truetype'),
-           url('fonts/manrope-light/Manrope-ExtraBold.ttf') format('truetype'),
-           url('fonts/manrope-light/Manrope-ExtraLight.ttf') format('truetype'),
-           url('fonts/manrope-light/Manrope-Light.ttf') format('truetype'),
-           url('fonts/manrope-light/Manrope-Medium.ttf') format('truetype'),
-           url('fonts/manrope-light/Manrope-Regular.ttf') format('truetype'),
-           url('fonts/manrope-light/Manrope-SemiBold.ttf') format('truetype');
-    }
-    @font-face {
-      font-family: 'butler-stencil';
-      src :url('fonts/butler-stencil/Butler_Ultra_Light_Stencil.otf') format('opentype'),
-           url('fonts/butler-stencil/Butler_Black_Stencil.otf') format('opentype'),
-           url('fonts/butler-stencil/Butler_Bold_Stencil.otf') format('opentype'),
-           url('fonts/butler-stencil/Butler_ExtraBold_Stencil.otf') format('opentype'),
-           url('fonts/butler-stencil/Butler_Light_Stencil.otf') format('opentype'),
-           url('fonts/butler-stencil/Butler_Medium_Stencil.otf') format('opentype'),
-           url('fonts/butler-stencil/Butler_Regular_Stencil.otf') format('opentype');
-    }
-    @font-face {
-      font-family: 'butler';
-      src :url('fonts/butler/Butler_Ultra_Light.otf') format('opentype');
-    }
-    @font-face {
-      font-family: 'manrope';
-      src: url('fonts/manrope-light/Manrope-Light.ttf') format('truetype');
-    }
-    @font-face {
-      font-family: 'manrope-ultra-light';
-      src: url('fonts/manrope-light/Manrope-ExtraLight.ttf') format('truetype');
-    }
-    @font-face {
-      font-family: 'manrope-medium';
-      src: url('fonts/manrope-light/Manrope-Medium.ttf') format('truetype');
-    }
-    /* custom styles for specific fonts */
-    .font-butler {
-      font-family: 'butler', sans-serif;
-    }
-    .font-manrope-medium {
-        font-family: 'manrope-medium', sans-serif;
-    }
-    .font-manrope-light {
-      font-family: 'manrope-light', sans-serif;
-    }
-    .font-manrope-ultra-light {
-      font-family: 'manrope-ultra-light', sans-serif;
-    }
-    .font-butler-stencil {
-      font-family: 'butler-stencil', sans-serif;
-    }
-    .background-color {
-        background-color: #1a1818;
-    }
+  @font-face {
+    font-family: "manrope-light";
+    src: url("fonts/manrope-light/Manrope-Bold.ttf") format("truetype"),
+      url("fonts/manrope-light/Manrope-ExtraBold.ttf") format("truetype"),
+      url("fonts/manrope-light/Manrope-ExtraLight.ttf") format("truetype"),
+      url("fonts/manrope-light/Manrope-Light.ttf") format("truetype"),
+      url("fonts/manrope-light/Manrope-Medium.ttf") format("truetype"),
+      url("fonts/manrope-light/Manrope-Regular.ttf") format("truetype"),
+      url("fonts/manrope-light/Manrope-SemiBold.ttf") format("truetype");
+  }
+  @font-face {
+    font-family: "butler-stencil";
+    src: url("fonts/butler-stencil/Butler_Ultra_Light_Stencil.otf")
+        format("opentype"),
+      url("fonts/butler-stencil/Butler_Black_Stencil.otf") format("opentype"),
+      url("fonts/butler-stencil/Butler_Bold_Stencil.otf") format("opentype"),
+      url("fonts/butler-stencil/Butler_ExtraBold_Stencil.otf")
+        format("opentype"),
+      url("fonts/butler-stencil/Butler_Light_Stencil.otf") format("opentype"),
+      url("fonts/butler-stencil/Butler_Medium_Stencil.otf") format("opentype"),
+      url("fonts/butler-stencil/Butler_Regular_Stencil.otf") format("opentype");
+  }
+  @font-face {
+    font-family: "butler";
+    src: url("fonts/butler/Butler_Ultra_Light.otf") format("opentype");
+  }
+  @font-face {
+    font-family: "manrope";
+    src: url("fonts/manrope-light/Manrope-Light.ttf") format("truetype");
+  }
+  @font-face {
+    font-family: "manrope-ultra-light";
+    src: url("fonts/manrope-light/Manrope-ExtraLight.ttf") format("truetype");
+  }
+  @font-face {
+    font-family: "manrope-medium";
+    src: url("fonts/manrope-light/Manrope-Medium.ttf") format("truetype");
+  }
+  /* custom styles for specific fonts */
+  .font-butler {
+    font-family: "butler", sans-serif;
+  }
+  .font-manrope-medium {
+    font-family: "manrope-medium", sans-serif;
+  }
+  .font-manrope-light {
+    font-family: "manrope-light", sans-serif;
+  }
+  .font-manrope-ultra-light {
+    font-family: "manrope-ultra-light", sans-serif;
+  }
+  .font-butler-stencil {
+    font-family: "butler-stencil", sans-serif;
+  }
+  .background-color {
+    background-color: #1a1818;
+  }
 
-    .background-color-section  {
-        background-color: #ece7e1;
-    }
+  .background-color-section {
+    background-color: #ece7e1;
+  }
 
-    .text-color {
-        color: #1a1818;
-    }
+  .text-color {
+    color: #1a1818;
+  }
 
-    .text-color-main {
-        color: #ece7e1;
-    }
+  .text-color-main {
+    color: #ece7e1;
+  }
 
-    .underline-animation {
-            position: relative;
-            display: inline-block;
-            overflow: hidden;
-    }
-    .underline-animation::before {
-        content: '';
-        position: absolute;
-        width: 100%;
-        height: 2px;
-        bottom: 0;
-        left: 0;
-        background-color: currentColor;
-        transform: scaleX(0);
-        transform-origin: bottom right;
-        transition: transform 0.3s ease-out;
-    }
-    .underline-animation:hover::before {
-        transform: scaleX(1);
-        transform-origin: bottom left;
-    }
+  .underline-animation {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+  }
+  .underline-animation::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: currentColor;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease-out;
+  }
+  .underline-animation:hover::before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
 
-    .arrow-container {
-        position: absolute;
-        top: 75%;
-        left: 50%;
-        width: 100px;
-        height: 100px;
-        transform: translate(-50%, -50%) rotateZ(0deg);
-    }
+  .arrow-container {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    width: 100px;
+    height: 100px;
+    transform: translate(-50%, -50%) rotateZ(0deg);
+  }
 
-    .arrow-container:hover .arrow {
-        top: 50%;
-    }
+  .arrow-container:hover .arrow {
+    top: 50%;
+  }
 
-    .arrow-container:hover .arrow:before {
-        transform: translate(-50%, -50%) rotateZ(-30deg);
-    }
+  .arrow-container:hover .arrow:before {
+    transform: translate(-50%, -50%) rotateZ(-30deg);
+  }
 
-    .arrow-container:hover .arrow:after {
-        transform: translate(-50%, -50%) rotateZ(30deg);
-    }
+  .arrow-container:hover .arrow:after {
+    transform: translate(-50%, -50%) rotateZ(30deg);
+  }
 
-    .arrow {
-        position: relative;
-        transition: all 0.4s ease;
-    }
+  .arrow {
+    position: relative;
+    transition: all 0.4s ease;
+  }
 
-    .arrow:before,
-    .arrow:after {
-        transition: all 0.4s ease;
-        content: '';
-        display: block;
-        position: absolute;
-        transform-origin: bottom right;
-        background: #1a1818;
-        width: 4px;
-        height: 50px;
-        border-radius: 10px;
-        transform: translate(-50%, -50%) rotateZ(-45deg);
-    }
+  .arrow:before,
+  .arrow:after {
+    transition: all 0.4s ease;
+    content: "";
+    display: block;
+    position: absolute;
+    transform-origin: bottom right;
+    background: #1a1818;
+    width: 4px;
+    height: 50px;
+    border-radius: 10px;
+    transform: translate(-50%, -50%) rotateZ(-45deg);
+  }
 
-    .arrow:after {
-        transform-origin: bottom left;
-        transform: translate(-50%, -50%) rotateZ(45deg);
-    }
+  .arrow:after {
+    transform-origin: bottom left;
+    transform: translate(-50%, -50%) rotateZ(45deg);
+  }
 
-    .arrow:nth-child(1) {
-        opacity: 0.3;
-        top: calc(15% + (100% / 5));
-    }
+  .arrow:nth-child(1) {
+    opacity: 0.3;
+    top: calc(15% + (100% / 5));
+  }
 
-    .arrow:nth-child(2) {
-        opacity: 0.6;
-        top: calc(15% + (100% * 2 / 5));
-    }
+  .arrow:nth-child(2) {
+    opacity: 0.6;
+    top: calc(15% + (100% * 2 / 5));
+  }
 
-    .arrow:nth-child(3) {
-        opacity: 0.9;
-        top: calc(15% + (100% * 3 / 5));
-    }
+  .arrow:nth-child(3) {
+    opacity: 0.9;
+    top: calc(15% + (100% * 3 / 5));
+  }
 
-    .animated-gradient {
-        background: radial-gradient(
-            circle at 30% 30%,
-            #F4C2C2,
-            #E2B9E8 40%,
-            #B9E4C9 60%,
-            #C2F0C2
-        );
-        background-size: 400% 400%;
-        animation: gradientAnimation 10s ease-in-out infinite;
-    }
+  .animated-gradient {
+    background: radial-gradient(
+      circle at 30% 30%,
+      #f4c2c2,
+      #e2b9e8 40%,
+      #b9e4c9 60%,
+      #c2f0c2
+    );
+    background-size: 400% 400%;
+    animation: gradientAnimation 10s ease-in-out infinite;
+  }
 
-    @keyframes gradientAnimation {
-        0% {
-            background-position: 0% 0%;
-        }
-        25% {
-            background-position: 100% 0%;
-        }
-        50% {
-            background-position: 100% 100%;
-        }
-        75% {
-            background-position: 0% 100%;
-        }
-        100% {
-            background-position: 0% 0%;
-        }
+  @keyframes gradientAnimation {
+    0% {
+      background-position: 0% 0%;
     }
+    25% {
+      background-position: 100% 0%;
+    }
+    50% {
+      background-position: 100% 100%;
+    }
+    75% {
+      background-position: 0% 100%;
+    }
+    100% {
+      background-position: 0% 0%;
+    }
+  }
 </style>

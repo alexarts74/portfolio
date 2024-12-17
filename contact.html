@@ -1,237 +1,387 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="icon" href="images/favicon.png">
-  <title>Contact</title>
-</head>
-<body class="background-color overflow-x-hidden" onload="applyLanguagePreference()">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" href="images/favicon.png" />
+    <title>Contact</title>
+  </head>
+  <body
+    class="background-color overflow-x-hidden"
+    onload="applyLanguagePreference()"
+  >
     <div class="h-screen w-screen flex items-start justify-center">
-        <div class="h-[100%] w-[90%] flex flex-col items-center">
-            <div class="flex justify-end md:hidden p-4">
-                <button id="burger-menu" class="text-color-main">
-                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
-                    </svg>
-                </button>
-            </div>
-            <nav class="w-full h-[60px] flex justify-center overflow-y-hidden mt-6">
-                <ul class="hidden md:flex justify-between w-[90%] ">
-                    <li class="underline-animation"><a href="index.html" class="font-butler font-medium md:text-[18px] lg:text-[24px] text-color-main">Home</a></li>
-                    <li class="underline-animation"><a href="bib-batteries.html" class="font-butler font-medium md:text-[18px] lg:text-[24px]">Bib Batteries</a></li>
-                    <li class="underline-animation"><a href="surf-course.html" class="font-butler font-medium md:text-[18px] lg:text-[24px] text-color-main">The Surf Course</a></li>
-                    <li class="underline-animation"><a href="tudo-bem-maman.html" class="font-butler font-medium md:text-[18px] lg:text-[24px] text-color-main">Tudo Bem Maman</a></li>
-                    <li class="underline-animation"><a href="portfolio.html" class="font-butler font-medium md:text-[18px] lg:text-[24px] text-color-main">Portfolio</a></li>
-                    <li class="underline-animation"><a href="workadventure.html" class="font-butler font-medium md:text-[18px] lg:text-[24px] text-color-main">WorkAdventure</a></li>
-                    <li class="underline-animation"><a href="others-projects.html" class="font-butler font-medium md:text-[18px] lg:text-[24px] text-color-main">Others Projects</a></li>
-                    <li class="underline-animation"><a href="contact.html" class="font-butler font-medium md:text-[18px] lg:text-[24px] text-color-main">Contact</a></li>
-                  </ul>
-                <!-- Burger Menu Content -->
-                <ul id="burger-menu-content" class="absolute top-[5%] left-[5%] right-[5%] background-color flex-col hidden md:hidden mt-8 px-2 py-1 rounded-md text-center">
-                  <li class="underline-animation"><a href="index.html" class="block p-2 font-butler font-medium text-color-main">Home</a></li>
-                  <li class="underline-animation"><a href="bib-batteries.html" class="font-butler font-medium md:text-[18px] lg:text-[24px]">Bib Batteries</a></li>
-                  <li class="underline-animation"><a href="surf-course.html" class="block p-2 font-butler font-medium text-color-main">The Surf Course</a></li>
-                  <li class="underline-animation"><a href="tudo-bem-maman.html" class="block p-2 font-butler font-medium text-color-main">Tudo Bem Maman</a></li>
-                  <li class="underline-animation"><a href="portfolio.html" class="block p-2 font-butler font-medium text-color-main">Portfolio</a></li>
-                  <li class="underline-animation"><a href="workadventure.html" class="block p-2 font-butler font-medium text-color-main">WorkAdventure</a></li>
-                  <li class="underline-animation"><a href="surfmate.html" class="block p-2 font-butler font-medium text-color-main">SurfMate</a></li>
-                  <li class="underline-animation"><a href="others-projects.html" class="block p-2 font-butler font-medium text-color-main">Others Projects</a></li>
-                </ul>
-              </nav>
-
-            <div class="md:flex items-center justify-around w-full h-full">
-                <div class="block mt-48 md:mt-0">
-                    <h1 class="font-butler font-medium text-[48px] md:text-[124px] text-center text-color-main">Contact.</h1>
-                    <hr class="border-t w-[42%] mt-[-12px] mx-auto md:mx-0 md:mt-[-32px] background-color-section">
-                </div>
-                <section>
-                    <div class="container mx-auto text-color-main text-[18px] font-manrope-ultra-light font-bold">
-                        <div class="flex justify-around md:gap-24">
-                            <div class="flex flex-col items-center text-center mt-20 md:mt-0">
-                                <p>GITHUB</p>
-                                <a href="https://github.com/alexarts74"><img src="images/github-mark-white.png" alt="github-logo" height="72px" width="54px"></a>
-                            </div>
-                            <div class="flex flex-col items-center mt-20 md:mt-0 text-center">
-                                <p>MAIL</p>
-                                <a href="mailto:artusalexandre74@gmail.com"><img src="images/gmail-logo.png" alt="logo-linkedin" height="48px" width="62px" class="gmail-logo"></a>
-                            </div>
-                            <div class="flex flex-col items-center mt-20 md:mt-0 text-center">
-                                <p>LINKEDIN</p>
-                                <a href="https://www.linkedin.com/in/alexandre-artus-27a71b1a4/"><img src="images/logo-linkedin.png" alt="logo-linkedin" height="48px" width="62px"></a>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-            </div>
-            <div class="mb-24 md:mb-52 mx-auto">
-                <a href="#chat" class="flex justify-center items-center rounded-lg h-[48px] w-[148px] background-color-section transform transition duration-300 hover:scale-110"><h1 class="text-[18px] text-color">Get in Touch</h1></a>
-            </div>
-
-
+      <div class="h-[100%] w-[90%] flex flex-col items-center">
+        <div class="flex justify-end md:hidden p-4">
+          <button id="burger-menu" class="text-color-main">
+            <svg
+              class="w-8 h-8"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16m-7 6h7"
+              ></path>
+            </svg>
+          </button>
         </div>
+        <nav class="w-full h-[60px] flex justify-center overflow-y-hidden mt-6">
+          <ul class="hidden md:flex justify-between w-[90%]">
+            <li class="underline-animation">
+              <a
+                href="index.html"
+                class="font-butler font-medium md:text-[18px] lg:text-[24px] text-color-main"
+                >Home</a
+              >
+            </li>
+            <li class="underline-animation">
+              <a
+                href="bib-batteries.html"
+                class="font-butler font-medium md:text-[18px] lg:text-[24px]"
+                >Bib Batteries</a
+              >
+            </li>
+            <li class="underline-animation">
+              <a
+                href="surf-course.html"
+                class="font-butler font-medium md:text-[18px] lg:text-[24px] text-color-main"
+                >The Surf Course</a
+              >
+            </li>
+            <li class="underline-animation">
+              <a
+                href="tudo-bem-maman.html"
+                class="font-butler font-medium md:text-[18px] lg:text-[24px] text-color-main"
+                >Tudo Bem Maman</a
+              >
+            </li>
+            <li class="underline-animation">
+              <a
+                href="portfolio.html"
+                class="font-butler font-medium md:text-[18px] lg:text-[24px] text-color-main"
+                >Portfolio</a
+              >
+            </li>
+            <li class="underline-animation">
+              <a
+                href="workadventure.html"
+                class="font-butler font-medium md:text-[18px] lg:text-[24px] text-color-main"
+                >WorkAdventure</a
+              >
+            </li>
+            <li class="underline-animation">
+              <a
+                href="others-projects.html"
+                class="font-butler font-medium md:text-[18px] lg:text-[24px] text-color-main"
+                >Others Projects</a
+              >
+            </li>
+            <li class="underline-animation">
+              <a
+                href="runmate.html"
+                class="font-butler font-medium md:text-[18px] lg:text-[24px] text-color-main"
+                >RunMate</a
+              >
+            </li>
+          </ul>
+          <!-- Burger Menu Content -->
+          <ul
+            id="burger-menu-content"
+            class="absolute top-[5%] left-[5%] right-[5%] background-color flex-col hidden md:hidden mt-8 px-2 py-1 rounded-md text-center"
+          >
+            <li class="underline-animation">
+              <a
+                href="index.html"
+                class="block p-2 font-butler font-medium text-color-main"
+                >Home</a
+              >
+            </li>
+            <li class="underline-animation">
+              <a
+                href="bib-batteries.html"
+                class="font-butler font-medium md:text-[18px] lg:text-[24px]"
+                >Bib Batteries</a
+              >
+            </li>
+            <li class="underline-animation">
+              <a
+                href="surf-course.html"
+                class="block p-2 font-butler font-medium text-color-main"
+                >The Surf Course</a
+              >
+            </li>
+            <li class="underline-animation">
+              <a
+                href="tudo-bem-maman.html"
+                class="block p-2 font-butler font-medium text-color-main"
+                >Tudo Bem Maman</a
+              >
+            </li>
+            <li class="underline-animation">
+              <a
+                href="portfolio.html"
+                class="block p-2 font-butler font-medium text-color-main"
+                >Portfolio</a
+              >
+            </li>
+            <li class="underline-animation">
+              <a
+                href="workadventure.html"
+                class="block p-2 font-butler font-medium text-color-main"
+                >WorkAdventure</a
+              >
+            </li>
+            <li class="underline-animation">
+              <a
+                href="runmate.html"
+                class="block p-2 font-butler font-medium text-color-main"
+                >RunMate</a
+              >
+            </li>
+            <li class="underline-animation">
+              <a
+                href="others-projects.html"
+                class="block p-2 font-butler font-medium text-color-main"
+                >Others Projects</a
+              >
+            </li>
+          </ul>
+        </nav>
+
+        <div class="md:flex items-center justify-around w-full h-full">
+          <div class="block mt-48 md:mt-0">
+            <h1
+              class="font-butler font-medium text-[48px] md:text-[124px] text-center text-color-main"
+            >
+              Contact.
+            </h1>
+            <hr
+              class="border-t w-[42%] mt-[-12px] mx-auto md:mx-0 md:mt-[-32px] background-color-section"
+            />
+          </div>
+          <section>
+            <div
+              class="container mx-auto text-color-main text-[18px] font-manrope-ultra-light font-bold"
+            >
+              <div class="flex justify-around md:gap-24">
+                <div
+                  class="flex flex-col items-center text-center mt-20 md:mt-0"
+                >
+                  <p>GITHUB</p>
+                  <a href="https://github.com/alexarts74"
+                    ><img
+                      src="images/github-mark-white.png"
+                      alt="github-logo"
+                      height="72px"
+                      width="54px"
+                  /></a>
+                </div>
+                <div
+                  class="flex flex-col items-center mt-20 md:mt-0 text-center"
+                >
+                  <p>MAIL</p>
+                  <a href="mailto:artusalexandre74@gmail.com"
+                    ><img
+                      src="images/gmail-logo.png"
+                      alt="logo-linkedin"
+                      height="48px"
+                      width="62px"
+                      class="gmail-logo"
+                  /></a>
+                </div>
+                <div
+                  class="flex flex-col items-center mt-20 md:mt-0 text-center"
+                >
+                  <p>LINKEDIN</p>
+                  <a
+                    href="https://www.linkedin.com/in/alexandre-artus-27a71b1a4/"
+                    ><img
+                      src="images/logo-linkedin.png"
+                      alt="logo-linkedin"
+                      height="48px"
+                      width="62px"
+                  /></a>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+        <div class="mb-24 md:mb-52 mx-auto">
+          <a
+            href="#chat"
+            class="flex justify-center items-center rounded-lg h-[48px] w-[148px] background-color-section transform transition duration-300 hover:scale-110"
+            ><h1 class="text-[18px] text-color">Get in Touch</h1></a
+          >
+        </div>
+      </div>
     </div>
 
     <div class="flex justify-center" id="chat">
-        <script type="module">
-            import Typebot from 'https://cdn.jsdelivr.net/npm/@typebot.io/js@0.3/dist/web.js';
+      <script type="module">
+        import Typebot from "https://cdn.jsdelivr.net/npm/@typebot.io/js@0.3/dist/web.js";
 
-            Typebot.initStandard({ typebot: "portfolio-xv0nlfn" });
-        </script>
-        <typebot-standard style="width: 90%; height: 600px; "></typebot-standard>
+        Typebot.initStandard({ typebot: "portfolio-xv0nlfn" });
+      </script>
+      <typebot-standard style="width: 90%; height: 600px"></typebot-standard>
     </div>
-</body>
-<script src="script.js" defer></script>
+  </body>
+  <script src="script.js" defer></script>
 </html>
 
 <style>
-    @font-face {
-      font-family: 'manrope-light';
-      src: url('fonts/manrope-light/Manrope-Bold.ttf') format('truetype'),
-           url('fonts/manrope-light/Manrope-ExtraBold.ttf') format('truetype'),
-           url('fonts/manrope-light/Manrope-ExtraLight.ttf') format('truetype'),
-           url('fonts/manrope-light/Manrope-Light.ttf') format('truetype'),
-           url('fonts/manrope-light/Manrope-Medium.ttf') format('truetype'),
-           url('fonts/manrope-light/Manrope-Regular.ttf') format('truetype'),
-           url('fonts/manrope-light/Manrope-SemiBold.ttf') format('truetype');
-    }
-    @font-face {
-      font-family: 'butler-stencil';
-      src :url('fonts/butler-stencil/Butler_Ultra_Light_Stencil.otf') format('opentype'),
-           url('fonts/butler-stencil/Butler_Black_Stencil.otf') format('opentype'),
-           url('fonts/butler-stencil/Butler_Bold_Stencil.otf') format('opentype'),
-           url('fonts/butler-stencil/Butler_ExtraBold_Stencil.otf') format('opentype'),
-           url('fonts/butler-stencil/Butler_Light_Stencil.otf') format('opentype'),
-           url('fonts/butler-stencil/Butler_Medium_Stencil.otf') format('opentype'),
-           url('fonts/butler-stencil/Butler_Regular_Stencil.otf') format('opentype');
-    }
-    @font-face {
-      font-family: 'butler';
-      src :url('fonts/butler/Butler_Ultra_Light.otf') format('opentype');
-    }
-    @font-face {
-      font-family: 'manrope';
-      src: url('fonts/manrope-light/Manrope-Light.ttf') format('truetype');
-    }
-    @font-face {
-      font-family: 'manrope-ultra-light';
-      src: url('fonts/manrope-light/Manrope-ExtraLight.ttf') format('truetype');
-    }
-    @font-face {
-      font-family: 'manrope-medium';
-      src: url('fonts/manrope-light/Manrope-Medium.ttf') format('truetype');
-    }
-    /* custom styles for specific fonts */
-    .font-butler {
-      font-family: 'butler', sans-serif;
-    }
-    .font-manrope-light {
-      font-family: 'manrope-light', sans-serif;
-    }
-    .font-manrope-ultra-light {
-      font-family: 'manrope-ultra-light', sans-serif;
-    }
-    .font-butler-stencil {
-      font-family: 'butler-stencil', sans-serif;
-    }
-    .background-color {
-        background-color: #1a1818;
-    }
+  @font-face {
+    font-family: "manrope-light";
+    src: url("fonts/manrope-light/Manrope-Bold.ttf") format("truetype"),
+      url("fonts/manrope-light/Manrope-ExtraBold.ttf") format("truetype"),
+      url("fonts/manrope-light/Manrope-ExtraLight.ttf") format("truetype"),
+      url("fonts/manrope-light/Manrope-Light.ttf") format("truetype"),
+      url("fonts/manrope-light/Manrope-Medium.ttf") format("truetype"),
+      url("fonts/manrope-light/Manrope-Regular.ttf") format("truetype"),
+      url("fonts/manrope-light/Manrope-SemiBold.ttf") format("truetype");
+  }
+  @font-face {
+    font-family: "butler-stencil";
+    src: url("fonts/butler-stencil/Butler_Ultra_Light_Stencil.otf")
+        format("opentype"),
+      url("fonts/butler-stencil/Butler_Black_Stencil.otf") format("opentype"),
+      url("fonts/butler-stencil/Butler_Bold_Stencil.otf") format("opentype"),
+      url("fonts/butler-stencil/Butler_ExtraBold_Stencil.otf")
+        format("opentype"),
+      url("fonts/butler-stencil/Butler_Light_Stencil.otf") format("opentype"),
+      url("fonts/butler-stencil/Butler_Medium_Stencil.otf") format("opentype"),
+      url("fonts/butler-stencil/Butler_Regular_Stencil.otf") format("opentype");
+  }
+  @font-face {
+    font-family: "butler";
+    src: url("fonts/butler/Butler_Ultra_Light.otf") format("opentype");
+  }
+  @font-face {
+    font-family: "manrope";
+    src: url("fonts/manrope-light/Manrope-Light.ttf") format("truetype");
+  }
+  @font-face {
+    font-family: "manrope-ultra-light";
+    src: url("fonts/manrope-light/Manrope-ExtraLight.ttf") format("truetype");
+  }
+  @font-face {
+    font-family: "manrope-medium";
+    src: url("fonts/manrope-light/Manrope-Medium.ttf") format("truetype");
+  }
+  /* custom styles for specific fonts */
+  .font-butler {
+    font-family: "butler", sans-serif;
+  }
+  .font-manrope-light {
+    font-family: "manrope-light", sans-serif;
+  }
+  .font-manrope-ultra-light {
+    font-family: "manrope-ultra-light", sans-serif;
+  }
+  .font-butler-stencil {
+    font-family: "butler-stencil", sans-serif;
+  }
+  .background-color {
+    background-color: #1a1818;
+  }
 
-    .background-color-section  {
-        background-color: #ece7e1;
-    }
+  .background-color-section {
+    background-color: #ece7e1;
+  }
 
-    .text-color {
-        color: #1a1818;
-    }
+  .text-color {
+    color: #1a1818;
+  }
 
-    .text-color-main {
-        color: #ece7e1;
-    }
+  .text-color-main {
+    color: #ece7e1;
+  }
 
-    .underline-animation {
-        position: relative;
-        display: inline-block;
-        overflow: hidden;
-    }
-    .underline-animation::before {
-        content: '';
-        position: absolute;
-        width: 100%;
-        height: 2px;
-        bottom: 0;
-        left: 0;
-        background-color: #ece7e1;
-        transform: scaleX(0);
-        transform-origin: bottom right;
-        transition: transform 0.3s ease-out;
-    }
-    .underline-animation:hover::before {
-        transform: scaleX(1);
-        transform-origin: bottom left;
-    }
+  .underline-animation {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+  }
+  .underline-animation::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #ece7e1;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease-out;
+  }
+  .underline-animation:hover::before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
 
-    .arrow-container {
-        position: absolute;
-        top: 75%;
-        left: 50%;
-        width: 100px;
-        height: 100px;
-        transform: translate(-50%, -50%) rotateZ(0deg);
-    }
+  .arrow-container {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    width: 100px;
+    height: 100px;
+    transform: translate(-50%, -50%) rotateZ(0deg);
+  }
 
-    .arrow-container:hover .arrow {
-        top: 50%;
-    }
+  .arrow-container:hover .arrow {
+    top: 50%;
+  }
 
-    .arrow-container:hover .arrow:before {
-        transform: translate(-50%, -50%) rotateZ(-30deg);
-    }
+  .arrow-container:hover .arrow:before {
+    transform: translate(-50%, -50%) rotateZ(-30deg);
+  }
 
-    .arrow-container:hover .arrow:after {
-        transform: translate(-50%, -50%) rotateZ(30deg);
-    }
+  .arrow-container:hover .arrow:after {
+    transform: translate(-50%, -50%) rotateZ(30deg);
+  }
 
-    .arrow {
-        position: relative;
-        transition: all 0.4s ease;
-    }
+  .arrow {
+    position: relative;
+    transition: all 0.4s ease;
+  }
 
-    .arrow:before,
-    .arrow:after {
-        transition: all 0.4s ease;
-        content: '';
-        display: block;
-        position: absolute;
-        transform-origin: bottom right;
-        background: #ece7e1;
-        width: 4px; /* arrow-line-width */
-        height: 50px; /* arrow-line-length */
-        border-radius: 10px;
-        transform: translate(-50%, -50%) rotateZ(-45deg);
-    }
+  .arrow:before,
+  .arrow:after {
+    transition: all 0.4s ease;
+    content: "";
+    display: block;
+    position: absolute;
+    transform-origin: bottom right;
+    background: #ece7e1;
+    width: 4px; /* arrow-line-width */
+    height: 50px; /* arrow-line-length */
+    border-radius: 10px;
+    transform: translate(-50%, -50%) rotateZ(-45deg);
+  }
 
-    .arrow:after {
-        transform-origin: bottom left;
-        transform: translate(-50%, -50%) rotateZ(45deg);
-    }
+  .arrow:after {
+    transform-origin: bottom left;
+    transform: translate(-50%, -50%) rotateZ(45deg);
+  }
 
-    /* Arrow opacity and positioning */
-    .arrow:nth-child(1) {
-        opacity: 0.3;
-        top: calc(15% + (100% / 5));
-    }
+  /* Arrow opacity and positioning */
+  .arrow:nth-child(1) {
+    opacity: 0.3;
+    top: calc(15% + (100% / 5));
+  }
 
-    .arrow:nth-child(2) {
-        opacity: 0.6;
-        top: calc(15% + (100% * 2 / 5));
-    }
+  .arrow:nth-child(2) {
+    opacity: 0.6;
+    top: calc(15% + (100% * 2 / 5));
+  }
 
-    .arrow:nth-child(3) {
-        opacity: 0.9;
-        top: calc(15% + (100% * 3 / 5));
-    }
-
+  .arrow:nth-child(3) {
+    opacity: 0.9;
+    top: calc(15% + (100% * 3 / 5));
+  }
 </style>

@@ -1,543 +1,980 @@
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="images/favicon.png">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="images/favicon.png" />
     <script src="https://cdn.tailwindcss.com"></script>
     <title>WorkAdventure</title>
-</head>
+  </head>
 
-<body class="background-color overflow-x-hidden" onload="applyLanguagePreference()">
+  <body
+    class="background-color overflow-x-hidden"
+    onload="applyLanguagePreference()"
+  >
     <div class="h-screen w-screen flex items-start justify-center">
-        <div class="h-[90%] w-[90%] flex flex-col items-center overflow-y-hidden animated-gradient">
-            <div class="flex justify-end md:hidden p-4">
-                <button id="burger-menu" class="text-black">
-                  <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
-                  </svg>
-                </button>
-              </div>
-              <nav class="w-full flex justify-center overflow-y-hidden">
-                <ul class="hidden md:flex justify-between w-[90%] mt-4">
-                  <li class="underline-animation"><a href="index.html" class="font-butler font-medium md:text-[18px] lg:text-[24px]">Home</a></li>
-                  <li class="underline-animation"><a href="bib-batteries.html" class="font-butler font-medium md:text-[18px] lg:text-[24px]">Bib Batteries</a></li>
-                  <li class="underline-animation"><a href="surf-course.html" class="font-butler font-medium md:text-[18px] lg:text-[24px]">The Surf Course</a></li>
-                  <li class="underline-animation"><a href="tudo-bem-maman.html" class="font-butler font-medium md:text-[18px] lg:text-[24px]">Tudo Bem Maman</a></li>
-                  <li class="underline-animation"><a href="portfolio.html" class="font-butler font-medium md:text-[18px] lg:text-[24px]">Portfolio</a></li>
-                  <li class="underline-animation"><a href="surfmate.html" class="font-butler font-medium md:text-[18px] lg:text-[24px]">SurfMate</a></li>
-                  <li class="underline-animation"><a href="others-projects.html" class="font-butler font-medium md:text-[18px] lg:text-[24px]">Others Projects</a></li>
-                  <li class="underline-animation"><a href="contact.html" class="font-butler font-medium md:text-[18px] lg:text-[24px]">Contact</a></li>
-                </ul>
-                <ul id="burger-menu-content" class="absolute top-[5%] left-[5%] right-[5%] flex-col hidden md:hidden mt-8 px-2 py-1 rounded-md text-center">
-                  <li class="underline-animation"><a href="index.html" class="block p-2 font-butler font-medium">Home</a></li>
-                  <li class="underline-animation"><a href="bib-batteries.html" class="font-butler font-medium md:text-[18px] lg:text-[24px]">Bib Batteries</a></li>
-                  <li class="underline-animation"><a href="surf-course.html" class="block p-2 font-butler font-medium">The Surf Course</a></li>
-                  <li class="underline-animation"><a href="tudo-bem-maman.html" class="block p-2 font-butler font-medium">Tudo Bem Maman</a></li>
-                  <li class="underline-animation"><a href="portfolio.html" class="block p-2 font-butler font-medium">Portfolio</a></li>
-                  <li class="underline-animation"><a href="surfmate.html" class="block p-2 font-butler font-medium">SurfMate</a></li>
-                  <li class="underline-animation"><a href="others-projects.html" class="block p-2 font-butler font-medium">Others Projects</a></li>
-                  <li class="underline-animation"><a href="contact.html" class="block p-2 font-butler font-medium">Contact</a></li>
-                </ul>
-              </nav>
-            <div class="flex flex-grow items-center justify-center mb-[75px] md:mb-0 lg:mb-0 w-full">
-                <h1 class="font-butler font-medium text-[48px] md:text-[80px] lg:text-[80px] text-center text-color">WorkAdventure</h1>
-            </div>
-            <a href="#section-fr" class="arrow-container hover:cursor-pointer flex justify-center">
-                <div class="arrow cursor-default"></div>
-                <div class="arrow cursor-default"></div>
-                <div class="arrow cursor-default"></div>
-            </a>
+      <div
+        class="h-[90%] w-[90%] flex flex-col items-center overflow-y-hidden animated-gradient"
+      >
+        <div class="flex justify-end md:hidden p-4">
+          <button id="burger-menu" class="text-black">
+            <svg
+              class="w-8 h-8"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16m-7 6h7"
+              ></path>
+            </svg>
+          </button>
         </div>
+        <nav class="w-full flex justify-center overflow-y-hidden">
+          <ul class="hidden md:flex justify-between w-[90%] mt-4">
+            <li class="underline-animation">
+              <a
+                href="index.html"
+                class="font-butler font-medium md:text-[18px] lg:text-[24px]"
+                >Home</a
+              >
+            </li>
+            <li class="underline-animation">
+              <a
+                href="bib-batteries.html"
+                class="font-butler font-medium md:text-[18px] lg:text-[24px]"
+                >Bib Batteries</a
+              >
+            </li>
+            <li class="underline-animation">
+              <a
+                href="surf-course.html"
+                class="font-butler font-medium md:text-[18px] lg:text-[24px]"
+                >The Surf Course</a
+              >
+            </li>
+            <li class="underline-animation">
+              <a
+                href="tudo-bem-maman.html"
+                class="font-butler font-medium md:text-[18px] lg:text-[24px]"
+                >Tudo Bem Maman</a
+              >
+            </li>
+            <li class="underline-animation">
+              <a
+                href="portfolio.html"
+                class="font-butler font-medium md:text-[18px] lg:text-[24px]"
+                >Portfolio</a
+              >
+            </li>
+            <li class="underline-animation">
+              <a
+                href="runmate.html"
+                class="font-butler font-medium md:text-[18px] lg:text-[24px]"
+                >RunMate</a
+              >
+            </li>
+            <li class="underline-animation">
+              <a
+                href="others-projects.html"
+                class="font-butler font-medium md:text-[18px] lg:text-[24px]"
+                >Others Projects</a
+              >
+            </li>
+            <li class="underline-animation">
+              <a
+                href="contact.html"
+                class="font-butler font-medium md:text-[18px] lg:text-[24px]"
+                >Contact</a
+              >
+            </li>
+          </ul>
+          <ul
+            id="burger-menu-content"
+            class="absolute top-[5%] left-[5%] right-[5%] flex-col hidden md:hidden mt-8 px-2 py-1 rounded-md text-center"
+          >
+            <li class="underline-animation">
+              <a href="index.html" class="block p-2 font-butler font-medium"
+                >Home</a
+              >
+            </li>
+            <li class="underline-animation">
+              <a
+                href="bib-batteries.html"
+                class="font-butler font-medium md:text-[18px] lg:text-[24px]"
+                >Bib Batteries</a
+              >
+            </li>
+            <li class="underline-animation">
+              <a
+                href="surf-course.html"
+                class="block p-2 font-butler font-medium"
+                >The Surf Course</a
+              >
+            </li>
+            <li class="underline-animation">
+              <a
+                href="tudo-bem-maman.html"
+                class="block p-2 font-butler font-medium"
+                >Tudo Bem Maman</a
+              >
+            </li>
+            <li class="underline-animation">
+              <a href="portfolio.html" class="block p-2 font-butler font-medium"
+                >Portfolio</a
+              >
+            </li>
+            <li class="underline-animation">
+              <a href="runmate.html" class="block p-2 font-butler font-medium"
+                >RunMate</a
+              >
+            </li>
+            <li class="underline-animation">
+              <a
+                href="others-projects.html"
+                class="block p-2 font-butler font-medium"
+                >Others Projects</a
+              >
+            </li>
+            <li class="underline-animation">
+              <a href="contact.html" class="block p-2 font-butler font-medium"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <div
+          class="flex flex-grow items-center justify-center mb-[75px] md:mb-0 lg:mb-0 w-full"
+        >
+          <h1
+            class="font-butler font-medium text-[48px] md:text-[80px] lg:text-[80px] text-center text-color"
+          >
+            WorkAdventure
+          </h1>
+        </div>
+        <a
+          href="#section-fr"
+          class="arrow-container hover:cursor-pointer flex justify-center"
+        >
+          <div class="arrow cursor-default"></div>
+          <div class="arrow cursor-default"></div>
+          <div class="arrow cursor-default"></div>
+        </a>
+      </div>
     </div>
 
     <section class="fr" id="section-fr">
-        <div class="w-[70%] mx-auto">
-            <p class="font-butler font-medium text-[32px] mt-12 mb-24 flex justify-center text-center text-color-main">Intégration de la refonte graphique. Mise en place de script d'upload de map</p>
-        </div>
-        <div class="container mx-auto text-color-main text-[18px] font-manrope-ultra-light font-bold">
-            <div class="md:grid md:grid-cols-3 gap-8 mb-24">
-                <div class="flex flex-col items-center mb-20 md:mb-0 text-center">
-                    <p>ROLE</p>
-                    <hr class="border-t w-[13%] mt-2 mb-4 background-color-section">
-                    <p>Développement back-end et front-end</p>
-                </div>
-                <div class="flex flex-col items-center mb-20 md:mb-0 text-center">
-                    <p>TECHNOLOGIES</p>
-                    <hr class="border-t w-[35%] mt-2 mb-4 background-color-section">
-                    <div class="ruby flex items-center gap-2">
-                        <p>Typescript</p>
-                        <img src="images/Typescript_logo_2020.svg.png" alt="logo-ruby" height="18px" width="20px">
-                    </div>
-                    <div class="javascript flex items-center gap-2">
-                        <p>Svelte</p>
-                        <img src="images/Logo Svelte.png" alt="logo-javascript" height="18px" width="18px">
-                    </div>
-                    <div class="sql flex items-center gap-2">
-                        <p>Tailwind</p>
-                        <img src="images/Logo Tailwind.svg.png" alt="logo-sql" height="12px" width="24px">
-                    </div>
-                </div>
-                <div class="flex flex-col items-center text-center">
-                    <p>SEE THE DESIGN</p>
-                    <hr class="border-t w-[42%] mt-2 mb-4 background-color-section">
-                    <a href="https://play.staging.workadventu.re/@/tcm/workadventure/wa-village" target="_blank" class="hover:text-sky-600">workadventure-staging.com</a>
-                </div>
+      <div class="w-[70%] mx-auto">
+        <p
+          class="font-butler font-medium text-[32px] mt-12 mb-24 flex justify-center text-center text-color-main"
+        >
+          Intégration de la refonte graphique. Mise en place de script d'upload
+          de map
+        </p>
+      </div>
+      <div
+        class="container mx-auto text-color-main text-[18px] font-manrope-ultra-light font-bold"
+      >
+        <div class="md:grid md:grid-cols-3 gap-8 mb-24">
+          <div class="flex flex-col items-center mb-20 md:mb-0 text-center">
+            <p>ROLE</p>
+            <hr class="border-t w-[13%] mt-2 mb-4 background-color-section" />
+            <p>Développement back-end et front-end</p>
+          </div>
+          <div class="flex flex-col items-center mb-20 md:mb-0 text-center">
+            <p>TECHNOLOGIES</p>
+            <hr class="border-t w-[35%] mt-2 mb-4 background-color-section" />
+            <div class="ruby flex items-center gap-2">
+              <p>Typescript</p>
+              <img
+                src="images/Typescript_logo_2020.svg.png"
+                alt="logo-ruby"
+                height="18px"
+                width="20px"
+              />
             </div>
+            <div class="javascript flex items-center gap-2">
+              <p>Svelte</p>
+              <img
+                src="images/Logo Svelte.png"
+                alt="logo-javascript"
+                height="18px"
+                width="18px"
+              />
+            </div>
+            <div class="sql flex items-center gap-2">
+              <p>Tailwind</p>
+              <img
+                src="images/Logo Tailwind.svg.png"
+                alt="logo-sql"
+                height="12px"
+                width="24px"
+              />
+            </div>
+          </div>
+          <div class="flex flex-col items-center text-center">
+            <p>SEE THE DESIGN</p>
+            <hr class="border-t w-[42%] mt-2 mb-4 background-color-section" />
+            <a
+              href="https://play.staging.workadventu.re/@/tcm/workadventure/wa-village"
+              target="_blank"
+              class="hover:text-sky-600"
+              >workadventure-staging.com</a
+            >
+          </div>
         </div>
+      </div>
 
-        <div class="text-color-main w-[80%] font-manrope-ultra-light text-[18px] mx-auto">
-            <div class="mb-4 md:mb-24 md:mt-8">
-                <p class="text-color-main hover:text-sky-600 text-center">En savoir plus ...</p>
-                <hr class="border-t w-[50%] md:w-[15%] mt-2 background-color-section mb-12 mx-auto">
+      <div
+        class="text-color-main w-[80%] font-manrope-ultra-light text-[18px] mx-auto"
+      >
+        <div class="mb-4 md:mb-24 md:mt-8">
+          <p class="text-color-main hover:text-sky-600 text-center">
+            En savoir plus ...
+          </p>
+          <hr
+            class="border-t w-[50%] md:w-[15%] mt-2 background-color-section mb-12 mx-auto"
+          />
+        </div>
+        <div class="md:flex gap-24">
+          <ul class="text-left list-disc flex-1">
+            <p class="text-center mb-8 font-manrope-medium">Refonte design</p>
+            <li class="mb-2 text-[15px]">
+              <span class="font-manrope-medium"
+                >Intégration des différents projets</span
+              >
+              (gestion des caméras, intégration de cowebsite avec iframe, popup
+              réactif...) de la refonte graphique en collaboration avec le
+              designer
+            </li>
+            <li class="mb-20 text-[15px]">
+              Ces missions m'ont permis de<span class="font-manrope-medium">
+                développer mon autonomie</span
+              >
+              mais aussi mon sens pour l'UI mais aussi d'adapter mon design pour
+              <span class="font-manrope-medium"
+                >permettre la meilleure expérience utilisateur possible</span
+              >
+            </li>
+            <p class="text-center mb-8 font-manrope-medium">
+              Script d'upload de map
+            </p>
+            <li class="mb-2 text-[15px]">
+              <span class="font-manrope-medium">Script et packet npm</span>
+              permettant aux entreprises partenaires d'uploader et d'hoster
+              leurs propres maps intéractives sur le serveur de WorkAdventure,
+              sur Github Pages ou sur leur propre serveur en entrant une
+              commande dans le terminal afin de simplifier au maximum
+              l'expérience utilisateur
+            </li>
+            <li class="mb-6 text-[15px]">
+              Cette mission m'a apporter<span class="font-manrope-medium">
+                une vision globale</span
+              >
+              des besoins utilisateurs, mais m'a aussi permis de développer ma
+              logique afin d'adapter ce script en
+              <span class="font-manrope-medium"
+                >prévoyant toutes les possibilités disponible pour
+                l'utilisateur</span
+              >. Mise en place d'un
+              <span class="font-manrope-medium">workflow github</span> afin de
+              permettre au "push" de déclencher la commande d'upload et en
+              fonction d'une variable d'envorinnement de choisir le mode
+              d'upload
+            </li>
+          </ul>
+          <ul class="text-left flex-1 list-disc">
+            <p class="text-center mt-16 md:mt-0 mb-8 font-manrope-medium">
+              Test design
+            </p>
+            <li class="mb-2 text-[15px]">
+              Création de tests end-to-end afin de verifier le bon comportement
+              des nouvelles fonctionnalités développées<span
+                class="font-manrope-medium"
+                >documentation pour les différents projets</span
+              >
+              (écris et vidéos en anglais)
+            </li>
+            <li class="mb-14 text-[15px]">
+              Rédiger des tests m'a fait comprendre l'importance de savoir ou
+              l'on va avant de commencer à coder mais également de mettre en
+              place de
+              <span class="font-manrope-medium"
+                >bonnes pratiques de développement</span
+              >
+              afin de rédiger un code
+              <span class="font-manrope-medium"
+                >robuste et facilement maintenable</span
+              >
+            </li>
+            <p class="text-center mb-8 font-manrope-medium">Documentation</p>
+            <li class="mb-2 text-[15px]">
+              Réalisation de la
+              <span class="font-manrope-medium"
+                >documentation de tout mes projets</span
+              >, notamment pour le script d'upload afin de permettre aux
+              entreprises partenaires, mais aussi aux utilisateurs utilisant
+              notre template de pouvoir héberger leur map. Cette documentation
+              <span class="font-manrope-medium"
+                >(vidéos et écris) à été réalisé en anglais</span
+              >
+            </li>
+            <li class="mb-6 text-[15px]">
+              Rédiger de la documentation m'a permis de<span
+                class="font-manrope-medium"
+              >
+                comprendre l'importance de savoir expliquer son "code"</span
+              >
+              car dans mon cas ce script s'adressait aussi bien à des
+              <span class="font-manrope-medium"
+                >développeurs expérimentés qu'a des designeurs de maps, mais
+                aussi des personnes voulant seulement tester notre
+                application.</span
+              >
+              Il m'a donc fallu m'adapter et être au maximum explicatif
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="flex flex-col-reverse items-center mt-24">
+        <div
+          class="text-center text-color-main text-[18px] font-manrope-ultra-light font-bold ml-16 mr-12 md:ml-32 md:mr-0"
+        ></div>
+        <div
+          class="video-container md:mt-8 mt-[-72] flex flex-col items-center"
+          id="container-video"
+        >
+          <div class="md:flex md:flex-row gap-24 mb-12">
+            <div class="md:block">
+              <video
+                class="scale-90 md:scale-100"
+                width="520"
+                height="350"
+                controls
+                autoplay
+              >
+                <source src="videos/Mockup ancien cam.mp4" type="video/mp4" />
+              </video>
+              <figcaption class="text-center mb-8 md:mb-0 text-color-main">
+                Ancien design et gestion des caméras
+              </figcaption>
             </div>
-            <div class="md:flex gap-24">
-                <ul class="text-left list-disc flex-1 ">
-                    <p class="text-center mb-8 font-manrope-medium">Refonte design</p>
-                    <li class="mb-2 text-[15px]"><span class="font-manrope-medium">Intégration des différents projets</span> (gestion des caméras, intégration de cowebsite avec iframe, popup réactif...) de la refonte graphique en collaboration avec le designer</li>
-                    <li class="mb-20 text-[15px]">Ces missions m'ont permis de<span class="font-manrope-medium"> développer mon autonomie</span> mais aussi mon sens pour l'UI mais aussi d'adapter mon design pour <span class="font-manrope-medium">permettre la meilleure expérience utilisateur possible</span></li>
-                    <p class="text-center mb-8 font-manrope-medium">Script d'upload de map</p>
-                    <li class="mb-2 text-[15px]"><span class="font-manrope-medium">Script et packet npm</span> permettant aux entreprises partenaires d'uploader et d'hoster leurs propres maps intéractives sur le serveur de WorkAdventure, sur Github Pages ou sur leur propre serveur en entrant une commande dans le terminal afin de simplifier au maximum l'expérience utilisateur</li>
-                    <li class="mb-6 text-[15px]">Cette mission m'a apporter<span class="font-manrope-medium"> une vision globale</span> des besoins utilisateurs, mais m'a aussi permis de développer ma logique afin d'adapter ce script en <span class="font-manrope-medium">prévoyant toutes les possibilités disponible pour l'utilisateur</span>. Mise en place d'un <span class="font-manrope-medium">workflow github</span> afin de permettre au "push" de déclencher la commande d'upload et en fonction d'une variable d'envorinnement de choisir le mode d'upload</li>
-                </ul>
-                <ul class="text-left flex-1 list-disc">
-                    <p class="text-center mt-16 md:mt-0 mb-8 font-manrope-medium">Test design</p>
-                    <li class="mb-2 text-[15px]">Création de tests end-to-end afin de verifier le bon comportement des nouvelles fonctionnalités développées<span class="font-manrope-medium">documentation pour les différents projets</span> (écris et vidéos en anglais)</li>
-                    <li class="mb-14 text-[15px]">Rédiger des tests m'a fait comprendre l'importance de savoir ou l'on va avant de commencer à coder mais également de mettre en place de <span class="font-manrope-medium">bonnes pratiques de développement</span> afin de rédiger un code <span class="font-manrope-medium">robuste et facilement maintenable</span></li>
-                    <p class="text-center mb-8 font-manrope-medium">Documentation</p>
-                    <li class="mb-2 text-[15px]">Réalisation de la <span class="font-manrope-medium">documentation de tout mes projets</span>, notamment pour le script d'upload afin de permettre aux entreprises partenaires, mais aussi aux utilisateurs utilisant notre template de pouvoir héberger leur map. Cette documentation <span class="font-manrope-medium">(vidéos et écris) à été réalisé en anglais</span></li>
-                    <li class="mb-6 text-[15px]">Rédiger de la documentation m'a permis de<span class="font-manrope-medium"> comprendre l'importance de savoir expliquer son "code"</span> car dans mon cas ce script s'adressait aussi bien à des <span class="font-manrope-medium">développeurs expérimentés qu'a des designeurs de maps, mais aussi des personnes voulant seulement tester notre application.</span> Il m'a donc fallu m'adapter et être au maximum explicatif</li>
-                </ul>
+            <!-- Mettre animation apparition au scroll fonction déjà dans le javascript-->
+            <div
+              class="flex items-center h-30vh relative mt-4 justify-center md:-rotate-90 md:flex md:items-center md:justify-center md:mr-16 md:h-10vh md:relative md:ml-0 arrow-animation reveal-hidden"
+              id="chevron-1"
+            >
+              <div class="chevron"></div>
+              <div class="chevron"></div>
+              <div class="chevron"></div>
             </div>
+            <figure class="scale-90 md:scale-100 mt-24 md:mt-0 md:mb-0">
+              <video width="520" height="350" controls>
+                <source src="videos/mockup-new cam-good.mp4" type="video/mp4" />
+              </video>
+              <figcaption class="text-center text-color-main">
+                Nouveau design et gestion des caméras
+              </figcaption>
+            </figure>
+          </div>
+          <hr
+            class="border-t w-[50%] mt-6 background-color-section mb-16 mx-auto"
+          />
+          <div class="md:flex md:flex-row gap-24">
+            <div class="md:block">
+              <video
+                class="scale-90 md:scale-100"
+                width="520"
+                height="350"
+                controls
+              >
+                <source
+                  src="videos/Mockup Ancien Cowebsite.mp4"
+                  type="video/mp4"
+                />
+              </video>
+              <figcaption class="text-center text-color-main mb-12 md:mb-0">
+                Ancien design et fonctionnement des cowebsites
+              </figcaption>
+            </div>
+            <!-- Mettre animation apparition au scroll fonction déjà dans le javascript-->
+            <div
+              class="flex items-center h-30vh relative mt-4 justify-center md:-rotate-90 md:flex md:items-center md:justify-center md:mr-16 md:h-10vh md:relative md:ml-0 arrow-animation reveal-hidden"
+              id="chevron-2"
+            >
+              <div class="chevron"></div>
+              <div class="chevron"></div>
+              <div class="chevron"></div>
+            </div>
+            <figure class="scale-90 md:scale-100 mt-24 md:mt-0">
+              <video width="520" height="350" controls>
+                <source
+                  src="videos/mockup-new-cowebsite.mp4"
+                  type="video/mp4"
+                />
+              </video>
+              <figcaption class="text-center text-color-main">
+                Nouveau design et fonctionnement des cowebsites
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
 
+      <div class="h-[500px] w-screen flex items-end justify-center">
+        <div
+          class="background-color-section h-[70%] w-[90%] flex flex-col items-center"
+        >
+          <p
+            class="font-butler font-medium text-[48px] mt-24 mb-12 flex justify-center text-center text-color"
+          >
+            Check it out !
+          </p>
+          <button
+            class="text-color-main background-color text-[24px] rounded-full w-[55%] h-[13%] md:w-[35%] lg:w-[20%] hover:w-[25%] transition-all duration-300"
+          >
+            <a
+              href="https://play.staging.workadventu.re/@/tcm/workadventure/wa-village"
+              target="_blank"
+              >WorkAdventure</a
+            >
+          </button>
         </div>
-        <div class="flex flex-col-reverse items-center mt-24">
-            <div class="text-center text-color-main text-[18px] font-manrope-ultra-light font-bold ml-16 mr-12 md:ml-32 md:mr-0">
-            </div>
-            <div class="video-container md:mt-8 mt-[-72] flex flex-col items-center"  id="container-video">
-                <div class="md:flex md:flex-row gap-24 mb-12">
-                    <div class="md:block">
-                        <video class="scale-90 md:scale-100" width="520" height="350" controls autoplay>
-                            <source src="videos/Mockup ancien cam.mp4" type="video/mp4">
-                        </video>
-                        <figcaption class="text-center mb-8 md:mb-0 text-color-main">Ancien design et gestion des caméras</figcaption>
-                    </div>
-                    <!-- Mettre animation apparition au scroll fonction déjà dans le javascript-->
-                    <div class="flex items-center h-30vh relative mt-4 justify-center md:-rotate-90 md:flex md:items-center md:justify-center md:mr-16 md:h-10vh md:relative md:ml-0 arrow-animation reveal-hidden" id="chevron-1">
-                        <div class="chevron"></div>
-                        <div class="chevron"></div>
-                        <div class="chevron"></div>
-                    </div>
-                    <figure class="scale-90 md:scale-100 mt-24 md:mt-0 md:mb-0">
-                        <video width="520" height="350" controls>
-                            <source src="videos/mockup-new cam-good.mp4" type="video/mp4">
-                        </video>
-                        <figcaption class="text-center text-color-main">Nouveau design et gestion des caméras</figcaption>
-                    </figure>
-                </div>
-                <hr class="border-t w-[50%] mt-6 background-color-section mb-16 mx-auto">
-                <div class="md:flex md:flex-row gap-24">
-                    <div class="md:block">
-                        <video class="scale-90 md:scale-100" width="520" height="350" controls>
-                            <source src="videos/Mockup Ancien Cowebsite.mp4" type="video/mp4">
-                        </video>
-                        <figcaption class="text-center text-color-main mb-12 md:mb-0">Ancien design et fonctionnement des cowebsites</figcaption>
-                    </div>
-                    <!-- Mettre animation apparition au scroll fonction déjà dans le javascript-->
-                    <div class="flex items-center h-30vh relative mt-4 justify-center md:-rotate-90 md:flex md:items-center md:justify-center md:mr-16 md:h-10vh md:relative md:ml-0 arrow-animation reveal-hidden" id="chevron-2">
-                        <div class="chevron"></div>
-                        <div class="chevron"></div>
-                        <div class="chevron"></div>
-                    </div>
-                    <figure class="scale-90 md:scale-100 mt-24 md:mt-0">
-                        <video width="520" height="350" controls>
-                            <source src="videos/mockup-new-cowebsite.mp4" type="video/mp4">
-                        </video>
-                        <figcaption class="text-center text-color-main">Nouveau design et fonctionnement des cowebsites</figcaption>
-                    </figure>
-                </div>
-            </div>
-        </div>
-
-        <div class="h-[500px] w-screen flex items-end justify-center">
-            <div class="background-color-section h-[70%] w-[90%] flex flex-col items-center">
-                <p class="font-butler font-medium text-[48px] mt-24 mb-12 flex justify-center text-center text-color">Check it out !</p>
-                <button class="text-color-main background-color text-[24px] rounded-full w-[55%] h-[13%] md:w-[35%] lg:w-[20%] hover:w-[25%] transition-all duration-300"><a href="https://play.staging.workadventu.re/@/tcm/workadventure/wa-village" target="_blank">WorkAdventure</a></button>
-            </div>
-        </div>
+      </div>
     </section>
 
     <!-- Code pour anglais -->
-    <section class="en" style="display: none;">
-        <div class="w-[70%] mx-auto">
-            <p class="font-butler font-medium text-[32px] mt-12 mb-24 flex justify-center text-center text-color-main">Integration of the graphic redesign. Implementation of the map upload script</p>
+    <section class="en" style="display: none">
+      <div class="w-[70%] mx-auto">
+        <p
+          class="font-butler font-medium text-[32px] mt-12 mb-24 flex justify-center text-center text-color-main"
+        >
+          Integration of the graphic redesign. Implementation of the map upload
+          script
+        </p>
+      </div>
+      <div
+        class="container mx-auto text-color-main text-[18px] font-manrope-ultra-light font-bold"
+      >
+        <div class="md:grid md:grid-cols-3 gap-8 mb-24">
+          <div class="flex flex-col items-center mb-20 md:mb-0 text-center">
+            <p>ROLE</p>
+            <hr class="border-t w-[13%] mt-2 mb-4 background-color-section" />
+            <p>Back-end and Front-end Development</p>
+          </div>
+          <div class="flex flex-col items-center mb-20 md:mb-0 text-center">
+            <p>TECHNOLOGIES</p>
+            <hr class="border-t w-[35%] mt-2 mb-4 background-color-section" />
+            <div class="ruby flex items-center gap-2">
+              <p>Typescript</p>
+              <img
+                src="images/Typescript_logo_2020.svg.png"
+                alt="logo-ruby"
+                height="18px"
+                width="20px"
+              />
+            </div>
+            <div class="javascript flex items-center gap-2">
+              <p>Svelte</p>
+              <img
+                src="images/Logo Svelte.png"
+                alt="logo-javascript"
+                height="18px"
+                width="18px"
+              />
+            </div>
+            <div class="sql flex items-center gap-2">
+              <p>Tailwind</p>
+              <img
+                src="images/Logo Tailwind.svg.png"
+                alt="logo-sql"
+                height="12px"
+                width="24px"
+              />
+            </div>
+          </div>
+          <div class="flex flex-col items-center text-center">
+            <p>SEE THE DESIGN</p>
+            <hr class="border-t w-[42%] mt-2 mb-4 background-color-section" />
+            <a
+              href="https://play.staging.workadventu.re/@/tcm/workadventure/wa-village"
+              target="_blank"
+              class="hover:text-sky-600"
+              >workadventure-staging.com</a
+            >
+          </div>
         </div>
-        <div class="container mx-auto text-color-main text-[18px] font-manrope-ultra-light font-bold">
-            <div class="md:grid md:grid-cols-3 gap-8 mb-24">
-                <div class="flex flex-col items-center mb-20 md:mb-0 text-center">
-                    <p>ROLE</p>
-                    <hr class="border-t w-[13%] mt-2 mb-4 background-color-section">
-                    <p>Back-end and Front-end Development</p>
-                </div>
-                <div class="flex flex-col items-center mb-20 md:mb-0 text-center">
-                    <p>TECHNOLOGIES</p>
-                    <hr class="border-t w-[35%] mt-2 mb-4 background-color-section">
-                    <div class="ruby flex items-center gap-2">
-                        <p>Typescript</p>
-                        <img src="images/Typescript_logo_2020.svg.png" alt="logo-ruby" height="18px" width="20px">
-                    </div>
-                    <div class="javascript flex items-center gap-2">
-                        <p>Svelte</p>
-                        <img src="images/Logo Svelte.png" alt="logo-javascript" height="18px" width="18px">
-                    </div>
-                    <div class="sql flex items-center gap-2">
-                        <p>Tailwind</p>
-                        <img src="images/Logo Tailwind.svg.png" alt="logo-sql" height="12px" width="24px">
-                    </div>
-                </div>
-                <div class="flex flex-col items-center text-center">
-                    <p>SEE THE DESIGN</p>
-                    <hr class="border-t w-[42%] mt-2 mb-4 background-color-section">
-                    <a href="https://play.staging.workadventu.re/@/tcm/workadventure/wa-village" target="_blank" class="hover:text-sky-600">workadventure-staging.com</a>
-                </div>
-            </div>
+      </div>
+
+      <div
+        class="text-color-main w-[80%] font-manrope-ultra-light text-[18px] mx-auto"
+      >
+        <div class="mb-4">
+          <p class="text-color-main hover:text-sky-600 text-center">
+            Learn more ...
+          </p>
+          <hr
+            class="border-t w-[50%] md:w-[15%] mt-2 background-color-section mb-12 mx-auto"
+          />
         </div>
-
-        <div class="text-color-main w-[80%] font-manrope-ultra-light text-[18px] mx-auto">
-            <div class="mb-4">
-                <p class="text-color-main hover:text-sky-600 text-center">Learn more ...</p>
-                <hr class="border-t w-[50%] md:w-[15%] mt-2 background-color-section mb-12 mx-auto">
-            </div>
-            <div class="md:flex gap-24">
-                <ul class="text-left list-disc flex-1 ">
-                    <p class="text-center mb-8 font-manrope-medium">Design Overhaul</p>
-                    <li class="mb-2 text-[15px]"><span class="font-manrope-medium">Integration of various projects</span> (camera management, integration of cowebsite with iframe, reactive popup...) of the graphic overhaul in collaboration with the designer</li>
-                    <li class="mb-20 text-[15px]">These tasks allowed me to<span class="font-manrope-medium"> develop my autonomy</span> but also my sense for UI, and to adapt my design to <span class="font-manrope-medium">provide the best possible user experience</span></li>
-                    <p class="text-center mb-8 font-manrope-medium">Map Upload Script</p>
-                    <li class="mb-2 text-[15px]"><span class="font-manrope-medium">Script and npm package</span> allowing partner companies to upload and host their own interactive maps on the WorkAdventure server, on Github Pages, or on their own server by entering a command in the terminal to simplify the user experience as much as possible</li>
-                    <li class="mb-6 text-[15px]">This task gave me<span class="font-manrope-medium"> a global vision</span> of user needs, but also allowed me to develop my logic to adapt this script by <span class="font-manrope-medium">anticipating all possibilities available for the user</span>. Setting up a <span class="font-manrope-medium">GitHub workflow</span> to allow a "push" to trigger the upload command and, depending on an environment variable, to choose the upload mode</li>
-                </ul>
-                <ul class="text-left flex-1 list-disc">
-                    <p class="text-center mt-16 md:mt-0 mb-8 font-manrope-medium">Design Testing</p>
-                    <li class="mb-2 text-[15px]">Creation of end-to-end tests to verify the proper behavior of the new features developed<span class="font-manrope-medium">documentation for the various projects</span> (written and video in English)</li>
-                    <li class="mb-14 text-[15px]">Writing tests made me understand the importance of knowing where you are going before starting to code but also of implementing <span class="font-manrope-medium">good development practices</span> to write <span class="font-manrope-medium">robust and easily maintainable code</span></li>
-                    <p class="text-center mb-8 font-manrope-medium">Documentation</p>
-                    <li class="mb-2 text-[15px]">Creation of the <span class="font-manrope-medium">documentation for all my projects</span>, especially for the upload script to allow partner companies, as well as users using our template, to host their map. This documentation <span class="font-manrope-medium">(videos and written) was created in English</span></li>
-                    <li class="mb-6 text-[15px]">Writing documentation allowed me to<span class="font-manrope-medium"> understand the importance of being able to explain my "code"</span> because in my case this script was intended for both <span class="font-manrope-medium">experienced developers and map designers, as well as people just wanting to test our application.</span> Therefore, I had to adapt and be as explanatory as possible</li>
-                </ul>
-            </div>
-
+        <div class="md:flex gap-24">
+          <ul class="text-left list-disc flex-1">
+            <p class="text-center mb-8 font-manrope-medium">Design Overhaul</p>
+            <li class="mb-2 text-[15px]">
+              <span class="font-manrope-medium"
+                >Integration of various projects</span
+              >
+              (camera management, integration of cowebsite with iframe, reactive
+              popup...) of the graphic overhaul in collaboration with the
+              designer
+            </li>
+            <li class="mb-20 text-[15px]">
+              These tasks allowed me to<span class="font-manrope-medium">
+                develop my autonomy</span
+              >
+              but also my sense for UI, and to adapt my design to
+              <span class="font-manrope-medium"
+                >provide the best possible user experience</span
+              >
+            </li>
+            <p class="text-center mb-8 font-manrope-medium">
+              Map Upload Script
+            </p>
+            <li class="mb-2 text-[15px]">
+              <span class="font-manrope-medium">Script and npm package</span>
+              allowing partner companies to upload and host their own
+              interactive maps on the WorkAdventure server, on Github Pages, or
+              on their own server by entering a command in the terminal to
+              simplify the user experience as much as possible
+            </li>
+            <li class="mb-6 text-[15px]">
+              This task gave me<span class="font-manrope-medium">
+                a global vision</span
+              >
+              of user needs, but also allowed me to develop my logic to adapt
+              this script by
+              <span class="font-manrope-medium"
+                >anticipating all possibilities available for the user</span
+              >. Setting up a
+              <span class="font-manrope-medium">GitHub workflow</span> to allow
+              a "push" to trigger the upload command and, depending on an
+              environment variable, to choose the upload mode
+            </li>
+          </ul>
+          <ul class="text-left flex-1 list-disc">
+            <p class="text-center mt-16 md:mt-0 mb-8 font-manrope-medium">
+              Design Testing
+            </p>
+            <li class="mb-2 text-[15px]">
+              Creation of end-to-end tests to verify the proper behavior of the
+              new features developed<span class="font-manrope-medium"
+                >documentation for the various projects</span
+              >
+              (written and video in English)
+            </li>
+            <li class="mb-14 text-[15px]">
+              Writing tests made me understand the importance of knowing where
+              you are going before starting to code but also of implementing
+              <span class="font-manrope-medium"
+                >good development practices</span
+              >
+              to write
+              <span class="font-manrope-medium"
+                >robust and easily maintainable code</span
+              >
+            </li>
+            <p class="text-center mb-8 font-manrope-medium">Documentation</p>
+            <li class="mb-2 text-[15px]">
+              Creation of the
+              <span class="font-manrope-medium"
+                >documentation for all my projects</span
+              >, especially for the upload script to allow partner companies, as
+              well as users using our template, to host their map. This
+              documentation
+              <span class="font-manrope-medium"
+                >(videos and written) was created in English</span
+              >
+            </li>
+            <li class="mb-6 text-[15px]">
+              Writing documentation allowed me to<span
+                class="font-manrope-medium"
+              >
+                understand the importance of being able to explain my
+                "code"</span
+              >
+              because in my case this script was intended for both
+              <span class="font-manrope-medium"
+                >experienced developers and map designers, as well as people
+                just wanting to test our application.</span
+              >
+              Therefore, I had to adapt and be as explanatory as possible
+            </li>
+          </ul>
         </div>
-        <div class="flex flex-col-reverse items-center mt-24">
-            <div class="text-center text-color-main text-[18px] font-manrope-ultra-light font-bold ml-16 mr-12 md:ml-32 md:mr-0">
+      </div>
+      <div class="flex flex-col-reverse items-center mt-24">
+        <div
+          class="text-center text-color-main text-[18px] font-manrope-ultra-light font-bold ml-16 mr-12 md:ml-32 md:mr-0"
+        ></div>
+        <div
+          class="video-container md:mt-8 mt-[-72] flex flex-col items-center"
+        >
+          <div class="md:flex md:flex-row gap-24 mb-12">
+            <div class="md:block">
+              <video
+                class="scale-90 md:scale-100"
+                width="520"
+                height="350"
+                controls
+                autoplay
+              >
+                <source src="videos/Mockup ancien cam.mp4" type="video/mp4" />
+              </video>
+              <figcaption class="text-center mb-8 md:mb-0 text-color-main">
+                Old design and camera management
+              </figcaption>
             </div>
-            <div class="video-container md:mt-8 mt-[-72] flex flex-col items-center">
-                <div class="md:flex md:flex-row gap-24 mb-12">
-                    <div class="md:block">
-                        <video class="scale-90 md:scale-100" width="520" height="350" controls autoplay>
-                            <source src="videos/Mockup ancien cam.mp4" type="video/mp4">
-                        </video>
-                        <figcaption class="text-center mb-8 md:mb-0 text-color-main">Old design and camera management</figcaption>
-                    </div>
-                    <!-- Add scroll appearance animation function already in the JavaScript -->
-                    <div class="flex items-center h-30vh relative mt-4 justify-center md:-rotate-90 md:flex md:items-center md:justify-center md:mr-16 md:h-10vh md:relative md:ml-0 arrow-animation reveal-hidden" id="chevron-3">
-                        <div class="chevron"></div>
-                        <div class="chevron"></div>
-                        <div class="chevron"></div>
-                    </div>
-                    <figure class="scale-90 md:scale-100 mt-24 md:mt-0 md:mb-0">
-                        <video width="520" height="350" controls>
-                            <source src="videos/mockup-new cam-good.mp4" type="video/mp4">
-                        </video>
-                        <figcaption class="text-center text-color-main">New design and camera management</figcaption>
-                    </figure>
-                </div>
-                <hr class="border-t w-[50%] mt-6 background-color-section mb-16 mx-auto">
-                <div class="md:flex md:flex-row gap-24">
-
-                    <div class="md:block">
-                        <video class="scale-90 md:scale-100" width="520" height="350" controls>
-                            <source src="videos/Mockup Ancien Cowebsite.mp4" type="video/mp4">
-                        </video>
-                        <figcaption class="text-center text-color-main mb-12 md:mb-0">Old design and operation of cowebsites</figcaption>
-                    </div>
-                    <!-- Add scroll appearance animation function already in the JavaScript -->
-                    <div class="flex items-center h-30vh relative mt-4 justify-center md:-rotate-90 md:flex md:items-center md:justify-center md:mr-16 md:h-10vh md:relative md:ml-0 arrow-animation reveal-hidden" id="chevron-4">
-                        <div class="chevron"></div>
-                        <div class="chevron"></div>
-                        <div class="chevron"></div>
-                    </div>
-                    <figure class="scale-90 md:scale-100 mt-24 md:mt-0">
-                        <video width="520" height="350" controls>
-                            <source src="videos/mockup-new-cowebsite.mp4" type="video/mp4">
-                        </video>
-                        <figcaption class="text-center text-color-main">New design and operation of cowebsites</figcaption>
-                    </figure>
-                </div>
+            <!-- Add scroll appearance animation function already in the JavaScript -->
+            <div
+              class="flex items-center h-30vh relative mt-4 justify-center md:-rotate-90 md:flex md:items-center md:justify-center md:mr-16 md:h-10vh md:relative md:ml-0 arrow-animation reveal-hidden"
+              id="chevron-3"
+            >
+              <div class="chevron"></div>
+              <div class="chevron"></div>
+              <div class="chevron"></div>
             </div>
+            <figure class="scale-90 md:scale-100 mt-24 md:mt-0 md:mb-0">
+              <video width="520" height="350" controls>
+                <source src="videos/mockup-new cam-good.mp4" type="video/mp4" />
+              </video>
+              <figcaption class="text-center text-color-main">
+                New design and camera management
+              </figcaption>
+            </figure>
+          </div>
+          <hr
+            class="border-t w-[50%] mt-6 background-color-section mb-16 mx-auto"
+          />
+          <div class="md:flex md:flex-row gap-24">
+            <div class="md:block">
+              <video
+                class="scale-90 md:scale-100"
+                width="520"
+                height="350"
+                controls
+              >
+                <source
+                  src="videos/Mockup Ancien Cowebsite.mp4"
+                  type="video/mp4"
+                />
+              </video>
+              <figcaption class="text-center text-color-main mb-12 md:mb-0">
+                Old design and operation of cowebsites
+              </figcaption>
+            </div>
+            <!-- Add scroll appearance animation function already in the JavaScript -->
+            <div
+              class="flex items-center h-30vh relative mt-4 justify-center md:-rotate-90 md:flex md:items-center md:justify-center md:mr-16 md:h-10vh md:relative md:ml-0 arrow-animation reveal-hidden"
+              id="chevron-4"
+            >
+              <div class="chevron"></div>
+              <div class="chevron"></div>
+              <div class="chevron"></div>
+            </div>
+            <figure class="scale-90 md:scale-100 mt-24 md:mt-0">
+              <video width="520" height="350" controls>
+                <source
+                  src="videos/mockup-new-cowebsite.mp4"
+                  type="video/mp4"
+                />
+              </video>
+              <figcaption class="text-center text-color-main">
+                New design and operation of cowebsites
+              </figcaption>
+            </figure>
+          </div>
         </div>
+      </div>
 
-        <div class="h-[500px] w-screen flex items-end justify-center">
-            <div class="background-color-section h-[70%] w-[90%] flex flex-col items-center">
-                <p class="font-butler font-medium text-[48px] mt-24 mb-12 flex justify-center text-center text-color">Check it out!</p>
-                <button class="text-color-main background-color text-[24px] rounded-full w-[55%] h-[13%] md:w-[35%] lg:w-[20%] hover:w-[25%] transition-all duration-300"><a href="https://play.staging.workadventu.re/@/tcm/workadventure/wa-village" target="_blank">WorkAdventure</a></button>
-            </div>
+      <div class="h-[500px] w-screen flex items-end justify-center">
+        <div
+          class="background-color-section h-[70%] w-[90%] flex flex-col items-center"
+        >
+          <p
+            class="font-butler font-medium text-[48px] mt-24 mb-12 flex justify-center text-center text-color"
+          >
+            Check it out!
+          </p>
+          <button
+            class="text-color-main background-color text-[24px] rounded-full w-[55%] h-[13%] md:w-[35%] lg:w-[20%] hover:w-[25%] transition-all duration-300"
+          >
+            <a
+              href="https://play.staging.workadventu.re/@/tcm/workadventure/wa-village"
+              target="_blank"
+              >WorkAdventure</a
+            >
+          </button>
         </div>
-
+      </div>
     </section>
-</body>
+  </body>
 
-<script src="script.js" defer></script>
+  <script src="script.js" defer></script>
 </html>
 
 <style>
-    @font-face {
-      font-family: 'manrope-light';
-      src: url('fonts/manrope-light/Manrope-Bold.ttf') format('truetype'),
-           url('fonts/manrope-light/Manrope-ExtraBold.ttf') format('truetype'),
-           url('fonts/manrope-light/Manrope-ExtraLight.ttf') format('truetype'),
-           url('fonts/manrope-light/Manrope-Light.ttf') format('truetype'),
-           url('fonts/manrope-light/Manrope-Medium.ttf') format('truetype'),
-           url('fonts/manrope-light/Manrope-Regular.ttf') format('truetype'),
-           url('fonts/manrope-light/Manrope-SemiBold.ttf') format('truetype');
-    }
-    @font-face {
-      font-family: 'butler-stencil';
-      src :url('fonts/butler-stencil/Butler_Ultra_Light_Stencil.otf') format('opentype'),
-           url('fonts/butler-stencil/Butler_Black_Stencil.otf') format('opentype'),
-           url('fonts/butler-stencil/Butler_Bold_Stencil.otf') format('opentype'),
-           url('fonts/butler-stencil/Butler_ExtraBold_Stencil.otf') format('opentype'),
-           url('fonts/butler-stencil/Butler_Light_Stencil.otf') format('opentype'),
-           url('fonts/butler-stencil/Butler_Medium_Stencil.otf') format('opentype'),
-           url('fonts/butler-stencil/Butler_Regular_Stencil.otf') format('opentype');
-    }
-    @font-face {
-      font-family: 'butler';
-      src :url('fonts/butler/Butler_Ultra_Light.otf') format('opentype');
-    }
-    @font-face {
-      font-family: 'manrope';
-      src: url('fonts/manrope-light/Manrope-Light.ttf') format('truetype');
-    }
-    @font-face {
-      font-family: 'manrope-ultra-light';
-      src: url('fonts/manrope-light/Manrope-ExtraLight.ttf') format('truetype');
-    }
-    @font-face {
-      font-family: 'manrope-medium';
-      src: url('fonts/manrope-light/Manrope-Medium.ttf') format('truetype');
-    }
-    /* custom styles for specific fonts */
-    .font-butler {
-      font-family: 'butler', sans-serif;
-    }
-    .font-manrope-medium {
-        font-family: 'manrope-medium', sans-serif;
-    }
-    .font-manrope-light {
-      font-family: 'manrope-light', sans-serif;
-    }
-    .font-manrope-ultra-light {
-      font-family: 'manrope-ultra-light', sans-serif;
-    }
-    .font-butler-stencil {
-      font-family: 'butler-stencil', sans-serif;
-    }
-    .background-color {
-        background-color: #1a1818;
-    }
+  @font-face {
+    font-family: "manrope-light";
+    src: url("fonts/manrope-light/Manrope-Bold.ttf") format("truetype"),
+      url("fonts/manrope-light/Manrope-ExtraBold.ttf") format("truetype"),
+      url("fonts/manrope-light/Manrope-ExtraLight.ttf") format("truetype"),
+      url("fonts/manrope-light/Manrope-Light.ttf") format("truetype"),
+      url("fonts/manrope-light/Manrope-Medium.ttf") format("truetype"),
+      url("fonts/manrope-light/Manrope-Regular.ttf") format("truetype"),
+      url("fonts/manrope-light/Manrope-SemiBold.ttf") format("truetype");
+  }
+  @font-face {
+    font-family: "butler-stencil";
+    src: url("fonts/butler-stencil/Butler_Ultra_Light_Stencil.otf")
+        format("opentype"),
+      url("fonts/butler-stencil/Butler_Black_Stencil.otf") format("opentype"),
+      url("fonts/butler-stencil/Butler_Bold_Stencil.otf") format("opentype"),
+      url("fonts/butler-stencil/Butler_ExtraBold_Stencil.otf")
+        format("opentype"),
+      url("fonts/butler-stencil/Butler_Light_Stencil.otf") format("opentype"),
+      url("fonts/butler-stencil/Butler_Medium_Stencil.otf") format("opentype"),
+      url("fonts/butler-stencil/Butler_Regular_Stencil.otf") format("opentype");
+  }
+  @font-face {
+    font-family: "butler";
+    src: url("fonts/butler/Butler_Ultra_Light.otf") format("opentype");
+  }
+  @font-face {
+    font-family: "manrope";
+    src: url("fonts/manrope-light/Manrope-Light.ttf") format("truetype");
+  }
+  @font-face {
+    font-family: "manrope-ultra-light";
+    src: url("fonts/manrope-light/Manrope-ExtraLight.ttf") format("truetype");
+  }
+  @font-face {
+    font-family: "manrope-medium";
+    src: url("fonts/manrope-light/Manrope-Medium.ttf") format("truetype");
+  }
+  /* custom styles for specific fonts */
+  .font-butler {
+    font-family: "butler", sans-serif;
+  }
+  .font-manrope-medium {
+    font-family: "manrope-medium", sans-serif;
+  }
+  .font-manrope-light {
+    font-family: "manrope-light", sans-serif;
+  }
+  .font-manrope-ultra-light {
+    font-family: "manrope-ultra-light", sans-serif;
+  }
+  .font-butler-stencil {
+    font-family: "butler-stencil", sans-serif;
+  }
+  .background-color {
+    background-color: #1a1818;
+  }
 
-    .background-color-section  {
-        background-color: #ece7e1;
-    }
+  .background-color-section {
+    background-color: #ece7e1;
+  }
 
-    .text-color {
-        color: #1a1818;
-    }
+  .text-color {
+    color: #1a1818;
+  }
 
-    .text-color-main {
-        color: #ece7e1;
-    }
+  .text-color-main {
+    color: #ece7e1;
+  }
 
-    .underline-animation {
-        position: relative;
-        display: inline-block;
-        overflow: hidden;
-    }
-    .underline-animation::before {
-        content: '';
-        position: absolute;
-        width: 100%;
-        height: 2px;
-        bottom: 0;
-        left: 0;
-        background-color: currentColor;
-        transform: scaleX(0);
-        transform-origin: bottom right;
-        transition: transform 0.3s ease-out;
-    }
-    .underline-animation:hover::before {
-        transform: scaleX(1);
-        transform-origin: bottom left;
-    }
+  .underline-animation {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+  }
+  .underline-animation::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: currentColor;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease-out;
+  }
+  .underline-animation:hover::before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
 
-    .arrow-container {
-        position: absolute;
-        top: 75%;
-        left: 50%;
-        width: 100px;
-        height: 100px;
-        transform: translate(-50%, -50%) rotateZ(0deg);
-    }
+  .arrow-container {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    width: 100px;
+    height: 100px;
+    transform: translate(-50%, -50%) rotateZ(0deg);
+  }
 
-    .arrow-container:hover .arrow {
-        top: 50%;
-    }
+  .arrow-container:hover .arrow {
+    top: 50%;
+  }
 
-    .arrow-container:hover .arrow:before {
-        transform: translate(-50%, -50%) rotateZ(-30deg);
-    }
+  .arrow-container:hover .arrow:before {
+    transform: translate(-50%, -50%) rotateZ(-30deg);
+  }
 
-    .arrow-container:hover .arrow:after {
-        transform: translate(-50%, -50%) rotateZ(30deg);
-    }
+  .arrow-container:hover .arrow:after {
+    transform: translate(-50%, -50%) rotateZ(30deg);
+  }
 
-    .arrow {
-        position: relative;
-        transition: all 0.4s ease;
-    }
+  .arrow {
+    position: relative;
+    transition: all 0.4s ease;
+  }
 
-    .arrow:before,
-    .arrow:after {
-        transition: all 0.4s ease;
-        content: '';
-        display: block;
-        position: absolute;
-        transform-origin: bottom right;
-        background: #1a1818;
-        width: 4px;
-        height: 50px;
-        border-radius: 10px;
-        transform: translate(-50%, -50%) rotateZ(-45deg);
-    }
+  .arrow:before,
+  .arrow:after {
+    transition: all 0.4s ease;
+    content: "";
+    display: block;
+    position: absolute;
+    transform-origin: bottom right;
+    background: #1a1818;
+    width: 4px;
+    height: 50px;
+    border-radius: 10px;
+    transform: translate(-50%, -50%) rotateZ(-45deg);
+  }
 
-    .arrow:after {
-        transform-origin: bottom left;
-        transform: translate(-50%, -50%) rotateZ(45deg);
-    }
+  .arrow:after {
+    transform-origin: bottom left;
+    transform: translate(-50%, -50%) rotateZ(45deg);
+  }
 
-    /* Arrow opacity and positioning */
-    .arrow:nth-child(1) {
-        opacity: 0.3;
-        top: calc(15% + (100% / 5));
-    }
+  /* Arrow opacity and positioning */
+  .arrow:nth-child(1) {
+    opacity: 0.3;
+    top: calc(15% + (100% / 5));
+  }
 
-    .arrow:nth-child(2) {
-        opacity: 0.6;
-        top: calc(15% + (100% * 2 / 5));
-    }
+  .arrow:nth-child(2) {
+    opacity: 0.6;
+    top: calc(15% + (100% * 2 / 5));
+  }
 
-    .arrow:nth-child(3) {
-        opacity: 0.9;
-        top: calc(15% + (100% * 3 / 5));
-    }
+  .arrow:nth-child(3) {
+    opacity: 0.9;
+    top: calc(15% + (100% * 3 / 5));
+  }
 
-    /* Animation chevron */
+  /* Animation chevron */
 
-    .chevron {
-        position: absolute;
-        width: 2.1rem;
-        height: 0.48rem;
-        opacity: 0;
-        transform: scale(0.3);
-        animation: move-chevron 3s ease-out infinite;
-    }
+  .chevron {
+    position: absolute;
+    width: 2.1rem;
+    height: 0.48rem;
+    opacity: 0;
+    transform: scale(0.3);
+    animation: move-chevron 3s ease-out infinite;
+  }
 
-    .chevron:first-child {
-        animation-delay: 1s;
-    }
+  .chevron:first-child {
+    animation-delay: 1s;
+  }
 
-    .chevron:nth-child(2) {
-        animation-delay: 2s;
-    }
+  .chevron:nth-child(2) {
+    animation-delay: 2s;
+  }
 
-    .chevron:before,
-    .chevron:after {
-        content: '';
-        position: absolute;
-        top: 0;
-        height: 100%;
-        width: 50%;
-        background: #ece7e1;
-    }
+  .chevron:before,
+  .chevron:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 50%;
+    background: #ece7e1;
+  }
 
-    .chevron:before {
-        left: 0;
-        transform: skewY(30deg);
-    }
+  .chevron:before {
+    left: 0;
+    transform: skewY(30deg);
+  }
 
-    .chevron:after {
-        right: 0;
-        width: 50%;
-        transform: skewY(-30deg);
-    }
+  .chevron:after {
+    right: 0;
+    width: 50%;
+    transform: skewY(-30deg);
+  }
 
-    .reveal-visible {
-        opacity: 1;
-        transition: opacity 0.5s ease-in-out;
-    }
+  .reveal-visible {
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+  }
 
-    .reveal-hidden {
-        opacity: 0;
-        transition: opacity 0.5s ease-in-out;
-    }
+  .reveal-hidden {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
 
-    @keyframes move-chevron {
-        25% {
-            opacity: 1;
-        }
-        33.3% {
-            opacity: 1;
-            transform: translateY(2.28rem);
-        }
-        66.6% {
-            opacity: 1;
-            transform: translateY(3.12rem);
-        }
-        100% {
-            opacity: 0;
-            transform: translateY(4.8rem) scale(0.5);
-        }
+  @keyframes move-chevron {
+    25% {
+      opacity: 1;
     }
+    33.3% {
+      opacity: 1;
+      transform: translateY(2.28rem);
+    }
+    66.6% {
+      opacity: 1;
+      transform: translateY(3.12rem);
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(4.8rem) scale(0.5);
+    }
+  }
 
-    .animated-gradient {
-        background: radial-gradient(
-            circle at 30% 30%,
-            #F4C2C2,
-            #E2B9E8 40%,
-            #B9E4C9 60%,
-            #C2F0C2
-        );
-        background-size: 400% 400%;
-        animation: gradientAnimation 10s ease-in-out infinite;
-    }
+  .animated-gradient {
+    background: radial-gradient(
+      circle at 30% 30%,
+      #f4c2c2,
+      #e2b9e8 40%,
+      #b9e4c9 60%,
+      #c2f0c2
+    );
+    background-size: 400% 400%;
+    animation: gradientAnimation 10s ease-in-out infinite;
+  }
 
-    @keyframes gradientAnimation {
-        0% {
-            background-position: 0% 0%;
-        }
-        25% {
-            background-position: 100% 0%;
-        }
-        50% {
-            background-position: 100% 100%;
-        }
-        75% {
-            background-position: 0% 100%;
-        }
-        100% {
-            background-position: 0% 0%;
-        }
+  @keyframes gradientAnimation {
+    0% {
+      background-position: 0% 0%;
     }
+    25% {
+      background-position: 100% 0%;
+    }
+    50% {
+      background-position: 100% 100%;
+    }
+    75% {
+      background-position: 0% 100%;
+    }
+    100% {
+      background-position: 0% 0%;
+    }
+  }
 </style>
